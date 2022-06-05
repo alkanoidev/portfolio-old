@@ -1,0 +1,19 @@
+nav {
+  @apply bg-gradient-to-r pb-[1px] dark:from-bg-dark dark:via-lineColor-dark dark:to-bg-dark
+  from-bg via-bg-dark to-bg;
+  .content {
+    @apply bg-bg flex text-labels text-bg-dark dark:text-bg items-center w-full justify-between
+    dark:bg-bg-dark p-4;
+  }
+  .links {
+    @apply flex gap-16;
+    a {
+      @apply transition-colors hover:underline hover:underline-offset-4 decoration-accent;
+    }
+  }
+  svg {
+    path {
+      @apply fill-bg-dark dark:fill-bg;
+    }
+  }
+}

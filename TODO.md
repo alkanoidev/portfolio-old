@@ -1,4 +1,4 @@
-# TODO
+
 ## tech stack
 - react
 - typescript
@@ -19,3 +19,7 @@
 	- /counter
 		- Counter.js: a React component that shows the UI for the counter feature
 		- counterSlice.js: the Redux logic for the counter feature
+
+
+# TODO 
+- background dots fix
