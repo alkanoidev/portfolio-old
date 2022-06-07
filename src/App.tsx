@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+
 function App() {
   React.useEffect(() => {
     if (
@@ -23,9 +26,11 @@ function App() {
     // localStorage.removeItem("theme");
   }, [localStorage.theme]);
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

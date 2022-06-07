@@ -1,0 +1,25 @@
+.button {
+  position: relative;
+  @apply text-labels shadow
+    text-bg-dark dark:text-bg
+    py-[10px] px-[20px] rounded-lg border;
+  z-index: 1;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0%;
+    width: 0%;
+    @apply rounded-lg;
+    z-index: -1;
+    transition: all 0.25s;
+  }
+
+
+  &:hover::before {
+    width: 100%;
+    height: 100%;
+  }
+}

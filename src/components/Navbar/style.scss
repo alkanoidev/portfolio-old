@@ -1,19 +1,37 @@
 nav {
-  @apply bg-gradient-to-r pb-[1px] dark:from-bg-dark dark:via-lineColor-dark dark:to-bg-dark
-  from-bg via-bg-dark to-bg;
   .content {
-    @apply bg-bg flex text-labels text-bg-dark dark:text-bg items-center w-full justify-between
-    dark:bg-bg-dark p-4;
+    @apply flex text-labels font-bold text-bg-dark dark:text-bg items-center w-full justify-between p-4;
   }
   .links {
     @apply flex gap-16;
     a {
-      @apply transition-colors hover:underline hover:underline-offset-4 decoration-accent;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        @apply bg-accent;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-in;
+      }
+      
+      &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
   }
   svg {
     path {
       @apply fill-bg-dark dark:fill-bg;
     }
+  }
+  .line {
+    @apply bg-gradient-to-r pb-[1px] dark:from-bg-dark dark:via-lineColor-dark dark:to-bg-dark
+    from-bg via-bg-dark to-bg w-full;
   }
 }

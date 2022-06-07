@@ -9,6 +9,7 @@ lerna-debug.log*
 
 .obsidian
 node_modules
+.vscode
 dist
 dist-ssr
 *.local

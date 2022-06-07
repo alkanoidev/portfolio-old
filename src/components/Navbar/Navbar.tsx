@@ -37,6 +37,7 @@ export default function Navbar({ showContact }: Props) {
           )}
         </div>
       </div>
+      <div className="line"></div>
     </nav>
   );
 }
