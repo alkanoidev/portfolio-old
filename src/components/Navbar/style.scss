@@ -7,7 +7,7 @@ nav {
     a {
       position: relative;
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         transform: scaleX(0);
@@ -18,7 +18,7 @@ nav {
         transform-origin: bottom right;
         transition: transform 0.25s ease-in;
       }
-      
+
       &:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;

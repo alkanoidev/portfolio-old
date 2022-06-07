@@ -5,14 +5,17 @@
 ### ✨ [Demo](link)
 
 ### 🛠 Tech Stack:
-| Frontend      | Backend     |
-| ------------- | ----------- |
-|               |             |
+
+| Frontend | Backend |
+| -------- | ------- |
+|          |         |
 
 ### 🚀 Features
+
 - feature 1
 
 ### 🖼 Screenshots:
+
 <div>
 
 <img alt="" src="">
@@ -33,7 +36,7 @@
 
 ### Author 👋
 
- **Filip Ivanovic**
+**Filip Ivanovic**
 
-* Website: TODO: add portfolio
-* Github: [@alkanoidev](https://github.com/alkanoidev)
+- Website: TODO: add portfolio
+- Github: [@alkanoidev](https://github.com/alkanoidev)
