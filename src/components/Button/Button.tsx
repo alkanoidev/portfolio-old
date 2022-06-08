@@ -18,8 +18,8 @@ export default function Button({ type, children }: Props) {
         button
         ${
           type === "primary"
-            ? "border-primary before:bg-primary"
-            : "border-secondary before:bg-secondary"
+            ? "ring-primary before:bg-primary"
+            : "ring-secondary before:bg-secondary"
         }
         hover:text-bg dark:hover:text-bg-dark
       `}

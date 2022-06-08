@@ -2,22 +2,19 @@
   position: relative;
   @apply text-labels shadow font-bold
     text-bg-dark dark:text-bg
-    py-[10px] px-[20px] rounded-lg border;
+    py-[10px] px-[20px] rounded-lg ring-2;
   z-index: 1;
   position: relative;
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
     height: 100%;
     width: 100%;
     transform: scale(0%);
-    border-radius: 0.4rem;
+    @apply rounded-lg ring-2 ring-inherit;
+    inset: 0px;
     z-index: -1;
     transition: all 0.25s ease;
-  }
-  &:hover{
   }
   &:hover::before {
     transform: scale(100%);
