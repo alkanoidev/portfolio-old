@@ -2,7 +2,7 @@
   @apply flex pt-32 w-full justify-center;
   .home-content {
     p {
-      @apply text-headline text-bg-dark dark:text-bg font-extrabold;
+      @apply text-headline text-bg-dark dark:text-bg font-extrabold leading-tight;
       span {
         @apply text-transparent 
       bg-gradient-to-r from-primary via-secondary to-primary 
