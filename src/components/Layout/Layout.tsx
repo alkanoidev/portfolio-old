@@ -11,8 +11,10 @@ export default function Layout({ children }: Props) {
     <div className="Layout">
       <Navbar />
       {children}
-      <div className="blob"></div>
-      <div className="blob" id="blob1"></div>
+      {/* <div className="blobs">
+        <div className="blob"></div>
+        <div className="blob" id="blob1"></div>
+      </div> */}
     </div>
   );
 }

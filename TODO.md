@@ -6,7 +6,6 @@
 - vite
 - sass
 - [blob shape](https://www.npmjs.com/package/blobshape)
-- rotate blob shape(check for reduced animations) // samsung music thing
 
 ## redux project structure
 
@@ -24,3 +23,8 @@
 
 - button colors on hover
 - redux theme state
+
+- waves se ucitavaju sa delayom animacija
+- stavi ih sve odvojeno
+
+[modals, tooltips](https://atomiks.github.io/tippyjs/)

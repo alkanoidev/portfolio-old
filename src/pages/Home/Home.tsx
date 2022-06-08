@@ -3,6 +3,7 @@ import Button from "../../components/Button/Button";
 import Layout from "../../components/Layout/Layout";
 import { BsGithub } from "react-icons/bs";
 import "./style.scss";
+import Waves from "../../components/Waves/Waves";
 type Props = {};
 
 export default function Home({}: Props) {
@@ -27,6 +28,7 @@ export default function Home({}: Props) {
             </a>
           </div>
         </main>
+        <Waves />
       </div>
     </Layout>
   );
