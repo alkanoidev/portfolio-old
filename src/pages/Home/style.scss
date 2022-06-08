@@ -18,6 +18,12 @@
     }
     .buttons {
       @apply flex gap-3 items-center;
+      a {
+        transition: transform 0.25s;
+      }
+      a:hover {
+        transform: scale(120%);
+      }
     }
   }
 }
