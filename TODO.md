@@ -25,6 +25,7 @@
 - redux theme state
 
 - waves se ucitavaju sa delayom animacija
-- stavi ih sve odvojeno
+
+- resume page resume generator site notion
 
 [modals, tooltips](https://atomiks.github.io/tippyjs/)
