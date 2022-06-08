@@ -4,6 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import { BsGithub } from "react-icons/bs";
 import "./style.scss";
 import Waves from "../../components/Waves/Waves";
+import { AiOutlineArrowDown } from "react-icons/ai";
 type Props = {};
 
 export default function Home({}: Props) {
@@ -18,7 +19,7 @@ export default function Home({}: Props) {
           </p>
           <div className="buttons">
             <Button type="primary">contact_me</Button>
-            <Button type="secondary">view_projects ↓</Button>
+            <Button type="secondary" icon={<AiOutlineArrowDown />}>view_projects</Button>
             <a
               href="https://github.com/alkanoidev"
               target="_blank"

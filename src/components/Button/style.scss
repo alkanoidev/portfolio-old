@@ -1,10 +1,15 @@
 .button {
   position: relative;
-  @apply text-labels shadow font-bold
+  @apply text-labels shadow font-semibold
     text-bg-dark dark:text-bg
-    py-[10px] px-[20px] rounded-lg ring-2;
+    py-[10px] px-[20px] rounded-lg ring-2
+    flex items-center gap-2;
   z-index: 1;
   position: relative;
+
+  span{
+    @apply font-normal text-icon-sm;
+  }
   &::before {
     content: "";
     position: absolute;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,600,800,800i|Nanum+Pen+Script:400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Fira Code", monospace;
+  font-family: 'Raleway', sans-serif;
 }
 html {
   height: 100%;

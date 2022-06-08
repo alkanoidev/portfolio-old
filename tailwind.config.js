@@ -21,6 +21,7 @@ module.exports = {
       fontSize: {
         headline: "62px",
         subh: "32px",
+        "icon-sm": "24px",
         body: "18px",
         labels: "16px",
         code: "14px",

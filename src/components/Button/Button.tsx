@@ -5,12 +5,13 @@ type Props = {
   title?: string;
   type: string;
   children: any;
+  icon?: any;
 };
 type StyledProps = {
   type1: string;
 };
 
-export default function Button({ type, children }: Props) {
+export default function Button({ type, children, icon }: Props) {
   const [dark, setDark] = useState(true);
   return (
     <button
@@ -25,7 +26,7 @@ export default function Button({ type, children }: Props) {
       `}
     >
       {children}
-      <div></div>
+      <span>{icon}</span>
     </button>
   );
 }
