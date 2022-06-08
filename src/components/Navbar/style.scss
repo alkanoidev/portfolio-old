@@ -1,6 +1,6 @@
 nav {
   .content {
-    @apply flex text-labels font-bold text-bg-dark dark:text-bg items-center w-full justify-between p-4;
+    @apply flex text-labels font-bold text-bg-dark dark:text-bg items-center w-full justify-between px-4 py-4;
   }
   .links {
     @apply flex gap-16;
@@ -14,7 +14,7 @@ nav {
         height: 2px;
         bottom: 0;
         left: 0;
-        @apply bg-accent;
+        @apply bg-bg-dark dark:bg-bg;
         transform-origin: bottom right;
         transition: transform 0.25s ease-in;
       }
@@ -24,6 +24,9 @@ nav {
         transform-origin: bottom left;
       }
     }
+  }
+  .socials{
+    @apply flex gap-4 text-[24px];
   }
   svg {
     path {

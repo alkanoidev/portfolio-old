@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
 
 type Props = {
-  title: string;
+  title?: string;
   type: string;
+  children: any;
 };
 type StyledProps = {
   type1: string;
 };
 
-export default function Button({ title, type }: Props) {
+export default function Button({ type, children }: Props) {
+  const [dark, setDark] = useState(true);
   return (
     <button
       className={`
@@ -19,9 +21,10 @@ export default function Button({ title, type }: Props) {
             ? "border-primary before:bg-primary"
             : "border-secondary before:bg-secondary"
         }
+        hover:text-bg dark:hover:text-bg-dark
       `}
     >
-      {title}
+      {children}
       <div></div>
     </button>
   );

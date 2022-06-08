@@ -22,4 +22,5 @@
 
 # TODO
 
-- bbutton colors on hover
+- button colors on hover
+- redux theme state

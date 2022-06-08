@@ -1,20 +1,23 @@
-.home-content {
-  p {
-    @apply text-headline text-bg-dark dark:text-bg font-extrabold;
-    span {
-      @apply text-transparent 
+.home {
+  @apply flex pt-32 w-full justify-center;
+  .home-content {
+    p {
+      @apply text-headline text-bg-dark dark:text-bg font-extrabold;
+      span {
+        @apply text-transparent 
       bg-gradient-to-r from-primary via-secondary to-primary 
       bg-clip-text;
-      background-size: 200% auto;
-      animation: shine 1s linear infinite;
-      @keyframes shine {
-        to {
-          background-position: 200% center;
+        background-size: 200% auto;
+        animation: shine 1s linear infinite;
+        @keyframes shine {
+          to {
+            background-position: 200% center;
+          }
         }
       }
     }
-  }
-  .buttons {
-    @apply flex gap-3;
+    .buttons {
+      @apply flex gap-3 items-center;
+    }
   }
 }

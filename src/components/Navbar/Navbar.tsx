@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
-import { ReactComponent as MoonIcon } from "../../assets/moon.svg";
+import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
+import Button from "../Button/Button";
 
 type Props = {
   showContact?: boolean;
@@ -19,21 +20,21 @@ export default function Navbar({ showContact }: Props) {
           <a href="#">skills</a>
           <a href="#">projects</a>
         </div>
-        <div>
+        <div className="socials">
           {showContact ? (
-            <h1>contact</h1>
+            <Button type="primary">contact_me</Button>
           ) : (
-            <button
-              onClick={() => {
-                if (localStorage.theme === "light") {
-                  localStorage.theme = "dark";
-                } else {
-                  localStorage.theme = "light";
-                }
-              }}
-            >
-              <MoonIcon />
-            </button>
+              <button
+                onClick={() => {
+                  if (localStorage.theme === "light") {
+                    localStorage.theme = "dark";
+                  } else {
+                    localStorage.theme = "light";
+                  }
+                }}
+              >
+                <BsMoonStarsFill />
+              </button>
           )}
         </div>
       </div>

@@ -2,7 +2,28 @@
   width: 100%;
   height: 100%;
   @apply bg-bg dark:bg-bg-dark;
-  background: url("/src/assets/pattern.svg");
+  // background: url("/src/assets/pattern.svg");
   background-repeat: repeat;
   background-size: auto;
+  position: relative;
+  z-index: 0;
+
+  .blob {
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 200px;
+    @apply bg-primary;
+    border-radius: 69.0418% 30.9582% 55.5115% 44.4885% / 47.5811% 61.1056%
+      38.8944% 52.4189%;
+    filter: blur(174px);
+  }
+  #blob1 {
+    @apply bg-secondary;
+    left: calc(50% + 100px);
+    top: calc(200px + 300px);
+    border-radius: 58% 42% 71% 29% / 62% 26% 74% 38%;
+  }
 }
