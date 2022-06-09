@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.scss";
 import Button from "../Buttons/Button/Button";
 import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
+import { Link } from "react-router-dom";
 
 type Props = {
   showContact?: boolean;
@@ -15,8 +16,8 @@ export default function Navbar({ showContact }: Props) {
           <a href="#">filip_ivanovic</a>
         </div>
         <div className="links">
-          <a href="#">home</a>
-          <a href="#">about_me</a>
+          <Link to="/">home</Link>
+          <Link to="/about">about_me</Link>
           <a href="#">skills</a>
           <a href="#">projects</a>
         </div>

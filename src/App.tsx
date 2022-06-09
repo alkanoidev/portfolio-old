@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 
 function App() {
   React.useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

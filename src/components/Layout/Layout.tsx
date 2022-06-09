@@ -4,6 +4,7 @@ import "./style.scss";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import NavbarMobile from "../NavbarMobile/NavbarMobile";
+import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
 
 type Props = {
   children?: any;
@@ -17,6 +18,9 @@ export default function Layout({ children }: Props) {
       {menu && <NavbarMobile />}
       {children}
 
+      <div className="flex text-icon-sm sm:hidden absolute z-10 left-5 top-5">
+        <ThemeToggle />
+      </div>
       <button
         className="menu-button"
         onClick={() => {

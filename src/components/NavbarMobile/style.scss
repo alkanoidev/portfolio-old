@@ -3,7 +3,7 @@
   items-center sm:hidden bg-bg dark:bg-bg-dark;
 
   .links {
-    @apply flex flex-col items-center gap-16;
+    @apply flex flex-col items-center gap-10;
     a {
       @apply text-headline font-extrabold;
       position: relative;
@@ -24,6 +24,18 @@
         transform: scaleX(1);
         transform-origin: bottom left;
       }
+      span {
+        @apply text-transparent 
+        bg-gradient-to-r from-primary via-secondary to-primary 
+        bg-clip-text;
+        background-size: 200% auto;
+        animation: shine 1s linear infinite;
+        @keyframes shine {
+          to {
+            background-position: 200% center;
+          }
+        }
+      }
     }
   }
   .blobs {
@@ -32,7 +44,7 @@
     position: absolute;
     z-index: -1;
     #blob1 {
-      filter: blur(100px);
+      @apply blur-[50px] dark:blur-[100px];
       position: absolute;
       width: 120px;
       height: 200px;
@@ -41,11 +53,11 @@
       @apply bg-primary;
     }
     #blob2 {
-      filter: blur(100px);
+      @apply blur-[50px] dark:blur-[100px];
       width: 200px;
       height: 100px;
       position: absolute;
-      bottom: 0px;
+      bottom: 50%;
       right: 0px;
       @apply bg-secondary;
     }

@@ -28,4 +28,6 @@
 
 - resume page resume generator site notion
 
+- kada se pritisne na link u nav mobile na kojem si vec d ase ugasi nav mobile
+
 [modals, tooltips](https://atomiks.github.io/tippyjs/)

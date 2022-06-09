@@ -13,7 +13,7 @@ export default function Home({}: Props) {
       <div className="home">
         <main className="home-content">
           <p>
-            Hi, <br />
+            Hi ! <br />
             I'm Filip <br />
             <span>{">"} Front-end Developer</span>
           </p>
