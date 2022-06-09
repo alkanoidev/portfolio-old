@@ -4,7 +4,7 @@
     text-bg-dark dark:text-bg
     py-[10px] px-[20px] rounded-lg ring-2
     flex items-center gap-2;
-  z-index: 1;
+  z-index: 0;
   position: relative;
 
   span{
@@ -13,15 +13,16 @@
   &::before {
     content: "";
     position: absolute;
-    height: 100%;
+    height: 0%;
     width: 100%;
-    transform: scale(0%);
+    opacity: 0;
     @apply rounded-lg ring-2 ring-inherit;
     inset: 0px;
     z-index: -1;
-    transition: all 0.25s ease;
+    transition: all 0.25s ease-out;
   }
   &:hover::before {
-    transform: scale(100%);
+    opacity: 1;
+    height: 100%;
   }
 }

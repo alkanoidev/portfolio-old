@@ -1,31 +1,35 @@
 .Layout {
   width: 100%;
   height: 100%;
-  @apply bg-bg dark:bg-bg-dark;
+  @apply bg-bg dark:bg-bg-dark text-bg-dark dark:text-bg;
+  overflow: hidden;
   // background: url("/src/assets/pattern.svg");
   background-repeat: repeat;
   background-size: auto;
   position: relative;
   z-index: 0;
-  .blobs {
-    position: absolute;
-    left: 50%;
-    top: 300px;
-    z-index: -1;
-    filter: blur(174px);
-    .blob {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      @apply bg-primary;
-      border-radius: 69.0418% 30.9582% 55.5115% 44.4885% / 47.5811% 61.1056%
-        38.8944% 52.4189%;
-    }
-    #blob1 {
-      @apply bg-secondary;
-      left: 250px;
-      top: 200px;
-      border-radius: 58% 42% 71% 29% / 62% 26% 74% 38%;
-    }
+  // .blobs {
+  //   position: absolute;
+  //   left: 50%;
+  //   top: 300px;
+  //   z-index: -1;
+  //   filter: blur(174px);
+  //   .blob {
+  //     position: absolute;
+  //     width: 300px;
+  //     height: 300px;
+  //     @apply bg-primary;
+  //     border-radius: 69.0418% 30.9582% 55.5115% 44.4885% / 47.5811% 61.1056%
+  //       38.8944% 52.4189%;
+  //   }
+  //   #blob1 {
+  //     @apply bg-secondary;
+  //     left: 250px;
+  //     top: 200px;
+  //     border-radius: 58% 42% 71% 29% / 62% 26% 74% 38%;
+  //   }
+  // }
+  .menu-button {
+    @apply absolute top-5 right-5 flex sm:hidden z-10 text-icon-sm;
   }
 }

@@ -19,8 +19,8 @@ export default function Button({ type, children, icon }: Props) {
         button
         ${
           type === "primary"
-            ? "ring-primary before:bg-primary"
-            : "ring-secondary before:bg-secondary"
+            ? "ring-primary before:bg-gradient-to-tr before:from-primary before:to-green-500"
+            : "ring-secondary before:bg-gradient-to-tr before:from-secondary before:to-blue-500"
         }
         hover:text-bg dark:hover:text-bg-dark
       `}

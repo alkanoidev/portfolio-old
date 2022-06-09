@@ -1,7 +1,6 @@
 .waves {
   position: absolute;
   bottom: 0px;
-  width: 100%;
-  @apply h-96;
+  @apply sm:w-full w-[200%] sm:h-96;
   opacity: 0.8;
 }

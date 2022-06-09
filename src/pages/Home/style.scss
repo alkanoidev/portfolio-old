@@ -1,12 +1,13 @@
 .home {
-  @apply flex pt-32 w-full justify-center;
+  @apply flex pt-20 sm:pt-32 h-full w-full justify-between items-center flex-col overflow-hidden;
   .home-content {
+    @apply pl-5 sm:pl-0;
     p {
       @apply text-headline text-bg-dark dark:text-bg font-extrabold leading-tight;
       span {
         @apply text-transparent 
-      bg-gradient-to-r from-primary via-secondary to-primary 
-      bg-clip-text;
+        bg-gradient-to-r from-primary via-secondary to-primary 
+        bg-clip-text;
         background-size: 200% auto;
         animation: shine 1s linear infinite;
         @keyframes shine {
@@ -17,7 +18,7 @@
       }
     }
     .buttons {
-      @apply flex gap-4 items-center;
+      @apply flex sm:flex-row flex-col gap-4 sm:items-center items-start;
       a {
         transition: transform 0.25s;
       }
