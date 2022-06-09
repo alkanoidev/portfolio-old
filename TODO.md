@@ -30,4 +30,10 @@
 
 - kada se pritisne na link u nav mobile na kojem si vec d ase ugasi nav mobile
 
+- download resume dugme na about
+
+- copy to clipboar mail
+
+- loading izmedju stranica
+
 [modals, tooltips](https://atomiks.github.io/tippyjs/)

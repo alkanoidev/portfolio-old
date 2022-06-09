@@ -17,6 +17,19 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+
 html {
   height: 100%;
 

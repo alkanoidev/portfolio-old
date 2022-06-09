@@ -4,11 +4,9 @@ import Button from "../Buttons/Button/Button";
 import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
 import { Link } from "react-router-dom";
 
-type Props = {
-  showContact?: boolean;
-};
+type Props = {};
 
-export default function Navbar({ showContact }: Props) {
+export default function Navbar({}: Props) {
   return (
     <nav>
       <div className="content">
@@ -18,15 +16,11 @@ export default function Navbar({ showContact }: Props) {
         <div className="links">
           <Link to="/">home</Link>
           <Link to="/about">about_me</Link>
-          <a href="#">skills</a>
           <a href="#">projects</a>
+          <a href="/contact">contact_me</a>
         </div>
         <div className="socials">
-          {showContact ? (
-            <Button type="primary">contact_me</Button>
-          ) : (
-            <ThemeToggle />
-          )}
+          <ThemeToggle />
         </div>
       </div>
       <div className="line"></div>

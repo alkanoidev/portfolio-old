@@ -10,7 +10,6 @@ export default function NavbarMobile({}: Props) {
       <div className="links">
         <Link to="/">home</Link>
         <Link to="/about">about_me</Link>
-        <a href="#">skills</a>
         <a href="#">projects</a>
         <a href="#">
           <span>contact_me</span>
