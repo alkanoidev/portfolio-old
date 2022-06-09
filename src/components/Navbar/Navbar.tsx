@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.scss";
-import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
-import Button from "../Button/Button";
+import Button from "../Buttons/Button/Button";
+import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
 
 type Props = {
   showContact?: boolean;
@@ -24,17 +24,7 @@ export default function Navbar({ showContact }: Props) {
           {showContact ? (
             <Button type="primary">contact_me</Button>
           ) : (
-            <button
-              onClick={() => {
-                if (localStorage.theme === "light") {
-                  localStorage.theme = "dark";
-                } else {
-                  localStorage.theme = "light";
-                }
-              }}
-            >
-              <BsMoonStarsFill />
-            </button>
+            <ThemeToggle />
           )}
         </div>
       </div>

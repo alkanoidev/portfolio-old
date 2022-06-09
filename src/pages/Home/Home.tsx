@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/Button/Button";
+import Button from "../../components/Buttons/Button/Button";
 import Layout from "../../components/Layout/Layout";
 import { BsGithub } from "react-icons/bs";
 import "./style.scss";
