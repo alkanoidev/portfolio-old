@@ -11,6 +11,7 @@ export default function ThemeToggle({}: Props) {
 
   return (
     <button
+    className="text-icon-sm"
       onClick={() => {
         if (theme === "light") {
           setTheme("dark");

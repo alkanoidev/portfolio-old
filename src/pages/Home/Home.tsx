@@ -4,6 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import { BsGithub } from "react-icons/bs";
 import "./style.scss";
 import Waves from "../../components/Waves/Waves";
+import SocialLink from "../../components/SocialLink/SocialLink";
 
 type Props = {};
 
@@ -19,16 +20,11 @@ export default function Home({}: Props) {
           </p>
           <div className="buttons">
             <Button type="primary">contact_me</Button>
-            <Button type="secondary">
-              view_projects
-            </Button>
-            <a
-              href="https://github.com/alkanoidev"
-              target="_blank"
-              className="text-subh text-bg-dark dark:text-bg"
-            >
-              <BsGithub />
-            </a>
+            <Button type="secondary">view_projects</Button>
+            <SocialLink
+              icon={<BsGithub />}
+              link="https://github.com/alkanoidev"
+            />
           </div>
         </main>
         <Waves />
