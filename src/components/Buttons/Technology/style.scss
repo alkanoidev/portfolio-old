@@ -1,0 +1,11 @@
+.tooltip{
+    transform: scale(50%);
+    opacity: 0.5;
+    animation: fade 0.1s linear forwards;
+    @keyframes fade {
+        to{
+            transform: scale(100%);
+            opacity: 1;
+        }
+    }
+}

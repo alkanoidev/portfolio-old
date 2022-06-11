@@ -29,7 +29,7 @@ import { SiHashnode } from "react-icons/si";
 import InfoChip from "../../components/InfoChip/InfoChip";
 import { IoIosMail } from "react-icons/io";
 import Avatar from "../../assets/avatar.png";
-import Technology from "../../components/Technology/Technology";
+import Technology from "../../components/Buttons/Technology/Technology";
 import SocialLink from "../../components/SocialLink/SocialLink";
 
 type Props = {};
