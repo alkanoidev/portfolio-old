@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Button from "../../components/Buttons/Button/Button";
 import Layout from "../../components/Layout/Layout";
 import {
@@ -28,8 +28,16 @@ import { BsGithub, BsTwitter } from "react-icons/bs";
 import { SiHashnode } from "react-icons/si";
 import InfoChip from "../../components/InfoChip/InfoChip";
 import { IoIosMail } from "react-icons/io";
+import Avatar from "../../assets/avatar.png";
+import Technology from "../../components/Technology/Technology";
+import SocialLink from "../../components/SocialLink/SocialLink";
 
 type Props = {};
+
+type TechnologyHoverProps = {
+  hovered: boolean;
+  text: string;
+};
 
 export default function About({}: Props) {
   return (
@@ -40,7 +48,7 @@ export default function About({}: Props) {
             <InfoChip title="Kragujevac, Serbia" icon={<FaMapMarkerAlt />} />
             <InfoChip title="alkanoidev@gmail.com" icon={<IoIosMail />} />
           </div>
-          <h1># About</h1>
+          <h1 className="mt-5"># About</h1>
           <p className="pb-6">
             I'm a <span>junior developer</span> who enjoys building things that
             live on the internet.
@@ -57,30 +65,21 @@ export default function About({}: Props) {
           </p>
           <div className="flex items-center gap-3">
             <Button type="primary">contact_me</Button>
-            <a
-              href="https://github.com/alkanoidev"
-              target="_blank"
-              className="text-subh text-bg-dark dark:text-bg"
-            >
-              <BsGithub />
-            </a>
-            <a
-              href="https://twitter.com/alkanoidev/"
-              target="_blank"
-              className="text-subh text-bg-dark dark:text-bg"
-            >
-              <BsTwitter />
-            </a>
-            <a
-              href="https://alkanoidev.hashnode.dev/"
-              target="_blank"
-              className="text-subh text-bg-dark dark:text-bg"
-            >
-              <SiHashnode />
-            </a>
+            <SocialLink
+              icon={<BsGithub />}
+              link="https://github.com/alkanoidev"
+            />
+            <SocialLink
+              icon={<BsTwitter />}
+              link="https://twitter.com/alkanoidev/"
+            />
+            <SocialLink
+              icon={<SiHashnode />}
+              link="https://alkanoidev.hashnode.dev/"
+            />
           </div>
 
-          <h1 className="pt-20 sm:pt-32"># Skills</h1>
+          <h1 className="mt-20 sm:mt-32"># Skills</h1>
           <p>
             The main area of my expertise is <span>Front-end development</span>.
             I enjoy building intuitive applications that are fast and built with
@@ -95,24 +94,23 @@ export default function About({}: Props) {
           </p>
 
           <h2 className="pt-6 pb-6">## Tools and Technologies</h2>
-          <div className="tech">
-            <FaHtml5 />
-            <FaCss3 />
-            <SiJavascript />
-            <FaReact />
-            <FaNodeJs />
-            <SiCsharp />
-            <SiKotlin />
-            <SiExpress />
-            <FaSass />
-            <SiTailwindcss />
-            <SiMongodb />
-            <GrMysql />
-            <FaGitAlt />
-            <FaAndroid />
-            <FaBootstrap />
-            <FaFigma />
-            <SiAdobephotoshop />
+          <div className="tech mb-7">
+            <Technology icon={<FaHtml5 />} title="HTML5" />
+            <Technology icon={<FaCss3 />} title="CSS3" />
+            <Technology icon={<SiJavascript />} title="JavaScript" />
+            <Technology icon={<FaReact />} title="React" />
+            <Technology icon={<FaNodeJs />} title="NodeJS" />
+            <Technology icon={<SiCsharp />} title="C#" />
+            <Technology icon={<SiKotlin />} title="Kotlin" />
+            <Technology icon={<SiExpress />} title="ExpressJS" />
+            <Technology icon={<FaSass />} title="Sass" />
+            <Technology icon={<SiTailwindcss />} title="Tailwind Css" />
+            <Technology icon={<SiMongodb />} title="MongoDB" />
+            <Technology icon={<GrMysql />} title="MySQL" />
+            <Technology icon={<FaGitAlt />} title="Git" />
+            <Technology icon={<FaAndroid />} title="Android" />
+            <Technology icon={<FaFigma />} title="Figma" />
+            <Technology icon={<SiAdobephotoshop />} title="Photoshop" />
           </div>
         </div>
       </div>

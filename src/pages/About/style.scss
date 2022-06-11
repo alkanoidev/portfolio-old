@@ -1,7 +1,11 @@
 .about {
-  @apply flex pt-20 pb-32 sm:pt-32 h-full w-full justify-between items-center flex-col overflow-x-hidden;
+   @apply h-full w-full flex justify-center;// overflow-x-hidden
+   img{
+    width: 120px;
+    height: 120px;
+   }
   .about-content {
-    @apply sm:pl-0 pl-3 font-extrabold;
+    @apply pt-20 sm:pt-32 sm:pl-0 pl-3 font-extrabold h-full sm:w-[700px] w-full;
     h1 {
       @apply text-headline;
     }
@@ -18,10 +22,7 @@
       }
     }
     .tech {
-      @apply text-headline w-full flex flex-wrap gap-3 text-bg-dark dark:text-bg sm:w-[700px];
-      svg:hover path {
-        @apply transition text-primary bg-clip-text;
-      }
+      @apply w-full flex flex-wrap gap-3 text-bg-dark dark:text-bg sm:w-[700px];
     }
 
     a {
