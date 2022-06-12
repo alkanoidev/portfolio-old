@@ -10,25 +10,23 @@ type Props = {};
 
 export default function Home({}: Props) {
   return (
-    <Layout>
-      <div className="home">
-        <main className="home-content">
-          <p>
-            Hi ! <br />
-            I'm Filip <br />
-            <span>{">"} Front-end Developer</span>
-          </p>
-          <div className="buttons">
-            <Button type="primary">contact_me</Button>
-            <Button type="secondary">view_projects</Button>
-            <SocialLink
-              icon={<BsGithub />}
-              link="https://github.com/alkanoidev"
-            />
-          </div>
-        </main>
-        <Waves />
-      </div>
-    </Layout>
+    <div className="home">
+      <main className="home-content">
+        <p>
+          Hi ! <br />
+          I'm Filip <br />
+          <span>{">"} Front-end Developer</span>
+        </p>
+        <div className="buttons">
+          <Button type="primary">contact_me</Button>
+          <Button type="secondary">view_projects</Button>
+          <SocialLink
+            icon={<BsGithub />}
+            link="https://github.com/alkanoidev"
+          />
+        </div>
+      </main>
+      <Waves />
+    </div>
   );
 }

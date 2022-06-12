@@ -1,11 +1,21 @@
-.tooltip{
+.technology {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .tooltip {
     transform: scale(50%);
     opacity: 0.5;
     animation: fade 0.1s linear forwards;
+
     @keyframes fade {
-        to{
-            transform: scale(100%);
-            opacity: 1;
-        }
+      to {
+        transform: scale(100%);
+        opacity: 1;
+      }
     }
+  }
 }

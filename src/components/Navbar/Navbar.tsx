@@ -11,13 +11,13 @@ export default function Navbar({}: Props) {
     <nav>
       <div className="content">
         <div>
-          <a href="#">filip_ivanovic</a>
+          <Link to="/">filip_ivanovic</Link>
         </div>
         <div className="links">
           <Link to="/">home</Link>
           <Link to="/about">about_me</Link>
           <a href="#">projects</a>
-          <a href="/contact">contact_me</a>
+          <Link to="/contact">contact_me</Link>
         </div>
           <ThemeToggle />
       </div>

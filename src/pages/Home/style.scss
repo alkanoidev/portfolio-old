@@ -1,7 +1,7 @@
 .home {
-  @apply flex pt-20 sm:pt-32 h-full w-full justify-between items-center flex-col; // overflow hidden
+  @apply flex h-full w-full justify-between items-center flex-col mt-20 sm:mt-32;
   .home-content {
-    @apply pl-5 sm:pl-0;
+    @apply pl-5 sm:pl-0 h-full;
     p {
       @apply text-headline text-bg-dark dark:text-bg font-extrabold leading-tight;
       span {

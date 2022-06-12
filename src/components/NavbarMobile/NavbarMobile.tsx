@@ -11,9 +11,9 @@ export default function NavbarMobile({}: Props) {
         <Link to="/">home</Link>
         <Link to="/about">about_me</Link>
         <a href="#">projects</a>
-        <a href="#">
+        <Link to="/contact">
           <span>contact_me</span>
-        </a>
+        </Link>
       </div>
       <div className="blobs">
         <div id="blob1"></div>

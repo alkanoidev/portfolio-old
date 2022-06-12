@@ -12,6 +12,7 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   const [menu, setMenu] = useState<boolean>(false);
+  
   return (
     <div className="Layout">
       <Navbar />

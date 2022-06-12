@@ -1,11 +1,8 @@
 .about {
-   @apply h-full w-full flex justify-center;// overflow-x-hidden
-   img{
-    width: 120px;
-    height: 120px;
-   }
+  @apply flex h-full w-full justify-between items-center flex-col mt-20 sm:mt-32; // overflow-x-hidden
+
   .about-content {
-    @apply pt-20 sm:pt-32 sm:pl-0 pl-3 font-extrabold h-full sm:w-[700px] w-full;
+    @apply sm:pl-0 px-3 font-extrabold h-full sm:w-[700px] w-full;
     h1 {
       @apply text-headline;
     }

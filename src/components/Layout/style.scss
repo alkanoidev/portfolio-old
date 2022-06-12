@@ -1,11 +1,6 @@
 .Layout {
-  // width: 100%;
-  // height: 100%;
-  @apply bg-bg dark:bg-bg-dark text-bg-dark dark:text-bg flex flex-col;
-  // background-repeat: repeat;
-  // background-size: auto;
-  // position: relative;
-  // z-index: 0;
+  @apply bg-bg w-full h-full dark:bg-bg-dark text-bg-dark dark:text-bg flex flex-col;
+
   .menu-button {
     @apply absolute top-5 right-5 flex sm:hidden z-10 text-icon-sm;
   }
