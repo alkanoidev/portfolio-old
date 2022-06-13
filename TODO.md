@@ -36,4 +36,7 @@
 
 - loading izmedju stranica
 
+- embed spotify pesma
+
+
 [modals, tooltips](https://atomiks.github.io/tippyjs/)
