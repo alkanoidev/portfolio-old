@@ -20,9 +20,9 @@ export default function NavbarMobile({ setMenu }: Props) {
         <Link to="/about" onClick={handleClick}>
           about_me
         </Link>
-        <a href="#" onClick={handleClick}>
+        <Link to="/projects" onClick={handleClick}>
           projects
-        </a>
+        </Link>
         <Link to="/contact" onClick={handleClick}>
           <span>contact_me</span>
         </Link>

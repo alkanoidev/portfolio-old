@@ -26,13 +26,12 @@ export default function Contact({}: Props) {
   const handleSubmit = () => {};
 
   useEffect(() => {
-    const date = new Date();
     setCode(`// submit message
     const button = document.querySelector("#sendBtn");
 
     const message = {
-      name: ${formValues?.name},
-      email: ${formValues?.email},
+      name: "${formValues?.name}",
+      email: "${formValues?.email}",
       message: ${"`" + formValues?.message + "`"},
     };
     
@@ -83,6 +82,8 @@ export default function Contact({}: Props) {
       <div className="code">
         <CodeSnippet code={code} language="javascript" showLineNumbers />
       </div>
+      <div id="blob1"></div>
+      <div id="blob2"></div>
     </div>
   );
 }

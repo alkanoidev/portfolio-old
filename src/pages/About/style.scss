@@ -21,12 +21,5 @@
     .tech {
       @apply w-full flex flex-wrap gap-3 text-bg-dark dark:text-bg sm:w-[700px];
     }
-
-    a {
-      transition: transform 0.25s;
-    }
-    a:hover {
-      transform: scale(120%);
-    }
   }
 }

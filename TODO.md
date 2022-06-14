@@ -22,6 +22,4 @@
 
 - theme ne pamti u local storage
 
-- glass effect on normal navbar
-
-- fox links on buttons scaling up on about page
+- stavi props.children unutar projectcard

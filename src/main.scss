@@ -26,12 +26,14 @@
 html {
   height: 100%;
   width: 100%;
+  @apply bg-bg dark:bg-bg-dark;
 
   body {
     height: 100%;
     width: 100%;
-
+    @apply bg-bg dark:bg-bg-dark;
     #root {
+      @apply bg-bg dark:bg-bg-dark;
       height: 100%;
       width: 100%;
     }
