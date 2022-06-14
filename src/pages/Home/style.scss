@@ -1,7 +1,7 @@
 .home {
-  @apply flex h-full w-full justify-between items-center flex-col mt-20 sm:mt-32;
+  @apply flex h-full w-full justify-between items-center flex-col; //mt-20 sm:mt-32
   .home-content {
-    @apply pl-5 sm:pl-0 h-full;
+    @apply pl-5 sm:pl-0 h-full flex justify-center items-center flex-col;
     p {
       @apply text-headline text-bg-dark dark:text-bg font-extrabold leading-tight;
       span {
@@ -18,7 +18,7 @@
       }
     }
     .buttons {
-      @apply flex sm:flex-row flex-col gap-4 sm:items-center items-start;
+      @apply flex sm:flex-row w-full flex-col items-start gap-4 sm:items-center;
     }
   }
 }

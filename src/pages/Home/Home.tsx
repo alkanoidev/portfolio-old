@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import "./style.scss";
 import Waves from "../../components/Waves/Waves";
 import SocialLink from "../../components/SocialLink/SocialLink";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -18,8 +19,12 @@ export default function Home({}: Props) {
           <span>{">"} Front-end Developer</span>
         </p>
         <div className="buttons">
-          <Button type="primary">contact_me</Button>
-          <Button type="secondary">view_projects</Button>
+          <Button variant="primary">
+            <Link to="/contact">contact_me</Link>
+          </Button>
+          <Button variant="secondary">
+            <Link to="/projects">view_projects</Link>
+          </Button>
           <SocialLink
             icon={<BsGithub />}
             link="https://github.com/alkanoidev"
