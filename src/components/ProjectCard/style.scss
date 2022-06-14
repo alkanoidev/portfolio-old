@@ -1,0 +1,62 @@
+/* From uiverse.io by @G4b413l */
+.card {
+  @apply sm:w-[295px] sm:h-[365px] w-full rounded-lg;;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  @apply bg-bg dark:bg-off-dark;
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  @apply shadow-lg;
+  @apply rounded-lg;
+  overflow: hidden;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  @apply flex flex-col gap-3 p-5;
+
+  h1 {
+    @apply text-subh font-bold;
+  }
+  p {
+    @apply text-body;
+  }
+  .buttons {
+    @apply flex gap-3 ml-2;
+  }
+  h2{
+    @apply text-body;
+  }
+  .technologies{
+    @apply flex flex-wrap w-full gap-3 text-subh ml-2;
+  }
+}
+
+.card:hover {
+  @apply shadow-2xl;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  @apply bg-gradient-radial from-primary to-transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(20px);
+  @apply dark:blur-[40px];
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+  @apply bg-gradient-radial from-secondary to-transparent;
+}
