@@ -8,16 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "flowbite": "^1.4.7",
-    "flowbite-react": "^0.0.25",
     "react": "^18.0.0",
     "react-code-blocks": "^0.0.9-0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
-    "react-tooltip": "^4.2.21",
-    "styled-components": "^5.3.5",
+    "react-toastify": "^9.0.4",
     "vite-plugin-svgr": "^2.1.0"
   },
   "devDependencies": {

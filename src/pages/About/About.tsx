@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Button from "../../components/Buttons/Button/Button";
 import {
   FaHtml5,
@@ -14,11 +14,11 @@ import {
 import {
   SiJavascript,
   SiCsharp,
-  SiKotlin,
   SiExpress,
   SiTailwindcss,
   SiMongodb,
   SiAdobephotoshop,
+  SiJava,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import "./style.scss";
@@ -29,16 +29,43 @@ import { IoIosMail } from "react-icons/io";
 import Technology from "../../components/Buttons/Technology/Technology";
 import SocialLink from "../../components/SocialLink/SocialLink";
 import { Link } from "react-router-dom";
+import Avatar from "../../assets/avatar.png";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import ThemeContext from "../../context/ThemeContext";
 
 type Props = {};
 
 export default function About({}: Props) {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div className="about">
       <div className="about-content">
-        <div className="flex flex-col sm:flex-row sm:items-center items-start justify-start gap-3">
-          <InfoChip title="Kragujevac, Serbia" icon={<FaMapMarkerAlt />} />
-          <InfoChip title="alkanoidev@gmail.com" icon={<IoIosMail />} />
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1">
+          <img src={Avatar} alt="" className="sm:w-32 w-28" />
+          <div className="flex flex-col  justify-start gap-3">
+            <InfoChip title="Kragujevac, Serbia" icon={<FaMapMarkerAlt />} />
+            <InfoChip
+              title="alkanoidev@gmail.com"
+              email
+              onClick={() => {
+                if ("navigator" in window) {
+                  navigator.clipboard.writeText("alkanoidev@gmail.com");
+                  toast.info("Email is copied to clipboard!", {
+                    position: "bottom-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: true,
+                    progress: undefined,
+                  });
+                }
+              }}
+              icon={<IoIosMail />}
+            />
+          </div>
         </div>
         <div className="mt-5">
           <h1># About</h1>
@@ -98,18 +125,29 @@ export default function About({}: Props) {
             <Technology icon={<FaReact />} title="React" />
             <Technology icon={<FaNodeJs />} title="NodeJS" />
             <Technology icon={<SiCsharp />} title="C#" />
-            <Technology icon={<SiKotlin />} title="Kotlin" />
+            <Technology icon={<SiJava />} title="Java" />
             <Technology icon={<SiExpress />} title="ExpressJS" />
             <Technology icon={<FaSass />} title="Sass" />
             <Technology icon={<SiTailwindcss />} title="Tailwind Css" />
             <Technology icon={<SiMongodb />} title="MongoDB" />
             <Technology icon={<GrMysql />} title="MySQL" />
             <Technology icon={<FaGitAlt />} title="Git" />
-            <Technology icon={<FaAndroid />} title="Android" />
             <Technology icon={<FaFigma />} title="Figma" />
             <Technology icon={<SiAdobephotoshop />} title="Photoshop" />
           </div>
         </div>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover={false}
+          theme={theme === "dark" ? "dark" : "light"}
+        />
       </div>
     </div>
   );

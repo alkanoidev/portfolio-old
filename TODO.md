@@ -18,8 +18,14 @@
 
 - loading izmedju stranica
 
+- animacije
+
 - wrap lines code
 
 - theme ne pamti u local storage
 
-- stavi props.children unutar projectcard
+- min and max height (min)
+
+- copy to clipboard on mobile useRef [dasdas](https://www.codegrepper.com/code-examples/javascript/copy+text+to+clipboard+with+javascript+mobile)
+
+- slike za projekte u public ...
