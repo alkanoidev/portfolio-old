@@ -16,7 +16,7 @@ export default function Navbar({}: Props) {
         <div className="links">
           <Link to="/">home</Link>
           <Link to="/about">about_me</Link>
-          <a href="#">projects</a>
+          <Link to="/projects">projects</Link>
           <Link to="/contact">contact_me</Link>
         </div>
         <ThemeToggle />

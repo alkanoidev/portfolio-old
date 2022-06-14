@@ -8,14 +8,9 @@
 
 # TODO
 
-- button colors on hover
-- redux theme state
-
 - waves se ucitavaju sa delayom animacija
 
 - resume page resume generator site notion
-
-- kada se pritisne na link u nav mobile na kojem si vec d ase ugasi nav mobile
 
 - download resume dugme na about
 
@@ -27,4 +22,6 @@
 
 - theme ne pamti u local storage
 
-[modals, tooltips](https://atomiks.github.io/tippyjs/)
+- glass effect on normal navbar
+
+- fox links on buttons scaling up on about page
