@@ -21,7 +21,7 @@ export default function Technology({ icon, title }: Props) {
       {tooltip && (
         <div
           className="capitalize max-w-[100px] absolute z-10 top-[-70%] text-code font-extralight bg-off-white dark:bg-off-dark 
-            text-bg dark:text-bg px-3 py-2 rounded-sm transition-transform tooltip"
+            text-bg-dark dark:text-bg px-3 py-2 rounded-sm transition-transform tooltip"
         >
           {title}
         </div>

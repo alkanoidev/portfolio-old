@@ -2,22 +2,9 @@
 
 - react
 - typescript
-- redux
 - vite
 - sass
 - [blob shape](https://www.npmjs.com/package/blobshape)
-
-## redux project structure
-
-- /src
-  - index.js: the starting point for the app
-  - App.js: the top-level React component
-- /app
-  - store.js: creates the Redux store instance
-- /features
-  - /counter
-    - Counter.js: a React component that shows the UI for the counter feature
-    - counterSlice.js: the Redux logic for the counter feature
 
 # TODO
 
@@ -36,7 +23,8 @@
 
 - loading izmedju stranica
 
-- embed spotify pesma
+- wrap lines code
 
+- theme ne pamti u local storage
 
 [modals, tooltips](https://atomiks.github.io/tippyjs/)

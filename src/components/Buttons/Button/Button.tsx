@@ -3,22 +3,20 @@ import "./style.scss";
 
 type Props = {
   title?: string;
-  type: string;
+  variant: string;
   children: any;
   icon?: any;
-};
-type StyledProps = {
-  type1: string;
+  type?: any;
 };
 
-export default function Button({ type, children, icon }: Props) {
-  const [dark, setDark] = useState(true);
+export default function Button({ variant, children, icon, type }: Props) {
   return (
     <button
+      type={type}
       className={`
         button
         ${
-          type === "primary"
+          variant === "primary"
             ? "ring-primary before:bg-gradient-to-tr before:from-primary before:to-green-500"
             : "ring-secondary before:bg-gradient-to-tr before:from-secondary before:to-blue-500"
         }

@@ -3,11 +3,11 @@
   @apply text-labels shadow font-semibold
     text-bg-dark dark:text-bg
     py-[10px] px-[20px] rounded-lg ring-2
-    flex items-center gap-2;
+    flex items-center justify-center gap-2;
   z-index: 0;
   position: relative;
 
-  span{
+  span {
     @apply font-normal text-icon-sm;
   }
   &::before {

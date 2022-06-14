@@ -4,7 +4,5 @@ import "./style.scss";
 type Props = {};
 
 export default function Waves({}: Props) {
-  return (
-    <WavesSVG className="waves" />
-  );
+  return <WavesSVG className="waves" />;
 }
