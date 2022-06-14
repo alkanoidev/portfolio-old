@@ -1,17 +1,29 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
 
-type Props = {};
+type Props = {
+  setMenu: Dispatch<SetStateAction<boolean>>;
+};
 
-export default function NavbarMobile({}: Props) {
+export default function NavbarMobile({ setMenu }: Props) {
+  const handleClick = (): void => {
+    setMenu(false);
+  };
+
   return (
     <div className="navbar-mobile">
       <div className="links">
-        <Link to="/">home</Link>
-        <Link to="/about">about_me</Link>
-        <a href="#">projects</a>
-        <Link to="/contact">
+        <Link to="/" onClick={handleClick}>
+          home
+        </Link>
+        <Link to="/about" onClick={handleClick}>
+          about_me
+        </Link>
+        <a href="#" onClick={handleClick}>
+          projects
+        </a>
+        <Link to="/contact" onClick={handleClick}>
           <span>contact_me</span>
         </Link>
       </div>

@@ -1,7 +1,15 @@
 .Layout {
-  @apply bg-bg w-full h-full dark:bg-bg-dark text-bg-dark dark:text-bg flex flex-col;
+  @apply bg-bg w-full h-full dark:bg-bg-dark text-bg-dark dark:text-bg flex flex-col transition-all;
 
   .menu-button {
-    @apply absolute top-5 right-5 flex sm:hidden z-10 text-icon-sm;
+    @apply relative top-5 right-5 flex sm:hidden text-icon-sm;
+  }
+  .theme-menu {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 0 0 1rem 1rem;
+    @apply flex text-icon-sm px-3 py-5 items-center justify-between w-full sm:hidden fixed z-10 left-0 top-0;
   }
 }

@@ -19,7 +19,7 @@ export default function Navbar({}: Props) {
           <a href="#">projects</a>
           <Link to="/contact">contact_me</Link>
         </div>
-          <ThemeToggle />
+        <ThemeToggle />
       </div>
       <div className="line"></div>
     </nav>

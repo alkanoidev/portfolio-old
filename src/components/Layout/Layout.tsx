@@ -12,24 +12,23 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   const [menu, setMenu] = useState<boolean>(false);
-  
+
   return (
     <div className="Layout">
       <Navbar />
-      {menu && <NavbarMobile />}
-      {children}
-
-      <div className="flex text-icon-sm sm:hidden absolute z-10 left-5 top-5">
+      <div className="theme-menu">
         <ThemeToggle />
+        <button
+          className=""
+          onClick={() => {
+            setMenu((prev) => !prev);
+          }}
+        >
+          {menu ? <IoMdClose /> : <FaBars />}
+        </button>
       </div>
-      <button
-        className="menu-button"
-        onClick={() => {
-          setMenu((prev) => !prev);
-        }}
-      >
-        {menu ? <IoMdClose /> : <FaBars />}
-      </button>
+      {menu && <NavbarMobile setMenu={setMenu} />}
+      {children}
     </div>
   );
 }
