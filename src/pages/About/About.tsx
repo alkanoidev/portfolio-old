@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext } from "react";
 import Button from "../../components/Buttons/Button/Button";
 import {
   FaHtml5,
@@ -7,18 +7,17 @@ import {
   FaNodeJs,
   FaSass,
   FaGitAlt,
-  FaAndroid,
   FaFigma,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import {
   SiJavascript,
-  SiCsharp,
   SiExpress,
   SiTailwindcss,
   SiMongodb,
   SiAdobephotoshop,
   SiJava,
+  SiC,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import "./style.scss";
@@ -112,7 +111,7 @@ export default function About({}: Props) {
             <br />
             I am into code refactoring and organizing.
             <br />
-            <br />I also have experience with
+            <br />I also have experience in
             <span> Full-stack development </span>using NodeJS and popular
             Relational Database Management Systems as well as Nonrelational.
           </p>
@@ -124,11 +123,11 @@ export default function About({}: Props) {
             <Technology icon={<SiJavascript />} title="JavaScript" />
             <Technology icon={<FaReact />} title="React" />
             <Technology icon={<FaNodeJs />} title="NodeJS" />
-            <Technology icon={<SiCsharp />} title="C#" />
+            <Technology icon={<SiC />} title="CLanguage" />
             <Technology icon={<SiJava />} title="Java" />
             <Technology icon={<SiExpress />} title="ExpressJS" />
             <Technology icon={<FaSass />} title="Sass" />
-            <Technology icon={<SiTailwindcss />} title="Tailwind Css" />
+            <Technology icon={<SiTailwindcss />} title="TailwindCss" />
             <Technology icon={<SiMongodb />} title="MongoDB" />
             <Technology icon={<GrMysql />} title="MySQL" />
             <Technology icon={<FaGitAlt />} title="Git" />

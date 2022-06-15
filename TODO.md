@@ -29,3 +29,7 @@
 - copy to clipboard on mobile useRef [dasdas](https://www.codegrepper.com/code-examples/javascript/copy+text+to+clipboard+with+javascript+mobile)
 
 - slike za projekte u public ...
+
+- contact form functionallity and cat
+
+- use group for tooltips tailwind
