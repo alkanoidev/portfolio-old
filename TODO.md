@@ -16,10 +16,6 @@
 
 - animacije
 
-- theme ne pamti u local storage
-
-- min and max height (min)
-
 - slike za projekte u public ...
 
 - contact form functionallity and cat
@@ -31,7 +27,3 @@
 - project page fetch readme
 
   - react-markdown
-
-- 404 page
-
-- kada ne postoji live demo ne prikazuj.... dugme

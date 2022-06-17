@@ -36,10 +36,12 @@ export default function Projects({}: Props) {
             <p>{project.description}</p>
             <div className="buttons">
               <SocialLink icon={<BsGithub />} link={project.githubLink} />
-              <SocialLink
-                icon={<HiExternalLink />}
-                link={project.liveDemoLink}
-              />
+              {project.liveDemoLink !== "" && (
+                <SocialLink
+                  icon={<HiExternalLink />}
+                  link={project.liveDemoLink}
+                />
+              )}
             </div>
             <h2>technologies used:</h2>
             <div className="technologies">

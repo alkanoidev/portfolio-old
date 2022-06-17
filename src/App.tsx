@@ -6,6 +6,7 @@ import Layout from "./components/Layout/Layout";
 import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
 import ThemeProvider from "./context/ThemeProvider";
+import Page404 from "./pages/Page404/Page404";
 
 function App() {
   const [theme, setTheme] = useState<string>("");
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about/skills" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<Page404 />} />
           </Routes>
         </Layout>
       </ThemeProvider>
