@@ -1,0 +1,12 @@
+.contact-success {
+  @apply h-full w-full flex justify-center items-start gap-10 px-3 sm:px-0 z-0;
+  @apply bg-bg dark:bg-bg-dark;
+
+  .form-submitted {
+    @apply flex flex-col sm:mt-12 items-center w-full gap-3;
+
+    img {
+      @apply rounded-lg w-[400px];
+    }
+  }
+}

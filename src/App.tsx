@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
 import ThemeProvider from "./context/ThemeProvider";
 import Page404 from "./pages/Page404/Page404";
+import ContactSuccess from "./pages/ContactSuccess/ContactSuccess";
 
 function App() {
   const [theme, setTheme] = useState<string>("");
@@ -17,10 +18,13 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/about/skills" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="about" element={<About />} />
+            <Route path="about/skills" element={<About />} />
+            <Route path="contact">
+              <Route path="/contact" element={<Contact />} />
+              <Route path="success" element={<ContactSuccess />} />
+            </Route>
+            <Route path="projects" element={<Projects />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </Layout>

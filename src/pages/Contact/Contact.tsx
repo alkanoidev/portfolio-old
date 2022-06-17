@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../components/Buttons/Button/Button";
 import CodeSnippet from "../../components/CodeSnippet/CodeSnippet";
 import "./style.scss";
@@ -10,6 +11,7 @@ type FormValuesProps = {
   message: string | undefined;
 };
 export default function Contact({}: Props) {
+  const navigate = useNavigate();
   const [formValues, setFormValues] = useState<FormValuesProps | null>({
     name: "",
     email: "",
@@ -25,14 +27,16 @@ export default function Contact({}: Props) {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formValues }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "contact", ...formValues }),
+    // })
+    //   .then(() => {
+    //     navigate("/contact/success");
+    //   })
+    //   .catch((error) => alert(error));
+    navigate("success");
     e.preventDefault();
   };
 
@@ -102,6 +106,7 @@ export default function Contact({}: Props) {
       <div className="code">
         <CodeSnippet code={code} language="javascript" showLineNumbers />
       </div>
+
       <div id="blob1"></div>
       <div id="blob2"></div>
     </div>

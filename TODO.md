@@ -27,3 +27,5 @@
 - project page fetch readme
 
   - react-markdown
+
+- project card image

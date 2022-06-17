@@ -3,7 +3,7 @@
   @apply bg-bg dark:bg-bg-dark;
 
   div {
-    @apply sm:mt-24 relative;
+    @apply sm:mt-12 relative;
     h1 {
       @apply text-headline font-extrabold;
     }
@@ -24,6 +24,14 @@
             color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
             background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
         }
+      }
+    }
+
+    .form-submitted {
+      @apply flex flex-col items-center w-full gap-3;
+
+      img {
+        @apply rounded-lg w-[400px];
       }
     }
   }
