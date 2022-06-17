@@ -25,4 +25,13 @@
 - contact form functionallity and cat
 
 - prevodjenje sajta na srpski
+
   - kada je na srpskom da se resume skine na srpskom
+
+- project page fetch readme
+
+  - react-markdown
+
+- 404 page
+
+- kada ne postoji live demo ne prikazuj.... dugme

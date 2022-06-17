@@ -1,21 +1,19 @@
 /* From uiverse.io by @G4b413l */
 .card {
-  @apply sm:w-[320px] sm:h-[365px] w-full rounded-lg;;
+  @apply sm:w-[320px] max-h-[600px] w-full rounded-lg;
   transition: all 0.2s;
   position: relative;
-  cursor: pointer;
   @apply bg-bg dark:bg-off-dark;
 }
 
 .card-inner {
   width: inherit;
-  height: inherit;
   @apply shadow-lg;
   @apply rounded-lg;
   overflow: hidden;
   background-color: transparent;
   backdrop-filter: blur(10px);
-  @apply flex flex-col gap-3 p-5;
+  @apply flex h-full flex-col gap-3 p-5;
 
   h1 {
     @apply text-subh font-bold;
@@ -26,16 +24,15 @@
   .buttons {
     @apply flex gap-3 ml-2;
   }
-  h2{
+  h2 {
     @apply text-body;
   }
-  .technologies{
-    @apply flex flex-wrap w-full gap-3 text-subh ml-2;
+  .technologies {
+    @apply flex flex-wrap w-full gap-3 text-primary text-labels ml-2;
   }
-}
-
-.card:hover {
-  @apply shadow-2xl;
+  .thumbnail {
+    @apply rounded-lg grayscale transition-all;
+  }
 }
 
 .circle {

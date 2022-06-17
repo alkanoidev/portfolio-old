@@ -1,6 +1,6 @@
-.projects{
-    @apply sm:px-0 px-3 flex flex-col mt-12 items-center text-headline font-extrabold w-full h-full;
-    .content{
-        @apply flex flex-wrap w-full justify-center mt-12; 
-    }
+.projects {
+  @apply sm:px-0 px-3 flex flex-col mt-12 items-center text-headline font-extrabold w-full h-full;
+  .content {
+    @apply flex h-full flex-wrap w-full gap-5 justify-center mt-12;
+  }
 }
