@@ -3,7 +3,7 @@
   @apply sm:w-[320px] max-h-[700px] w-full flex flex-col rounded-lg;
   transition: all 0.2s;
   position: relative;
-  @apply bg-bg dark:bg-off-dark;
+  @apply bg-off-white dark:bg-off-dark hover:ring-4 hover:ring-primary cursor-pointer;
 
   .thumbnail-link {
     @apply flex w-full justify-center;
@@ -11,7 +11,6 @@
       @apply rounded-t-lg w-full h-full grayscale transition-all;
     }
   }
-  overflow: hidden;
 }
 
 .card-inner {

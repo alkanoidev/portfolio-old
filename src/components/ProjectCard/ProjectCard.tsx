@@ -19,7 +19,7 @@ export default function ProjectCard({
 
   return (
     <div
-      className={`card  ${comingSoon && "blur-sm"} group`}
+      className={`card  ${comingSoon && "opacity-20"} group`}
       onClick={() => {
         navigate(`${githubRepoName}`);
       }}
