@@ -16,22 +16,11 @@ export default function Projects({}: Props) {
       <h1>Some Things I’ve Built</h1>
       <div className="content">
         {projects.map((project, index) => (
-          <ProjectCard key={index} comingSoon={project.comingSoon}>
-            {project.image && (
-              <a
-                className="thumbnail-link"
-                href={project.liveDemoLink}
-                target="_blank"
-              >
-                <img
-                  src={project.image}
-                  alt=""
-                  className={`thumbnail ${
-                    !project.comingSoon && "group-hover:grayscale-0"
-                  }`}
-                />
-              </a>
-            )}
+          <ProjectCard
+            key={index}
+            comingSoon={project.comingSoon}
+            githubRepoName={project.repoName}
+          >
             <h1>{project.title}</h1>
             <p>{project.description}</p>
             <div className="buttons">

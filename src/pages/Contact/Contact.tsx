@@ -27,15 +27,15 @@ export default function Contact({}: Props) {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", ...formValues }),
-    // })
-    //   .then(() => {
-    //     navigate("/contact/success");
-    //   })
-    //   .catch((error) => alert(error));
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formValues }),
+    })
+      .then(() => {
+        navigate("/contact/success");
+      })
+      .catch((error) => alert(error));
     navigate("success");
     e.preventDefault();
   };

@@ -1,0 +1,33 @@
+.markdown {
+  @apply flex flex-col gap-1 max-w-[700px] w-full my-12 font-bold px-2 sm:px-0;
+  h1 {
+    @apply text-headline;
+  }
+  h3 {
+    @apply text-subh;
+  }
+  h4 {
+    @apply text-icon-sm;
+  }
+  ul {
+    list-style: square;
+  }
+  li {
+    @apply ml-5;
+  }
+  tr {
+    @apply bg-off-white dark:bg-off-dark;
+  }
+
+  th,
+  td {
+    padding: 6px 13px;
+  }
+  th {
+    @apply border-b border-b-primary;
+  }
+
+  table tr:nth-child(2n) {
+    @apply bg-bg dark:bg-bg-dark;
+  }
+}

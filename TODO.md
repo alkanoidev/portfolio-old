@@ -16,16 +16,8 @@
 
 - animacije
 
-- slike za projekte u public ...
-
-- contact form functionallity and cat
+- contact form functionallity
 
 - prevodjenje sajta na srpski
 
   - kada je na srpskom da se resume skine na srpskom
-
-- project page fetch readme
-
-  - react-markdown
-
-- project card image

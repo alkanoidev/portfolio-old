@@ -13,7 +13,8 @@
             "styled components",
             "create-react-app"
         ],
-        "comingSoon": false
+        "comingSoon": false,
+        "repoName": "nasa-apis"
     },
     {
         "title": "coffee-shop-menu",
@@ -30,7 +31,8 @@
             "sass",
             "vite"
         ],
-        "comingSoon": true
+        "comingSoon": true,
+        "repoName": "coffee-shop-menu"
     },
     {
         "title": "travel-app-landing-page",
@@ -45,7 +47,8 @@
             "framer motion",
             "create-react-app"
         ],
-        "comingSoon": false
+        "comingSoon": false,
+        "repoName": "travel-app-landing-page"
     },
     {
         "title": "motivate",
@@ -59,7 +62,8 @@
             "coroutines",
             "gson"
         ],
-        "comingSoon": false
+        "comingSoon": false,
+        "repoName": "motivate"
     },
     {
         "title": "map-generator",
@@ -73,7 +77,8 @@
             "raylib",
             "fast noise lite"
         ],
-        "comingSoon": false
+        "comingSoon": false,
+        "repoName": "mapgenerator"
     },
     {
         "title": "movie reviews database",
@@ -87,7 +92,8 @@
             "express",
             "mysql"
         ],
-        "comingSoon": true
+        "comingSoon": true,
+        "repoName": "MovieReviewsDB"
     },
     {
         "title": "firlw",
@@ -99,6 +105,7 @@
             "html",
             "css"
         ],
-        "comingSoon": false
+        "comingSoon": false,
+        "repoName": "firlw-landing-page"
     }
 ]
