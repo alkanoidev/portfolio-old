@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button/Button";
 import CodeSnippet from "../../components/CodeSnippet/CodeSnippet";
 import "./style.scss";
+
 type Props = {};
 type FormValuesProps = {
   name: string | undefined;
@@ -23,7 +24,25 @@ export default function Contact({}: Props) {
     setFormValues((prev: any) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e: React.FormEvent) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formValues }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
 
   useEffect(() => {
     setCode(`// submit message
@@ -45,6 +64,7 @@ export default function Contact({}: Props) {
       <div className="contact-form">
         <h1>Contact me</h1>
         <form onSubmit={handleSubmit}>
+          <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>name:</label>
             <input

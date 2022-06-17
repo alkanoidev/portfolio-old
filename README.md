@@ -1,6 +1,6 @@
 # portfolio
 
-> project description
+My overkilled personal portfolio.
 
 ### ✨ [Demo](link)
 
