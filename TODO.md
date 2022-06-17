@@ -21,3 +21,7 @@
 - prevodjenje sajta na srpski
 
   - kada je na srpskom da se resume skine na srpskom
+
+- mobile copy to clipboard mail
+
+- optimize projects page

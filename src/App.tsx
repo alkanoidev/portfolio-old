@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -12,6 +12,7 @@ import Project from "./pages/Project/Project";
 
 function App() {
   const [theme, setTheme] = useState<string>("");
+  useEffect(() => {}, []);
 
   return (
     <BrowserRouter>

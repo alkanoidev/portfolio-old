@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Button from "../../components/Buttons/Button/Button";
-import Layout from "../../components/Layout/Layout";
 import { BsGithub } from "react-icons/bs";
 import "./style.scss";
 import Waves from "../../components/Waves/Waves";

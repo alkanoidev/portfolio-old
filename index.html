@@ -9,6 +9,13 @@
     />
     <link rel="manifest" href="manifest.json" />
     <title>Filip Ivanovic</title>
+    <style>
+      @import "tailwindcss/base";
+
+      @import "tailwindcss/components";
+
+      @import "tailwindcss/utilities";
+    </style>
   </head>
   <body>
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -17,7 +24,11 @@
       <textarea name="message"></textarea>
     </form>
 
-    <div id="root"></div>
+    <div id="root">
+      <div class="bg-bg w-full h-screen flex items-center justify-center">
+        <img src="avatar.png" alt="" class="w-24 h-24" />
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
