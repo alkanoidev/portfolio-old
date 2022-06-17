@@ -3,7 +3,7 @@ import "./style.scss";
 type Props = {
   icon: JSX.Element;
   title: string;
-  small: boolean;
+  small?: boolean;
 };
 
 export default function Technology({ icon, title, small }: Props) {
