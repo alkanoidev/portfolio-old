@@ -1,24 +1,17 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./style.scss";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
-import ThemeContext from "../../../context/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeProvider";
 type Props = {};
 
 export default function ThemeToggle({}: Props) {
-  const { theme, setTheme } = useContext(ThemeContext);
-  useEffect(() => {
-    localStorage.theme = theme;
-  }, [theme]);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <button
       className="text-icon-sm"
       onClick={() => {
-        if (theme === "light") {
-          setTheme("dark");
-        } else {
-          setTheme("light");
-        }
+        toggleTheme();
       }}
     >
       {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}

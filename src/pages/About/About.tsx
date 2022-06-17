@@ -31,7 +31,7 @@ import { Link } from "react-router-dom";
 import Avatar from "../../assets/avatar.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ThemeContext from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeProvider";
 
 type Props = {};
 
@@ -82,22 +82,27 @@ export default function About({}: Props) {
             <br />
             <br />I also love open-source, UI design, and orange cats :)
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex sm:flex-row flex-col sm:items-center items-start gap-3">
             <Button variant="primary">
               <Link to="/contact">contact_me</Link>
             </Button>
-            <SocialLink
-              icon={<BsGithub />}
-              link="https://github.com/alkanoidev"
-            />
-            <SocialLink
-              icon={<BsTwitter />}
-              link="https://twitter.com/alkanoidev/"
-            />
-            <SocialLink
-              icon={<SiHashnode />}
-              link="https://alkanoidev.hashnode.dev/"
-            />
+            <Button variant="secondary">
+              <Link to="/">download_resume</Link>
+            </Button>
+            <div className="flex gap-2">
+              <SocialLink
+                icon={<BsGithub />}
+                link="https://github.com/alkanoidev"
+              />
+              <SocialLink
+                icon={<BsTwitter />}
+                link="https://twitter.com/alkanoidev/"
+              />
+              <SocialLink
+                icon={<SiHashnode />}
+                link="https://alkanoidev.hashnode.dev/"
+              />
+            </div>
           </div>
         </div>
 
