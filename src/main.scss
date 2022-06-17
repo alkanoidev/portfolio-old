@@ -24,20 +24,17 @@
 }
 
 html {
-  height: 100%;
   width: 100%;
   min-height: 100vh;
   @apply bg-bg dark:bg-bg-dark;
 
   body {
-    height: 100%;
     width: 100%;
     min-height: 100vh;
     @apply bg-bg dark:bg-bg-dark;
 
     #root {
       @apply bg-bg dark:bg-bg-dark;
-      height: 100%;
       width: 100%;
       min-height: 100vh;
     }

@@ -2,7 +2,7 @@ nav {
   @apply hidden sm:block;
   .content {
     @apply flex text-labels font-semibold text-bg-dark
-     dark:text-bg items-center w-full justify-between px-4 pt-8 pb-3;
+     dark:text-bg items-center w-full justify-between h-[70px] px-3;
   }
   .links {
     @apply flex gap-16;

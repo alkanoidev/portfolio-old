@@ -18,7 +18,11 @@ export default function Projects({}: Props) {
         {projects.map((project, index) => (
           <ProjectCard key={index} comingSoon={project.comingSoon}>
             {project.image && (
-              <a href={project.liveDemoLink} target="_blank">
+              <a
+                className="thumbnail-link"
+                href={project.liveDemoLink}
+                target="_blank"
+              >
                 <img
                   src={project.image}
                   alt=""

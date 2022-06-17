@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../../components/Buttons/Button/Button";
 import Layout from "../../components/Layout/Layout";
 import { BsGithub } from "react-icons/bs";

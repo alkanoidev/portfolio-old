@@ -1,10 +1,9 @@
 .contact {
   @apply h-full w-full flex justify-center items-start gap-10 px-3 sm:px-0 z-0;
   @apply bg-bg dark:bg-bg-dark;
-  min-height: 100vh;
-  
+
   div {
-    @apply mt-24 sm:mt-32 relative;
+    @apply sm:mt-24 relative;
     h1 {
       @apply text-headline font-extrabold;
     }

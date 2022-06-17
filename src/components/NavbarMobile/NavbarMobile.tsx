@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
 
@@ -10,6 +10,16 @@ export default function NavbarMobile({ setMenu }: Props) {
   const handleClick = (): void => {
     setMenu(false);
   };
+
+  useEffect(() => {
+    document.body.setAttribute("scroll", "no");
+    document.body.setAttribute("style", "overflow: hidden");
+
+    return () => {
+      document.body.removeAttribute("scroll");
+      document.body.setAttribute("style", "overflow: scroll");
+    };
+  }, []);
 
   return (
     <div className="navbar-mobile">

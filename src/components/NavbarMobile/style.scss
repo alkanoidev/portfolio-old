@@ -1,5 +1,5 @@
 .navbar-mobile {
-  @apply w-full h-full absolute z-10 flex justify-center 
+  @apply w-full h-screen absolute z-10 flex justify-center 
   items-center sm:hidden bg-bg dark:bg-bg-dark;
 
   .links {
