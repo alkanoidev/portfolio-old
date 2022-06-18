@@ -29,7 +29,9 @@ export default function InfoChip({ icon, title, onClick, email }: Props) {
       {email && (
         <div>
           {title}
-          <h6 className="text-sm opacity-50">click to copy to clipboard</h6>
+          <h6 className="text-sm opacity-50 hidden sm:block">
+            click to copy to clipboard
+          </h6>
         </div>
       )}
     </motion.div>

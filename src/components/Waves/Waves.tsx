@@ -82,8 +82,8 @@ export default function Waves({}: Props) {
           y2="422"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#62AEEF" />
-          <stop offset="1" stop-color="#62AEEF" stop-opacity="0" />
+          <stop stopColor="#62AEEF" />
+          <stop offset="1" stopColor="#62AEEF" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_113_232"
@@ -93,8 +93,8 @@ export default function Waves({}: Props) {
           y2="422"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#62AEEF" />
-          <stop offset="1" stop-color="#62AEEF" stop-opacity="0" />
+          <stop stopColor="#62AEEF" />
+          <stop offset="1" stopColor="#62AEEF" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_113_232"
@@ -104,8 +104,8 @@ export default function Waves({}: Props) {
           y2="422.238"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#62AEEF" />
-          <stop offset="1" stop-color="#62AEEF" stop-opacity="0" />
+          <stop stopColor="#62AEEF" />
+          <stop offset="1" stopColor="#62AEEF" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_113_232"
@@ -115,8 +115,8 @@ export default function Waves({}: Props) {
           y2="422"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#68AF73" />
-          <stop offset="1" stop-color="#68AF73" stop-opacity="0" />
+          <stop stopColor="#68AF73" />
+          <stop offset="1" stopColor="#68AF73" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_113_232"
@@ -126,8 +126,8 @@ export default function Waves({}: Props) {
           y2="422"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#62AEEF" />
-          <stop offset="1" stop-color="#62AEEF" stop-opacity="0" />
+          <stop stopColor="#62AEEF" />
+          <stop offset="1" stopColor="#62AEEF" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_113_232"
@@ -137,8 +137,8 @@ export default function Waves({}: Props) {
           y2="421.753"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#68AF73" />
-          <stop offset="1" stop-color="#68AF73" stop-opacity="0" />
+          <stop stopColor="#68AF73" />
+          <stop offset="1" stopColor="#68AF73" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_113_232"
@@ -148,8 +148,8 @@ export default function Waves({}: Props) {
           y2="422"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#62AEEF" />
-          <stop offset="1" stop-color="#62AEEF" stop-opacity="0" />
+          <stop stopColor="#62AEEF" />
+          <stop offset="1" stopColor="#62AEEF" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_113_232"
@@ -159,8 +159,8 @@ export default function Waves({}: Props) {
           y2="422"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#68AF73" />
-          <stop offset="1" stop-color="#68AF73" stop-opacity="0" />
+          <stop stopColor="#68AF73" />
+          <stop offset="1" stopColor="#68AF73" stopOpacity="0" />
         </linearGradient>
       </defs>
     </motion.svg>

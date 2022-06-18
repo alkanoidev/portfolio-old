@@ -27,7 +27,7 @@ export default function Layout({ children }: Props) {
           {menu ? <IoMdClose /> : <FaBars />}
         </button>
       </div>
-      {menu && <NavbarMobile setMenu={setMenu} />}
+      {menu && <NavbarMobile setMenu={setMenu} menu={menu} />}
       {children}
     </div>
   );
