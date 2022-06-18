@@ -1,14 +1,27 @@
 import React from "react";
 import "./style.scss";
+import { motion } from "framer-motion";
+
 type Props = {
   icon: JSX.Element;
   title: string;
   small?: boolean;
 };
-
+const item = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
 export default function Technology({ icon, title, small }: Props) {
   return (
-    <button
+    <motion.button
+      variants={item}
       className={`${
         small ? "text-subh" : "text-headline"
       } technology flex justify-center relative transition text-primary bg-clip-text group`}
@@ -23,6 +36,6 @@ export default function Technology({ icon, title, small }: Props) {
         {title}
       </div>
       {icon}
-    </button>
+    </motion.button>
   );
 }

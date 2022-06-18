@@ -4,6 +4,7 @@ import Button from "../../components/Buttons/Button/Button";
 import CodeSnippet from "../../components/CodeSnippet/CodeSnippet";
 import withSplashScreen from "../SplashScreen/SplashScreen";
 import "./style.scss";
+import { motion } from "framer-motion";
 
 type Props = {};
 type FormValuesProps = {
@@ -66,7 +67,12 @@ export function Contact({}: Props) {
 
   return (
     <div className="contact">
-      <div className="contact-form">
+      <motion.div
+        className="contact-form"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, type: "spring" }}
+      >
         <h1>Contact me</h1>
         <form onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
@@ -103,10 +109,15 @@ export function Contact({}: Props) {
             </Button>
           </p>
         </form>
-      </div>
-      <div className="code">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, type: "spring", delay: 0.5 }}
+        className="code"
+      >
         <CodeSnippet code={code} language="javascript" showLineNumbers />
-      </div>
+      </motion.div>
 
       <div id="blob1"></div>
       <div id="blob2"></div>

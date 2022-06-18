@@ -6,8 +6,14 @@ import SocialLink from "../../components/SocialLink/SocialLink";
 import { BsGithub } from "react-icons/bs";
 import { HiExternalLink } from "react-icons/hi";
 import withSplashScreen from "../SplashScreen/SplashScreen";
+import { motion } from "framer-motion";
 
 type Props = {};
+
+const container = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { staggerChildren: 0.1 } },
+};
 
 export function Projects({}: Props) {
   const [projects, setProjects] = useState<any[]>(projectsData);
@@ -15,7 +21,12 @@ export function Projects({}: Props) {
   return (
     <div className="projects">
       <h1>Some Things I’ve Built</h1>
-      <div className="content">
+      <motion.div
+        className="content"
+        variants={container}
+        initial="initial"
+        animate="animate"
+      >
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
@@ -41,7 +52,7 @@ export function Projects({}: Props) {
             </div>
           </ProjectCard>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

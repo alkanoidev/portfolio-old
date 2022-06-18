@@ -33,17 +33,32 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeContext } from "../../context/ThemeProvider";
 import withSplashScreen from "../SplashScreen/SplashScreen";
+import { motion } from "framer-motion";
 
 type Props = {};
-
 export function About({}: Props) {
   const { theme } = useContext(ThemeContext);
 
   return (
     <div className="about">
       <div className="about-content">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1">
-          <img src={Avatar} alt="" className="sm:w-32 w-28" />
+        <motion.div
+          layout
+          className="flex flex-col sm:flex-row items-start sm:items-center gap-1"
+        >
+          <motion.img
+            src={Avatar}
+            alt=""
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
+            transition={{ duration: 0.2 }}
+            className="sm:w-32 w-28"
+          />
           <div className="flex flex-col  justify-start gap-3">
             <InfoChip title="Kragujevac, Serbia" icon={<FaMapMarkerAlt />} />
             <InfoChip
@@ -66,8 +81,8 @@ export function About({}: Props) {
               icon={<IoIosMail />}
             />
           </div>
-        </div>
-        <div className="mt-5">
+        </motion.div>
+        <AnimatedParagraph className="mt-5">
           <h1># About</h1>
           <p className="pb-6">
             I'm a <span>junior developer</span> who enjoys building things that
@@ -105,9 +120,9 @@ export function About({}: Props) {
               />
             </div>
           </div>
-        </div>
+        </AnimatedParagraph>
 
-        <div className="pb-6 mt-16 sm:mt-14 flex gap-6 flex-col w-full">
+        <AnimatedParagraph className="pb-6 mt-16 sm:mt-14 flex gap-6 flex-col w-full">
           <h1 className=""># Skills</h1>
           <p>
             The main area of my expertise is <span>Front-end development</span>.
@@ -123,7 +138,12 @@ export function About({}: Props) {
           </p>
 
           <h2>## Tools and Technologies</h2>
-          <div className="tech">
+          <motion.div
+            className="tech"
+            variants={container}
+            initial="initial"
+            whileInView="animate"
+          >
             <Technology icon={<FaHtml5 />} title="HTML5" />
             <Technology icon={<FaCss3 />} title="CSS3" />
             <Technology icon={<SiJavascript />} title="JavaScript" />
@@ -139,8 +159,8 @@ export function About({}: Props) {
             <Technology icon={<FaGitAlt />} title="Git" />
             <Technology icon={<FaFigma />} title="Figma" />
             <Technology icon={<SiAdobephotoshop />} title="Photoshop" />
-          </div>
-        </div>
+          </motion.div>
+        </AnimatedParagraph>
         <ToastContainer
           position="bottom-right"
           autoClose={5000}
@@ -157,5 +177,29 @@ export function About({}: Props) {
     </div>
   );
 }
+
+const AnimatedParagraph = ({
+  children,
+  className,
+}: {
+  children: any;
+  className: string;
+}) => {
+  return (
+    <motion.div
+      className={className}
+      initial={{ x: -100, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.6, type: "spring" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+const container = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { staggerChildren: 0.1 } },
+};
 
 export default withSplashScreen(About);

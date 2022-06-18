@@ -14,7 +14,7 @@ export default function CodeSnippet({
   language,
   showLineNumbers,
 }: Props) {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Code
