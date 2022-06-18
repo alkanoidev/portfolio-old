@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.scss";
-import Button from "../Buttons/Button/Button";
 import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
 import { Link } from "react-router-dom";
 

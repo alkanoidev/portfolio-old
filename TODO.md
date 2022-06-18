@@ -12,8 +12,6 @@
 
 - download resume dugme na about
 
-- loading izmedju stranica
-
 - animacije
 
 - contact form functionallity [link](https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/?_ga=2.168728161.1512449875.1655157230-238669959.1653747071)
