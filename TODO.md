@@ -15,3 +15,6 @@
 - prevodjenje sajta na srpski [tut](https://medium.com/@jishnu61/6-easy-steps-to-localize-your-react-application-internationalization-with-i18next-8de9cc3a66a1)
 
   - kada je na srpskom da se resume skine na srpskom
+
+- stavi na about da se ne radi whileInView
+- close button on navbarmobile

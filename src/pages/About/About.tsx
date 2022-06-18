@@ -189,7 +189,7 @@ const AnimatedParagraph = ({
     <motion.div
       className={className}
       initial={{ x: -100, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.2 }}
     >
       {children}
