@@ -5,10 +5,11 @@ import projectsData from "./projects.json";
 import SocialLink from "../../components/SocialLink/SocialLink";
 import { BsGithub } from "react-icons/bs";
 import { HiExternalLink } from "react-icons/hi";
+import withSplashScreen from "../SplashScreen/SplashScreen";
 
 type Props = {};
 
-export default function Projects({}: Props) {
+export function Projects({}: Props) {
   const [projects, setProjects] = useState<any[]>(projectsData);
 
   return (
@@ -44,3 +45,5 @@ export default function Projects({}: Props) {
     </div>
   );
 }
+
+export default withSplashScreen(Projects);

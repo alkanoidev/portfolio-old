@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Buttons/Button/Button";
 import CodeSnippet from "../../components/CodeSnippet/CodeSnippet";
+import withSplashScreen from "../SplashScreen/SplashScreen";
 import "./style.scss";
 
 type Props = {};
@@ -10,7 +11,7 @@ type FormValuesProps = {
   email: string | undefined;
   message: string | undefined;
 };
-export default function Contact({}: Props) {
+export function Contact({}: Props) {
   const navigate = useNavigate();
   const [formValues, setFormValues] = useState<FormValuesProps | null>({
     name: "",
@@ -112,3 +113,5 @@ export default function Contact({}: Props) {
     </div>
   );
 }
+
+export default withSplashScreen(Contact);

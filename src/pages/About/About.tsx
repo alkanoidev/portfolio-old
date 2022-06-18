@@ -32,10 +32,11 @@ import Avatar from "../../assets/avatar.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeContext } from "../../context/ThemeProvider";
+import withSplashScreen from "../SplashScreen/SplashScreen";
 
 type Props = {};
 
-export default function About({}: Props) {
+export function About({}: Props) {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -156,3 +157,5 @@ export default function About({}: Props) {
     </div>
   );
 }
+
+export default withSplashScreen(About);
