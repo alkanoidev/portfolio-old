@@ -2,41 +2,24 @@
 
 My overkilled personal portfolio.
 
-### ✨ [Demo](link)
+### ✨ [Demo](https://filipivanovic.netlify.app/)
 
 ### 🛠 Tech Stack:
 
-| Frontend | Backend |
-| -------- | ------- |
-|          |         |
-
-### 🚀 Features
-
-- feature 1
-
-### 🖼 Screenshots:
-
-<div>
-
-<img alt="" src="">
-
-</div>
-
-### ⚙ Install
-
-```sh
-
-```
-
-### ⚙ Usage
-
-```sh
-
-```
+| Frontend      |
+| ------------- |
+| React         |
+| TypeScript    |
+| React-Router  |
+| TailwindCSS   |
+| Sass          |
+| Framer-Motion |
+| Vite          |
+| Figma         |
 
 ### Author 👋
 
 **Filip Ivanovic**
 
-- Website: TODO: add portfolio
+- Website: [https://filipivanovic.netlify.app/](https://filipivanovic.netlify.app/)
 - Github: [@alkanoidev](https://github.com/alkanoidev)
