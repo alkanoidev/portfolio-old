@@ -59,7 +59,7 @@ export function About({}: Props) {
             transition={{ duration: 0.2 }}
             className="sm:w-32 w-28"
           />
-          <div className="flex flex-col  justify-start gap-3">
+          <div className="flex flex-col justify-start gap-3">
             <InfoChip title="Kragujevac, Serbia" icon={<FaMapMarkerAlt />} />
             <InfoChip
               title="alkanoidev@gmail.com"

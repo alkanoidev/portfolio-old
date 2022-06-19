@@ -7,7 +7,7 @@
       @apply text-[42px];
     }
     p {
-      @apply text-body w-full pl-5 sm:text-icon-sm text-bg-dark dark:text-bg leading-normal sm:w-[700px];
+      @apply text-body w-full sm:text-icon-sm text-bg-dark dark:text-bg leading-normal sm:w-[700px];
       span {
         @apply text-transparent 
           bg-gradient-to-r from-primary via-secondary to-primary 

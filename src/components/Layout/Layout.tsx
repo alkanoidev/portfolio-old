@@ -20,7 +20,9 @@ export default function Layout({ children }: Props) {
     <div className="Layout">
       <Navbar />
       <div
-        className={`theme-menu ${pathname === "/" ? "relative" : "fixed z-20"}`}
+        className={`theme-menu ${
+          pathname === "/" && !menu ? "relative" : "fixed z-20"
+        }`}
       >
         <ThemeToggle />
         <button
