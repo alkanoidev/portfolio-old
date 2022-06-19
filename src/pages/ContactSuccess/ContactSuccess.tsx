@@ -32,7 +32,7 @@ export function ContactSuccess({}: Props) {
         initial="initial"
         animate="animate"
       >
-        <motion.h1 variants={item} className="text-headline">
+        <motion.h1 variants={item} className="text-headline mt-[70px] sm:mt-0">
           thank you!
         </motion.h1>
         <motion.h2 variants={item} className="text-subh text-center">
