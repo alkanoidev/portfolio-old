@@ -18,7 +18,7 @@ function withSplashScreen(WrappedComponent: React.FC) {
     useEffect(() => {
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 400);
     }, [pathname]);
 
     if (loading) {

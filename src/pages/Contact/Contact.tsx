@@ -83,6 +83,7 @@ export function Contact({}: Props) {
               name="name"
               value={formValues?.name}
               onChange={handleChange}
+              required
             />
           </p>
           <p>
@@ -92,6 +93,7 @@ export function Contact({}: Props) {
               name="email"
               value={formValues?.email}
               onChange={handleChange}
+              required
             />
           </p>
           <p>
@@ -101,6 +103,7 @@ export function Contact({}: Props) {
               value={formValues?.message}
               onChange={handleChange}
               rows={5}
+              required
             />
           </p>
           <p>
