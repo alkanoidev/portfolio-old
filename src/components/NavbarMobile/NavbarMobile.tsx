@@ -27,8 +27,8 @@ export default function NavbarMobile({ setMenu, menu }: Props) {
     <motion.div
       className="navbar-mobile"
       transition={{ type: "spring" }}
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
       <div className="links">
         <Link to="/" onClick={handleClick}>
