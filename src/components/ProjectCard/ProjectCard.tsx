@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./style.scss";
 import { motion } from "framer-motion";
 
@@ -32,13 +32,13 @@ export default function ProjectCard({
   githubRepoName,
   image,
 }: Props) {
-  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   return (
     <motion.div
       className={`card  ${comingSoon && "opacity-20"} group`}
       onClick={() => {
-        window.open(`${pathname}/${githubRepoName}`, "_blank");
+        navigate(`${githubRepoName}`);
       }}
       variants={item}
     >
