@@ -16,10 +16,9 @@ export default function Layout({ children }: Props) {
   return (
     <div className="Layout">
       <Navbar />
-      <div className="theme-menu">
+      <div className={`theme-menu  ${menu && "fixed z-20"}`}>
         <ThemeToggle />
         <button
-          className=""
           onClick={() => {
             setMenu((prev) => !prev);
           }}
