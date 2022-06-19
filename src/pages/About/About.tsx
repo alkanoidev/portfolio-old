@@ -44,7 +44,7 @@ export function About({}: Props) {
       <div className="about-content">
         <motion.div
           layout
-          className="flex flex-col sm:flex-row items-start sm:items-center gap-1"
+          className="flex flex-col mt-[70px] sm:mt-0 sm:flex-row items-start sm:items-center gap-1"
         >
           <motion.img
             src={Avatar}

@@ -3,14 +3,11 @@
 
   .about-content {
     @apply sm:pl-0 px-3 font-extrabold h-full sm:w-[700px] w-full;
-    h1 {
-      @apply text-headline;
-    }
     h2 {
       @apply text-[42px];
     }
     p {
-      @apply text-body w-full sm:text-icon-sm text-bg-dark dark:text-bg leading-normal sm:w-[700px];
+      @apply text-body w-full pl-5 sm:text-icon-sm text-bg-dark dark:text-bg leading-normal sm:w-[700px];
       span {
         @apply text-transparent 
           bg-gradient-to-r from-primary via-secondary to-primary 
@@ -19,7 +16,7 @@
       }
     }
     .tech {
-      @apply w-full flex flex-wrap gap-3 text-bg-dark dark:text-bg sm:w-[700px];
+      @apply w-full pl-5 flex flex-wrap gap-5 text-bg-dark dark:text-bg sm:w-[700px];
     }
   }
 }

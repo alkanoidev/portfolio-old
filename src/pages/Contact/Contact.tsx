@@ -73,7 +73,7 @@ export function Contact({}: Props) {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, type: "spring" }}
       >
-        <h1>Contact me</h1>
+        <h1 className="mt-[70px]">Contact me</h1>
         <form onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <p>

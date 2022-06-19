@@ -2,7 +2,7 @@
     {
         "title": "nasa-apis",
         "description": "Explore NASA apis such as Picture Of the Day, Mars Rover Photos and NASA Image and Video Library",
-        "image": "nasaapisthumb.png",
+        "image": "https://raw.githubusercontent.com/alkanoidev/nasa-apis/master/page2.jpeg",
         "githubLink": "https://github.com/alkanoidev/nasa-apis",
         "liveDemoLink": "https://nasa-apis.netlify.app/",
         "technologies": [
@@ -19,9 +19,8 @@
     {
         "title": "coffee-shop-menu",
         "description": "App to demonstrate basic CRUD operations in mongodb.",
-        "image": "coffeeshopinventorythumb.png",
+        "image": "https://raw.githubusercontent.com/alkanoidev/coffee-shop-menu/master/screenshots/Screenshot2022-05-23173142.png",
         "githubLink": "https://github.com/alkanoidev/coffee-shop-menu",
-        "liveDemoLink": "TODO",
         "technologies": [
             "react",
             "javascript",
@@ -32,6 +31,7 @@
             "vite"
         ],
         "comingSoon": true,
+        "liveDemoLink": "",
         "repoName": "coffee-shop-menu"
     },
     {
@@ -51,41 +51,10 @@
         "repoName": "travel-app-landing-page"
     },
     {
-        "title": "motivate",
-        "description": "Android app for getting random inspirational quotes.",
-        "image": "",
-        "githubLink": "https://github.com/alkanoidev/motivate",
-        "liveDemoLink": "",
-        "technologies": [
-            "kotlin",
-            "android-xml",
-            "coroutines",
-            "gson"
-        ],
-        "comingSoon": false,
-        "repoName": "motivate"
-    },
-    {
-        "title": "map-generator",
-        "description": "Generating 2D maps with Perlin noise.",
-        "image": "mapgeneratorthumb.png",
-        "githubLink": "https://github.com/alkanoidev/mapgenerator",
-        "liveDemoLink": "",
-        "technologies": [
-            "c++",
-            "perlin noise",
-            "raylib",
-            "fast noise lite"
-        ],
-        "comingSoon": false,
-        "repoName": "mapgenerator"
-    },
-    {
         "title": "movie reviews database",
         "description": "App to demonstrate basic CRUD operations in MySQL database.",
         "image": "moviereviewsdbthumb.png",
         "githubLink": "https://github.com/alkanoidev/MovieReviewsDB",
-        "liveDemoLink": "TODO",
         "technologies": [
             "react",
             "nodejs",
@@ -93,19 +62,7 @@
             "mysql"
         ],
         "comingSoon": true,
+        "liveDemoLink": "",
         "repoName": "MovieReviewsDB"
-    },
-    {
-        "title": "firlw",
-        "description": "Landing page for Cyber Security Agency.",
-        "image": "firlwthumb.png",
-        "githubLink": "https://github.com/alkanoidev/firlw-landing-page",
-        "liveDemoLink": "https://firlwcysec.netlify.app/",
-        "technologies": [
-            "html",
-            "css"
-        ],
-        "comingSoon": false,
-        "repoName": "firlw-landing-page"
     }
 ]

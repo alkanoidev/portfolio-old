@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import "./style.scss";
 import remarkGfm from "remark-gfm";
+
 type Props = {};
 
 export default function Project({}: Props) {

@@ -20,7 +20,7 @@ export function Projects({}: Props) {
 
   return (
     <div className="projects">
-      <h1>Some Things I’ve Built</h1>
+      <h1 className="mt-[70px] sm:mt-0">some things i’ve built</h1>
       <motion.div
         className="content"
         variants={container}
@@ -32,6 +32,7 @@ export function Projects({}: Props) {
             key={index}
             comingSoon={project.comingSoon}
             githubRepoName={project.repoName}
+            image={project.image}
           >
             <h1>{project.title}</h1>
             <p>{project.description}</p>
@@ -53,6 +54,13 @@ export function Projects({}: Props) {
           </ProjectCard>
         ))}
       </motion.div>
+      <a
+        href="https://github.com/alkanoidev"
+        target="_blank"
+        className="text-icon-sm my-3 sm:my-12 text-center underline"
+      >
+        check my other projects on github.
+      </a>
     </div>
   );
 }

@@ -1,6 +1,7 @@
-import React, { Dispatch, SetStateAction, useEffect } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
+import { motion } from "framer-motion";
 
 type Props = {
   setMenu: Dispatch<SetStateAction<boolean>>;
@@ -23,7 +24,12 @@ export default function NavbarMobile({ setMenu, menu }: Props) {
   }, []);
 
   return (
-    <div className="navbar-mobile">
+    <motion.div
+      className="navbar-mobile"
+      transition={{ type: "spring" }}
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+    >
       <div className="links">
         <Link to="/" onClick={handleClick}>
           home
@@ -38,10 +44,6 @@ export default function NavbarMobile({ setMenu, menu }: Props) {
           <span>contact_me</span>
         </Link>
       </div>
-      <div className="blobs">
-        <div id="blob1"></div>
-        <div id="blob2"></div>
-      </div>
-    </div>
+    </motion.div>
   );
 }

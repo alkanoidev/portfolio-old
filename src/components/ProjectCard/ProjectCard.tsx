@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./style.scss";
 import { motion } from "framer-motion";
 
@@ -30,23 +30,19 @@ export default function ProjectCard({
   children,
   comingSoon,
   githubRepoName,
+  image,
 }: Props) {
-  const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   return (
     <motion.div
       className={`card  ${comingSoon && "opacity-20"} group`}
       onClick={() => {
-        navigate(`${githubRepoName}`);
+        window.open(`${pathname}/${githubRepoName}`, "_blank");
       }}
       variants={item}
     >
-      <div className={`card-inner`}>
-        {/* <div className="circle"></div>
-        <div className="circle"></div> */}
-
-        {children}
-      </div>
+      <div className={`card-inner`}>{children}</div>
     </motion.div>
   );
 }
