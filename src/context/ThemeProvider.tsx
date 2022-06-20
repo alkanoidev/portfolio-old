@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 type Props = {
   children: any;
@@ -12,6 +12,12 @@ type ThemeContext = {
 export const ThemeContext = React.createContext<ThemeContext>(
   {} as ThemeContext
 );
+
+export const useThemeContext = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  return { theme, toggleTheme };
+};
 
 export default function ThemeProvider({ children }: Props) {
   const [theme, setTheme] = useState<Theme>("dark");
