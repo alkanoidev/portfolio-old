@@ -5,11 +5,8 @@ import "./style.scss";
 import Waves from "../../components/Waves/Waves";
 import SocialLink from "../../components/SocialLink/SocialLink";
 import { Link } from "react-router-dom";
-import withSplashScreen from "../SplashScreen/SplashScreen";
 
-type Props = {};
-
-export function Home({}: Props) {
+export default function Home() {
   return (
     <div className="home">
       <main className="home-content">
@@ -35,5 +32,3 @@ export function Home({}: Props) {
     </div>
   );
 }
-
-export default withSplashScreen(Home);

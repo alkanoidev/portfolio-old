@@ -4,11 +4,10 @@ import ReactMarkdown from "react-markdown";
 import "./style.scss";
 import remarkGfm from "remark-gfm";
 
-type Props = {};
-
-export default function Project({}: Props) {
+export default function Project() {
   const { projectName } = useParams();
-  const [readme, setReadme] = useState<string>("");
+  const [readme, setReadme] = useState("");
+
   useEffect(() => {
     const getReadme = async () => {
       const res = await fetch(

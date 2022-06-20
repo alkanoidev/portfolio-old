@@ -3,9 +3,8 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./style.scss";
 import projectsData from "./projects.json";
 import SocialLink from "../../components/SocialLink/SocialLink";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsLink } from "react-icons/bs";
 import { HiExternalLink } from "react-icons/hi";
-import withSplashScreen from "../SplashScreen/SplashScreen";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -15,7 +14,7 @@ const container = {
   animate: { opacity: 1, transition: { staggerChildren: 0.1 } },
 };
 
-export function Projects({}: Props) {
+export default function Projects({}: Props) {
   const [projects, setProjects] = useState<any[]>(projectsData);
 
   return (
@@ -57,12 +56,12 @@ export function Projects({}: Props) {
       <a
         href="https://github.com/alkanoidev"
         target="_blank"
-        className="text-icon-sm my-3 sm:my-12 text-center underline"
+        id="gitlink"
+        className="text-body mt-5 sm:mt-12 text-center flex gap-2 items-center"
       >
         check my other projects on github.
+        <HiExternalLink />
       </a>
     </div>
   );
 }
-
-export default withSplashScreen(Projects);
