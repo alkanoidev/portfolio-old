@@ -36,6 +36,11 @@
         const theme = localStorage.theme;
         const splashscreen = document.getElementById("splashscreen");
         splashscreen.classList.add(theme === "dark" ? "bg-bg-dark" : "bg-bg");
+      } else {
+        const darkmode = window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .matches();
+        splashscreen.classList.add(darkmode ? "bg-bg-dark" : "bg-bg");
       }
     </script>
   </body>
