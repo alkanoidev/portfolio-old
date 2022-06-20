@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import "./style.scss";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
-import { ThemeContext } from "../../../context/ThemeProvider";
+import { useThemeContext } from "../../../context/ThemeProvider";
 type Props = {};
 
 export default function ThemeToggle({}: Props) {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useThemeContext();
 
   return (
     <button

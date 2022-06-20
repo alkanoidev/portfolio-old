@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Buttons/Button/Button";
-import withSplashScreen from "../SplashScreen/SplashScreen";
 import "./style.scss";
 import { motion } from "framer-motion";
 
-type Props = {};
 const container = {
   initial: { opacity: 0 },
   animate: { opacity: 1, transition: { staggerChildren: 0.35 } },
@@ -23,7 +21,7 @@ const item = {
   },
 };
 
-export function ContactSuccess({}: Props) {
+export default function ContactSuccess() {
   return (
     <div className="contact-success">
       <motion.div
@@ -46,5 +44,3 @@ export function ContactSuccess({}: Props) {
     </div>
   );
 }
-
-export default withSplashScreen(ContactSuccess);

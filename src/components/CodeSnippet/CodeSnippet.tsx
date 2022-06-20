@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import "./style.scss";
 import { Code, atomOneDark, atomOneLight } from "react-code-blocks";
-import { ThemeContext } from "../../context/ThemeProvider";
+import { useThemeContext } from "../../context/ThemeProvider";
 
 type Props = {
   code: string;
@@ -14,7 +14,7 @@ export default function CodeSnippet({
   language,
   showLineNumbers,
 }: Props) {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext();
 
   return (
     <Code

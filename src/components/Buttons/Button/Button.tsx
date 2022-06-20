@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import "./style.scss";
 
-type Props = {
-  title?: string;
-  variant: string;
-  children: any;
-  icon?: any;
-  type?: any;
-};
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant: "primary" | "secondary";
+  children: ReactNode;
+  icon?: ReactNode;
+}
 
-export default function Button({ variant, children, icon, type }: Props) {
+export default function Button({
+  variant,
+  children,
+  icon,
+  ...props
+}: ButtonProps) {
   return (
     <button
-      type={type}
+      {...props}
       className={`
         button
         ${
@@ -24,7 +27,7 @@ export default function Button({ variant, children, icon, type }: Props) {
       `}
     >
       {children}
-      <span>{icon}</span>
+      {icon && <span>{icon}</span>}
     </button>
   );
 }

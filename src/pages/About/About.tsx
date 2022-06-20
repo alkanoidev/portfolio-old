@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Button from "../../components/Buttons/Button/Button";
 import {
   FaHtml5,
@@ -30,14 +30,13 @@ import SocialLink from "../../components/SocialLink/SocialLink";
 import { Link } from "react-router-dom";
 import Avatar from "../../assets/avatar.png";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { ThemeContext } from "../../context/ThemeProvider";
-import withSplashScreen from "../SplashScreen/SplashScreen";
+// import "react-toastify/dist/ReactToastify.min.css";
+import "./ReactToastify.min.css";
+import { useThemeContext } from "../../context/ThemeProvider";
 import { motion } from "framer-motion";
 
-type Props = {};
-export function About({}: Props) {
-  const { theme } = useContext(ThemeContext);
+export default function About() {
+  const { theme } = useThemeContext();
 
   return (
     <div className="about">
@@ -65,18 +64,16 @@ export function About({}: Props) {
               title="alkanoidev@gmail.com"
               email
               onClick={() => {
-                if ("navigator" in window) {
-                  navigator.clipboard.writeText("alkanoidev@gmail.com");
-                  toast.info("Email is copied to clipboard!", {
-                    position: "bottom-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: true,
-                    progress: undefined,
-                  });
-                }
+                navigator.clipboard.writeText("alkanoidev@gmail.com");
+                toast.info("Email is copied to clipboard!", {
+                  position: "bottom-right",
+                  autoClose: 5000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: false,
+                  draggable: true,
+                  progress: undefined,
+                });
               }}
               icon={<IoIosMail />}
             />
@@ -201,5 +198,3 @@ const container = {
   initial: { opacity: 0 },
   animate: { opacity: 1, transition: { staggerChildren: 0.1 } },
 };
-
-export default withSplashScreen(About);
