@@ -28,7 +28,11 @@
             "framer motion",
             "tailwindcss",
             "sass",
-            "vite"
+            "vite",
+            "nodejs",
+            "mongodb",
+            "expressjs",
+            "axios"
         ],
         "comingSoon": true,
         "liveDemoLink": "",
