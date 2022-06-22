@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Buttons/Button/Button";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import "./style.scss";
 import Waves from "../../components/Waves/Waves";
 import SocialLink from "../../components/SocialLink/SocialLink";
@@ -22,10 +22,16 @@ export default function Home() {
           <Button variant="secondary">
             <Link to="/projects">view_projects</Link>
           </Button>
-          <SocialLink
-            icon={<BsGithub />}
-            link="https://github.com/alkanoidev"
-          />
+          <div className="flex gap-4 items-center">
+            <SocialLink
+              icon={<BsGithub />}
+              link="https://github.com/alkanoidev"
+            />
+            <SocialLink
+              icon={<BsLinkedin />}
+              link="https://www.linkedin.com/in/filip-ivanovic-60ab98242/"
+            />
+          </div>
         </div>
       </main>
       <Waves />

@@ -100,7 +100,12 @@ export default function About() {
               <Link to="/contact">contact_me</Link>
             </Button>
             <Button variant="secondary">
-              <Link to="/">download_resume</Link>
+              <a
+                href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/alkanoidev/alkanoidev/main/FilipIvanovicResume.pdf"
+                target="_blank"
+              >
+                resume
+              </a>
             </Button>
             <div className="flex gap-2">
               <SocialLink

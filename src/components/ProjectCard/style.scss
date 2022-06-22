@@ -1,6 +1,6 @@
 /* From uiverse.io by @G4b413l */
 .card {
-  @apply sm:w-[320px] max-h-[700px] w-full flex flex-col rounded-lg;
+  @apply sm:w-[320px] max-h-[700px] shadow-lg w-full flex flex-col rounded-lg;
   transition: all 0.2s;
   position: relative;
   @apply bg-off-white dark:bg-off-dark hover:ring-4 hover:ring-primary cursor-pointer;
@@ -15,7 +15,6 @@
 
 .card-inner {
   width: inherit;
-  @apply shadow-lg;
   @apply rounded-lg;
   overflow: hidden;
   background-color: transparent;
