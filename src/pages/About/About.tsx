@@ -21,7 +21,7 @@ import {
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import "./style.scss";
-import { BsGithub, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { SiHashnode } from "react-icons/si";
 import InfoChip from "../../components/InfoChip/InfoChip";
 import { IoIosMail } from "react-icons/io";
@@ -118,6 +118,10 @@ export default function About() {
               <SocialLink
                 icon={<SiHashnode />}
                 link="https://alkanoidev.hashnode.dev/"
+              />
+              <SocialLink
+                icon={<BsLinkedin />}
+                link="https://www.linkedin.com/in/filip-ivanovic-60ab98242/"
               />
             </div>
           </div>

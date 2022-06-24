@@ -13,6 +13,11 @@
           bg-gradient-to-r from-primary via-secondary to-primary 
           bg-clip-text;
         background-size: 200% auto;
+        @media only screen and (max-width: 400px) {
+          & {
+            @apply text-primary bg-none;
+          }
+        }
       }
     }
     .tech {

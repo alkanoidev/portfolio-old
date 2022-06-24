@@ -13,18 +13,17 @@ export default function Home() {
         <p>
           Hi ! <br />
           I'm Filip <br />
-          <span className="flex flex-col sm:flex-row sm:gap-2 gap-0">
-            <span>{">"} Front-end</span>
-            <span>Developer</span>
-          </span>
+          <span>{">"} Front-end Developer</span>
         </p>
         <div className="buttons">
-          <Button variant="primary">
-            <Link to="/contact">contact_me</Link>
-          </Button>
-          <Button variant="secondary">
-            <Link to="/projects">view_projects</Link>
-          </Button>
+          <div className="flex items-center gap-4">
+            <Button variant="primary">
+              <Link to="/contact">contact_me</Link>
+            </Button>
+            <Button variant="secondary">
+              <Link to="/projects">view_projects</Link>
+            </Button>
+          </div>
           <div className="flex gap-4 items-center">
             <SocialLink
               icon={<BsGithub />}
