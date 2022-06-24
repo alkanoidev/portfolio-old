@@ -12,8 +12,6 @@ export default function MenuAndThemeToggle({
   menu: boolean;
   setMenu: Dispatch<SetStateAction<boolean>>;
 }) {
-  const { pathname } = useLocation();
-
   return (
     <div
       className={`theme-menu

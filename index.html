@@ -24,7 +24,7 @@
 
     <div id="root">
       <div
-        class="w-full h-screen flex items-center justify-center"
+        class="w-full h-screen flex bg-bg dark:bg-bg-dark items-center justify-center"
         id="splashscreen"
       >
         <img src="avatar.png" alt="" class="w-24 h-24" />
@@ -32,15 +32,11 @@
     </div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      if ("theme" in localStorage) {
-        const theme = localStorage.theme;
-        const splashscreen = document.getElementById("splashscreen");
-        splashscreen.classList.add(theme === "dark" ? "bg-bg-dark" : "bg-bg");
+      const theme = localStorage.theme;
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
       } else {
-        const darkmode = window
-          .matchMedia("(prefers-color-scheme: dark)")
-          .matches();
-        splashscreen.classList.add(darkmode ? "bg-bg-dark" : "bg-bg");
+        document.documentElement.classList.remove("dark");
       }
     </script>
   </body>
