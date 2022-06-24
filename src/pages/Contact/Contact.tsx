@@ -96,6 +96,7 @@ export default function Contact({}: Props) {
               value={formValues?.name}
               onChange={handleChange}
               required
+              placeholder="Jane Doe"
             />
           </p>
           <p>
@@ -106,6 +107,7 @@ export default function Contact({}: Props) {
               value={formValues?.email}
               onChange={handleChange}
               required
+              placeholder="janedoe@gmail.com"
             />
           </p>
           <p>
@@ -116,6 +118,7 @@ export default function Contact({}: Props) {
               onChange={handleChange}
               rows={5}
               required
+              placeholder="Write your message..."
             />
           </p>
           <p>

@@ -30,7 +30,6 @@ import SocialLink from "../../components/SocialLink/SocialLink";
 import { Link } from "react-router-dom";
 import Avatar from "../../assets/avatar.png";
 import { toast, ToastContainer } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.min.css";
 import "./ReactToastify.min.css";
 import { useThemeContext } from "../../context/ThemeProvider";
 import { motion } from "framer-motion";

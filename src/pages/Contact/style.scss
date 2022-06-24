@@ -9,7 +9,7 @@
     }
 
     form {
-      @apply flex flex-col gap-10 w-full;
+      @apply flex flex-col gap-5 sm:gap-10 w-full;
       p {
         @apply flex flex-col gap-2;
         label {

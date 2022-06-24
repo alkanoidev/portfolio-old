@@ -13,7 +13,10 @@ export default function Home() {
         <p>
           Hi ! <br />
           I'm Filip <br />
-          <span>{">"} Front-end Developer</span>
+          <span className="flex flex-col sm:flex-row sm:gap-2 gap-0">
+            <span>{">"} Front-end</span>
+            <span>Developer</span>
+          </span>
         </p>
         <div className="buttons">
           <Button variant="primary">
