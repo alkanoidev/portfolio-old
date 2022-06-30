@@ -81,8 +81,8 @@ export default function About() {
         <AnimatedParagraph className="mt-5">
           <h1># About</h1>
           <p className="pb-6">
-            I'm a <span>junior developer</span> who enjoys building things that
-            live on the internet.
+            I'm a <span>developer</span> who enjoys building things that live on
+            the internet.
             <br />
             <br />
             I'm a self-motivated learner who can work independently and
@@ -127,7 +127,7 @@ export default function About() {
           </div>
         </AnimatedParagraph>
 
-        <AnimatedParagraph className="pb-6 mt-16 sm:mt-14 flex gap-6 flex-col w-full">
+        <AnimatedParagraph className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
           <h1 className=""># Skills</h1>
           <p>
             The main area of my expertise is <span>Front-end development</span>.
@@ -142,7 +142,7 @@ export default function About() {
             Relational Database Management Systems as well as Nonrelational.
           </p>
 
-          <h2>## Tools and Technologies</h2>
+          <h2 className="mt-16">## Tools and Technologies</h2>
           <motion.div
             className="tech"
             variants={container}
@@ -154,7 +154,6 @@ export default function About() {
             <Technology icon={<SiJavascript />} title="JavaScript" />
             <Technology icon={<FaReact />} title="React" />
             <Technology icon={<FaNodeJs />} title="NodeJS" />
-            <Technology icon={<SiC />} title="CLanguage" />
             <Technology icon={<SiJava />} title="Java" />
             <Technology icon={<SiExpress />} title="ExpressJS" />
             <Technology icon={<FaSass />} title="Sass" />

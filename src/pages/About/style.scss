@@ -1,5 +1,5 @@
 .about {
-  @apply flex w-full justify-between items-center flex-col pt-3 sm:pt-32 overflow-auto; // overflow-x-hidden
+  @apply flex w-full justify-between items-center flex-col pt-3 sm:pt-5 overflow-auto; // overflow-x-hidden
 
   .about-content {
     @apply sm:pl-0 px-3 font-extrabold h-full sm:w-[700px] w-full;

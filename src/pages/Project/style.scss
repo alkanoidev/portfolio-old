@@ -30,4 +30,28 @@
   table tr:nth-child(2n) {
     @apply bg-bg dark:bg-bg-dark;
   }
+  img {
+    @apply mt-3;
+  }
+  a {
+    position: relative;
+    @apply text-primary;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      @apply bg-primary;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-in;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }
