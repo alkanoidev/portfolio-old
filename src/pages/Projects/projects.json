@@ -1,5 +1,21 @@
 [
     {
+        "title": "rusty-spotted-link",
+        "description": "Link Shortener for reducing long links",
+        "githubLink": "https://github.com/alkanoidev/rusty-spotted-link",
+        "liveDemoLink": "",
+        "repoName": "rusty-spotted-link",
+        "technologies": [
+            "next-js",
+            "typescript",
+            "prisma",
+            "mongodb",
+            "framer-motion",
+            "tailwindcss",
+            "axios"
+        ]
+    },
+    {
         "title": "nasa-apis",
         "description": "Explore NASA apis such as Picture Of the Day, Mars Rover Photos and NASA Image and Video Library",
         "image": "https://raw.githubusercontent.com/alkanoidev/nasa-apis/master/page2.jpeg",
@@ -53,20 +69,5 @@
         ],
         "comingSoon": false,
         "repoName": "travel-app-landing-page"
-    },
-    {
-        "title": "movie reviews database",
-        "description": "App to demonstrate basic CRUD operations in MySQL database.",
-        "image": "moviereviewsdbthumb.png",
-        "githubLink": "https://github.com/alkanoidev/MovieReviewsDB",
-        "technologies": [
-            "react",
-            "nodejs",
-            "express",
-            "mysql"
-        ],
-        "comingSoon": true,
-        "liveDemoLink": "",
-        "repoName": "MovieReviewsDB"
     }
 ]

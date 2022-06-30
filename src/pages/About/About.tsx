@@ -100,7 +100,7 @@ export default function About() {
             </Button>
             <Button variant="secondary">
               <a
-                href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/alkanoidev/alkanoidev/main/FilipIvanovicResume.pdf"
+                href="http://docs.google.com/gview?url=https://raw.githubusercontent.com/alkanoidev/alkanoidev/main/FilipIvanovicResume.pdf"
                 target="_blank"
               >
                 resume
