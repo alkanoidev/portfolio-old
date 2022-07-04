@@ -1,8 +1,8 @@
 # portfolio
 
-My overkilled personal portfolio.
+My overkilled personal portfolio website.
 
-### ✨ [Demo](https://filipivanovic.netlify.app/)
+### ✨ [Live](https://filipivanovic.netlify.app/)
 
 ### 🛠 Tech Stack:
 
