@@ -1,7 +1,7 @@
 [
     {
         "title": "personal blog",
-        "description": "A blogging platform for sharing posts about technologies I am currently learning and some tips and tricks. Custom React components with functionalities can be embedded into blog posts. Also, it is an installable Progressive Web App.",
+        "description": "A blogging platform for sharing posts about technologies I am currently learning and some tips and tricks.",
         "githubLink": "https://github.com/alkanoidev/filipblog",
         "liveDemoLink": "https://filipblog.netlify.app/",
         "repoName": "filipblog",
