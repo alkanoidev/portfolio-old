@@ -27,11 +27,12 @@ export default function Technology({ icon, title, small }: Props) {
       } technology flex justify-center relative transition text-primary bg-clip-text group`}
     >
       <div
-        className={`capitalize max-w-[100px] ${
+        id="tooltip"
+        className={`capitalize max-w-[100px] font-extralight ${
           small ? "top-[-120%]" : "top-[-70%]"
-        } absolute z-10  text-code font-extralight bg-off-white dark:bg-off-dark
+        } absolute z-10  text-code bg-off-white dark:bg-off-dark
             text-bg-dark dark:text-bg px-3 py-2 rounded-sm transition
-            hidden group-hover:block shadow`}
+            hidden group-hover:block font-bold tracking-wide`}
       >
         {title}
       </div>

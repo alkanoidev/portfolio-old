@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./style.scss";
 import projectsData from "./projects.json";
 import SocialLink from "../../components/SocialLink/SocialLink";
-import { BsGithub, BsLink } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { HiExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 

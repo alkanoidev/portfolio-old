@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../../components/Buttons/Button/Button";
 import {
   FaHtml5,
