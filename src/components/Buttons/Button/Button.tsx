@@ -20,10 +20,10 @@ export default function Button({
         button
         ${
           variant === "primary"
-            ? "ring-primary before:bg-gradient-to-tr before:from-primary before:to-green-500"
-            : "ring-secondary before:bg-gradient-to-tr before:from-secondary before:to-blue-500"
+            ? "ring-primary before:bg-primary"
+            : "ring-secondary before:bg-secondary"
         }
-        hover:text-bg dark:hover:text-bg-dark
+        hover:text-bg-dark dark:hover:text-bg-dark
       `}
     >
       {children}

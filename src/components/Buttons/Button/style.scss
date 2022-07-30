@@ -13,16 +13,16 @@
   &::before {
     content: "";
     position: absolute;
-    height: 0%;
-    width: 100%;
-    opacity: 0;
-    @apply rounded-lg ring-2 ring-inherit;
+    height: 100%;
+    width: 0%;
     inset: 0px;
     z-index: -1;
     transition: all 0.25s ease-out;
+    @apply rounded-lg ring-2 ring-inherit;
+    visibility: hidden;
   }
   &:hover::before {
-    opacity: 1;
-    height: 100%;
+    width: 100%;
+    visibility: visible;
   }
 }
