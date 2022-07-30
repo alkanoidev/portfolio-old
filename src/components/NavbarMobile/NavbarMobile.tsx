@@ -40,11 +40,7 @@ export default function NavbarMobile({ setMenu, menu }: Props) {
         <Link to="/projects" onClick={handleClick}>
           projects
         </Link>
-        <a
-          className="underline"
-          href="https://filipblog.netlify.app/"
-          target="_blank"
-        >
+        <a href="https://filipblog.netlify.app/" target="_blank">
           blog
         </a>
         <Link to="/contact" onClick={handleClick}>
