@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
 import { Link } from "react-router-dom";
@@ -17,6 +16,9 @@ export default function Navbar({}: Props) {
           <Link to="/about">about_me</Link>
           <Link to="/projects">projects</Link>
           <Link to="/contact">contact_me</Link>
+          <a href="https://filipblog.netlify.app/" target="_blank">
+            blog
+          </a>
         </div>
         <ThemeToggle />
       </div>
