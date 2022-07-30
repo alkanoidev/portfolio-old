@@ -8,15 +8,15 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-bg dark:bg-bg-dark;
+  @apply bg-off-white dark:bg-off-dark;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary;
+  @apply dark:bg-primary/50 bg-primary/70;
 }
 
 html {
