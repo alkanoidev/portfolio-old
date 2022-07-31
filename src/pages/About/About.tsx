@@ -16,7 +16,6 @@ import {
   SiMongodb,
   SiAdobephotoshop,
   SiJava,
-  SiC,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import "./style.scss";
@@ -76,7 +75,7 @@ export default function About() {
             />
           </div>
         </motion.div>
-        <AnimatedParagraph className="mt-5">
+        <AnimatedParagraph delay={0.3} className="mt-5">
           <h1># About</h1>
           <p className="pb-6">
             I'm a <span>developer</span> who enjoys building things that live on
@@ -116,7 +115,10 @@ export default function About() {
           </div>
         </AnimatedParagraph>
 
-        <AnimatedParagraph className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
+        <AnimatedParagraph
+          delay={0.5}
+          className="pb-6 mt-16 sm:mt-14 flex flex-col w-full"
+        >
           <h1 className=""># Skills</h1>
           <p>
             The main area of my expertise is <span>Front-end development</span>.
@@ -174,16 +176,18 @@ export default function About() {
 const AnimatedParagraph = ({
   children,
   className,
+  delay,
 }: {
   children: any;
   className: string;
+  delay: number;
 }) => {
   return (
     <motion.div
       className={className}
-      initial={{ x: -100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.2 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2, delay: delay }}
     >
       {children}
     </motion.div>

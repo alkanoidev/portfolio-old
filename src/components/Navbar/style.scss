@@ -5,7 +5,7 @@ nav {
      dark:text-bg items-center w-full justify-between h-[60px] px-3;
   }
   .links {
-    @apply flex gap-16;
+    @apply flex gap-16 items-center;
     a {
       position: relative;
       &:after {
