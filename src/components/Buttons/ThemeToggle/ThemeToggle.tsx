@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 import { useThemeContext } from "../../../context/ThemeProvider";

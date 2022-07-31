@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = { link: string; icon: JSX.Element };
 
 export default function SocialLink({ link, icon }: Props) {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import { Code, atomOneDark, atomOneLight } from "react-code-blocks";
 import { useThemeContext } from "../../context/ThemeProvider";

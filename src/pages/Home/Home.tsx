@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../../components/Buttons/Button/Button";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import "./style.scss";
