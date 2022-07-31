@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode } from "react";
 import "./style.scss";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -20,11 +20,9 @@ export default function Button({
         button
         ${
           variant === "primary"
-            ? "ring-primary before:bg-primary"
-            : "ring-secondary before:bg-secondary"
-        }
-        hover:text-bg-dark dark:hover:text-bg-dark
-      `}
+            ? "ring-primary hover:bg-primary/50"
+            : "ring-secondary hover:bg-secondary/50"
+        }`}
     >
       {children}
       {icon && <span>{icon}</span>}

@@ -6,23 +6,9 @@
     flex items-center justify-center gap-2;
   z-index: 0;
   position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
 
   span {
     @apply font-normal text-icon-sm;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    inset: 0px;
-    z-index: -1;
-    transition: all 0.25s ease-out;
-    @apply rounded-lg ring-2 ring-inherit;
-    visibility: hidden;
-  }
-  &:hover::before {
-    width: 100%;
-    visibility: visible;
   }
 }
