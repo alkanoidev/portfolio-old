@@ -48,28 +48,6 @@
         "repoName": "nasa-apis"
     },
     {
-        "title": "coffee-shop-menu",
-        "description": "App to demonstrate basic CRUD operations in mongodb.",
-        "image": "https://raw.githubusercontent.com/alkanoidev/coffee-shop-menu/master/screenshots/Screenshot2022-05-23173142.png",
-        "githubLink": "https://github.com/alkanoidev/coffee-shop-menu",
-        "technologies": [
-            "react",
-            "javascript",
-            "react router",
-            "framer motion",
-            "tailwindcss",
-            "sass",
-            "vite",
-            "nodejs",
-            "mongodb",
-            "expressjs",
-            "axios"
-        ],
-        "comingSoon": true,
-        "liveDemoLink": "",
-        "repoName": "coffee-shop-menu"
-    },
-    {
         "title": "travel-app-landing-page",
         "description": "Mobile Responsive Landing page for tour and travel project",
         "image": "travelapplandingpagethumb.png",

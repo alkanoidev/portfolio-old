@@ -18,8 +18,8 @@ export default function Layout({ children }: Props) {
     <div className="Layout">
       <Helmet>
         <meta
-          name={theme === "dark" ? "#121212" : "#f5f5f5"}
-          content="#4285f4"
+          name="theme-color"
+          content={theme === "dark" ? "#121212" : "#f5f5f5"}
         />
       </Helmet>
 

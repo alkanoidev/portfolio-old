@@ -1,7 +1,6 @@
 import Button from "../../components/Buttons/Button/Button";
 import {
   FaHtml5,
-  FaCss3,
   FaReact,
   FaNodeJs,
   FaSass,
@@ -17,6 +16,7 @@ import {
   SiAdobephotoshop,
   SiJava,
 } from "react-icons/si";
+import { DiCss3 } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
 import "./style.scss";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
@@ -141,7 +141,7 @@ export default function About() {
             whileInView="animate"
           >
             <Technology icon={<FaHtml5 />} title="HTML5" />
-            <Technology icon={<FaCss3 />} title="CSS3" />
+            <Technology icon={<DiCss3 />} title="CSS3" />
             <Technology icon={<SiJavascript />} title="JavaScript" />
             <Technology icon={<FaReact />} title="React" />
             <Technology icon={<FaNodeJs />} title="NodeJS" />

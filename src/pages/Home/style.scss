@@ -9,21 +9,15 @@
   .home-content {
     @apply px-5 mt-[70px] sm:mt-0 sm:pl-0 h-full gap-3 flex justify-center items-center flex-col;
     p {
-      @apply text-headline text-bg-dark dark:text-bg font-extrabold leading-none;
+      @apply text-[54px] sm:text-headline text-bg-dark dark:text-bg font-extrabold leading-none;
       span {
         @apply text-transparent
         bg-gradient-to-r from-primary via-secondary to-primary 
-        bg-clip-text;
-        background-size: 200% auto;
+        bg-clip-text bg-[length:200%_auto];
         animation: shine 1s linear infinite;
         @keyframes shine {
           to {
             background-position: 200% center;
-          }
-        }
-        @media only screen and (max-width: 400px) {
-          & {
-            @apply text-primary bg-none;
           }
         }
       }
