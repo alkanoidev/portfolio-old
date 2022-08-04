@@ -82,14 +82,14 @@ export default function About() {
             the internet.
             <br />
             <br />
-            I'm a self-motivated learner who can work independently and
-            collaboratively in a team.
-            <br />
-            <br />
-            I love working on fun projects and keeping up with the programming
-            world that is constantly growing.
+            I'm a self-motivated learner who loves working on fun projects and
+            keeping up with the programming world that is constantly growing.
             <br />
             <br />I also love open-source, UI design, and orange cats :)
+            <br />
+            If you are in search of a frontend developer who enjoys solving
+            problems and is desiring to learn and contribute, I'd love to hear
+            from you!
           </p>
           <div className="flex sm:flex-row flex-col sm:items-center items-start gap-3">
             <Button variant="primary">
