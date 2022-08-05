@@ -13,8 +13,7 @@ import {
   SiExpress,
   SiTailwindcss,
   SiMongodb,
-  SiAdobephotoshop,
-  SiJava,
+  SiTypescript,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
@@ -78,21 +77,23 @@ export default function About() {
         <AnimatedParagraph delay={0.3} className="mt-5">
           <h1># About</h1>
           <p className="pb-6">
-            I'm a <span>developer</span> who enjoys building things that live on
-            the internet.
+            I'm a <span>frontend developer</span> who enjoys building things
+            that live on the internet.
             <br />
             <br />
             I'm a self-motivated learner who loves working on fun projects and
             keeping up with the programming world that is constantly growing.
             <br />
-            <br />I also love open-source, UI design, and orange cats :)
+            <br />
+            I also love open-source, UI design, and orange cats :)
+            <br />
             <br />
             If you are in search of a frontend developer who enjoys solving
             problems and is desiring to learn and contribute, I'd love to hear
             from you!
           </p>
           <div className="flex sm:flex-row flex-col sm:items-center items-start gap-3">
-            <Button variant="primary">
+            <Button variant="primary" shine>
               <Link to="/contact">contact_me</Link>
             </Button>
             <Button variant="secondary">
@@ -129,7 +130,7 @@ export default function About() {
             I am into code refactoring and organizing.
             <br />
             <br />I also have experience in
-            <span> Full-stack development </span>using NodeJS and popular
+            <span> Backend development </span>using NodeJS and popular
             Relational Database Management Systems as well as Nonrelational.
           </p>
 
@@ -143,17 +144,15 @@ export default function About() {
             <Technology icon={<FaHtml5 />} title="HTML5" />
             <Technology icon={<DiCss3 />} title="CSS3" />
             <Technology icon={<SiJavascript />} title="JavaScript" />
+            <Technology icon={<SiTypescript />} title="TypeScript" />
             <Technology icon={<FaReact />} title="React" />
             <Technology icon={<FaNodeJs />} title="NodeJS" />
-            <Technology icon={<SiJava />} title="Java" />
-            <Technology icon={<SiExpress />} title="ExpressJS" />
             <Technology icon={<FaSass />} title="Sass" />
             <Technology icon={<SiTailwindcss />} title="TailwindCss" />
             <Technology icon={<SiMongodb />} title="MongoDB" />
             <Technology icon={<GrMysql />} title="MySQL" />
             <Technology icon={<FaGitAlt />} title="Git" />
             <Technology icon={<FaFigma />} title="Figma" />
-            <Technology icon={<SiAdobephotoshop />} title="Photoshop" />
           </motion.div>
         </AnimatedParagraph>
         <ToastContainer
