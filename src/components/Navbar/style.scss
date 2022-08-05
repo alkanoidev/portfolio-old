@@ -1,5 +1,5 @@
 nav {
-  @apply hidden sm:block;
+  @apply hidden sm:block sm:sticky z-10 sm:top-0 shadow  backdrop-blur-lg;
   .content {
     @apply flex text-labels font-semibold text-bg-dark
      dark:text-bg items-center w-full justify-between h-[60px] px-3;

@@ -33,6 +33,14 @@ module.exports = {
         labels: "16px",
         code: "14px",
       },
+      animation: { shine: "shimmer 2s infinite" },
+      keyframes: {
+        shimmer: {
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+      },
     },
   },
   plugins: [],
