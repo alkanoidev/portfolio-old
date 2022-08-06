@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply dark:bg-primary/50 bg-primary/70;
+  @apply dark:bg-primary/50 bg-primary/70 rounded-full;
 }
 
 html {
@@ -28,6 +28,8 @@ html {
     width: 100%;
     min-height: 100vh;
     @apply bg-bg dark:bg-bg-dark;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
 
     #root {
       @apply bg-bg dark:bg-bg-dark;
