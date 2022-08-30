@@ -4,6 +4,7 @@ import "./style.scss";
 import NavbarMobile from "../NavbarMobile/NavbarMobile";
 import MenuAndThemeToggle from "../MenuAndThemeToggle/MenuAndThemeToggle";
 import { useThemeContext } from "../../context/ThemeProvider";
+import ScrollToTop from "../Buttons/ScrollToTop";
 
 type Props = {
   children?: any;
@@ -19,6 +20,7 @@ export default function Layout({ children }: Props) {
       <MenuAndThemeToggle menu={menu} setMenu={setMenu} />
       {menu && <NavbarMobile setMenu={setMenu} menu={menu} />}
       {children}
+      <ScrollToTop />
     </div>
   );
 }
