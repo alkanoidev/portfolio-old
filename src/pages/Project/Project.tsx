@@ -9,7 +9,6 @@ export default function Project() {
   const [readme, setReadme] = useState("");
   const [repoData, setRepoData] = useState({
     created_at: "",
-    updated_at: "",
     topics: [""],
   });
 
@@ -28,7 +27,6 @@ export default function Project() {
       const data = await res.json();
       setRepoData({
         created_at: data.created_at,
-        updated_at: data.updated_at,
         topics: data.topics,
       });
       console.log(repoData);
@@ -55,12 +53,6 @@ export default function Project() {
           Created at:{" "}
           <span className="text-secondary font-bold">
             {new Date(repoData.created_at).toLocaleDateString()}
-          </span>
-        </div>
-        <div>
-          Last updated:{" "}
-          <span className="text-secondary font-bold">
-            {new Date(repoData.updated_at).toLocaleDateString()}
           </span>
         </div>
       </div>
