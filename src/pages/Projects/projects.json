@@ -12,23 +12,8 @@
             "framer-motion",
             "tailwindcss",
             "pwa"
-        ]
-    },
-    {
-        "title": "rusty-spotted-link",
-        "description": "Link Shortener for reducing long links",
-        "githubLink": "https://github.com/alkanoidev/rusty-spotted-link",
-        "liveDemoLink": "",
-        "repoName": "rusty-spotted-link",
-        "technologies": [
-            "next-js",
-            "typescript",
-            "prisma",
-            "mongodb",
-            "framer-motion",
-            "tailwindcss",
-            "axios"
-        ]
+        ],
+        "imageSource": "/blog.png"
     },
     {
         "title": "nasa-apis",
@@ -45,7 +30,8 @@
             "create-react-app"
         ],
         "comingSoon": false,
-        "repoName": "nasa-apis"
+        "repoName": "nasa-apis",
+        "imageSource": "/nasaapis.png"
     },
     {
         "title": "travel-app-landing-page",
@@ -61,6 +47,7 @@
             "create-react-app"
         ],
         "comingSoon": false,
-        "repoName": "travel-app-landing-page"
+        "repoName": "travel-app-landing-page",
+        "imageSource": "/travel.png"
     }
 ]

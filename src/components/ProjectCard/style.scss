@@ -1,27 +1,4 @@
-/* From uiverse.io by @G4b413l */
 .card {
-  @apply sm:w-[320px] max-h-[700px] shadow-lg w-full flex flex-col rounded-lg;
-  transition: all 0.2s;
-  position: relative;
-  @apply bg-off-white dark:bg-off-dark hover:ring-4 hover:ring-primary cursor-pointer;
-
-  .thumbnail-link {
-    @apply flex w-full justify-center;
-    .thumbnail {
-      @apply rounded-t-lg w-full h-full grayscale transition-all;
-    }
-  }
-}
-
-.card-inner {
-  width: inherit;
-  @apply rounded-lg;
-  overflow: hidden;
-  background-color: transparent;
-  // backdrop-filter: blur(10px);
-  @apply flex flex-col gap-5 p-5;
-  height: 100%;
-
   h1 {
     @apply text-subh font-bold;
   }
@@ -29,13 +6,13 @@
     @apply text-body;
   }
   .buttons {
-    @apply flex gap-3 ml-2;
+    @apply flex gap-3;
   }
   h2 {
     @apply text-body;
   }
   .technologies {
-    @apply flex flex-wrap w-full gap-3 text-primary text-labels ml-2;
+    @apply flex flex-wrap w-full gap-3 text-primary text-labels;
   }
 }
 

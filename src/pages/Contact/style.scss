@@ -36,7 +36,7 @@
     }
   }
   .code {
-    @apply hidden mt-14 sm:flex max-w-[450px] w-[450px];
+    @apply hidden mt-14 sm:flex md:hidden lg:flex max-w-[450px] w-[450px];
   }
   #blob1 {
     @apply bg-primary;

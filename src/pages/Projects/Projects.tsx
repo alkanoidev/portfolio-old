@@ -2,8 +2,6 @@ import { useState } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./style.scss";
 import projectsData from "./projects.json";
-import SocialLink from "../../components/SocialLink/SocialLink";
-import { BsGithub } from "react-icons/bs";
 import { HiExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 
@@ -19,7 +17,7 @@ export default function Projects({}: Props) {
 
   return (
     <div className="projects">
-      <h1 className="mt-[70px] sm:mt-0">some things i’ve built</h1>
+      <h1 className="mt-[70px] sm:mt-0 text-[48px]">some things i’ve built</h1>
       <motion.div
         className="content"
         variants={container}
@@ -27,30 +25,7 @@ export default function Projects({}: Props) {
         animate="animate"
       >
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            comingSoon={project.comingSoon}
-            githubRepoName={project.repoName}
-            image={project.image}
-          >
-            <h1>{project.title}</h1>
-            <p>{project.description}</p>
-            <div className="buttons">
-              <SocialLink icon={<BsGithub />} link={project.githubLink} />
-              {project.liveDemoLink !== "" && (
-                <SocialLink
-                  icon={<HiExternalLink />}
-                  link={project.liveDemoLink}
-                />
-              )}
-            </div>
-            <h2>technologies used:</h2>
-            <div className="technologies">
-              {project.technologies.map((technology: any, index: number) => (
-                <h6 key={index}>{technology}</h6>
-              ))}
-            </div>
-          </ProjectCard>
+          <ProjectCard key={index} project={project} />
         ))}
       </motion.div>
       <a

@@ -1,7 +1,7 @@
 .projects {
   @apply sm:px-0 px-5 flex flex-col my-3 sm:my-10 items-center text-headline font-extrabold w-full h-full;
   .content {
-    @apply flex h-full w-full flex-wrap gap-5 justify-center mt-12;
+    @apply flex w-full h-full md:px-5 flex-wrap gap-32 justify-center mt-12;
   }
   #gitlink {
     position: relative;
