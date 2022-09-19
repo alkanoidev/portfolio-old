@@ -10,12 +10,8 @@ type Props = {
   children?: any;
   project: ProjectDataType;
 };
-// TODO: button next to title TAKE ME TO REPO README
-// TODO: IMAGES
 
-export default function ProjectCard({ children, project }: Props) {
-  const navigate = useNavigate();
-
+export default function ProjectCard({ project }: Props) {
   return (
     <div
       className={`card ${
@@ -28,9 +24,10 @@ export default function ProjectCard({ children, project }: Props) {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.2 }}
+        // viewport={{ once: true }}
         variants={{
-          visible: { x: 0 },
-          hidden: { x: -100 },
+          visible: { x: 0, opacity: 1 },
+          hidden: { x: -100, opacity: 0 },
         }}
       >
         <div className="text-2xl transition grid group-hover:opacity-100 opacity-0 rounded-md border-2 border-off-dark absolute z-[1] w-full h-full bg-bg dark:bg-bg-dark place-items-center">
@@ -43,10 +40,11 @@ export default function ProjectCard({ children, project }: Props) {
         className="sm:w-1/2 w-full flex flex-col gap-4"
         initial="hidden"
         whileInView="visible"
-        transition={{ duration: 0.2 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
+        // viewport={{ once: true }}
         variants={{
-          visible: { y: 0 },
-          hidden: { y: -100 },
+          visible: { y: 0, opacity: 1 },
+          hidden: { y: -100, opacity: 0 },
         }}
       >
         <section>
