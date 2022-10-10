@@ -23,3 +23,10 @@ My overkilled personal portfolio website.
 
 - Website: [https://filipivanovic.netlify.app/](https://filipivanovic.netlify.app/)
 - Github: [@alkanoidev](https://github.com/alkanoidev)
+
+translate
+hover on projects shows the logo!!!!
+
+new projects page
+
+seo
