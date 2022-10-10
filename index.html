@@ -26,32 +26,26 @@
     />
     <meta name="application-name" content="Filip's Developer Portfolio" />
     <meta name="keywords" content="Developer, Portfolio, Web, Frontend" />
-
     <meta name="title" content="Filip Ivanovic" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://filipivanovic.netlify.app/" />
-    <meta property="og:title" content="Filip Ivanovic" />
-    <meta
-      property="og:description"
-      content="Filip Ivanovic - Frontend Developer - React, JavaScript, NextJS, TypeScript"
-    />
-    <meta property="og:image" content="preview-image.png" />
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://filipivanovic.netlify.app/" />
-    <meta property="twitter:title" content="Filip Ivanovic" />
-    <meta
-      property="twitter:description"
-      content="Filip Ivanovic - Frontend Developer - React, JavaScript, NextJS, TypeScript"
-    />
-    <meta property="twitter:image" content="preview-image.png" />
 
     <title>Filip Ivanovic</title>
     <style>
-      @import "tailwindcss/base";
-      @import "tailwindcss/components";
-      @import "tailwindcss/utilities";
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      #splashscreen {
+        background: #121212;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #splashscreen img {
+        width: 6rem;
+        height: 6rem;
+      }
     </style>
   </head>
   <body>
@@ -62,11 +56,8 @@
     </form>
 
     <div id="root">
-      <div
-        class="w-full h-screen flex bg-bg-dark items-center justify-center"
-        id="splashscreen"
-      >
-        <img src="avatar.png" alt="" class="w-24 h-24" />
+      <div id="splashscreen">
+        <img src="avatar.png" alt="" />
       </div>
     </div>
     <script type="module" src="/src/main.tsx"></script>

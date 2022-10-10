@@ -128,14 +128,6 @@ export default function Contact({}: Props) {
           </p>
         </form>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, type: "spring", delay: 0.5 }}
-        className="code"
-      >
-        <CodeSnippet code={code} language="javascript" showLineNumbers />
-      </motion.div>
 
       <div id="blob1"></div>
       <div id="blob2"></div>

@@ -24,7 +24,6 @@ export default function ProjectCard({ project }: Props) {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.2 }}
-        // viewport={{ once: true }}
         variants={{
           visible: { x: 0, opacity: 1 },
           hidden: { x: -100, opacity: 0 },
