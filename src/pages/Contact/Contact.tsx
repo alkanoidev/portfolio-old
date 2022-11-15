@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Buttons/Button/Button";
-import CodeSnippet from "../../components/CodeSnippet/CodeSnippet";
 import "./style.scss";
 import { motion } from "framer-motion";
-import { toast, ToastContainer } from "react-toastify";
 import { useThemeContext } from "../../context/ThemeProvider";
 
 type Props = {};
@@ -41,17 +39,7 @@ export default function Contact({}: Props) {
       .then(() => {
         navigate("/contact/success");
       })
-      .catch((error) => {
-        toast.error("an error has occurred", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: true,
-          progress: undefined,
-        });
-      });
+      .catch((error) => {});
   };
 
   const encode = (data: any) => {
@@ -131,19 +119,6 @@ export default function Contact({}: Props) {
 
       <div id="blob1"></div>
       <div id="blob2"></div>
-
-      <ToastContainer
-        position="bottom-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover={false}
-        theme={theme === "dark" ? "dark" : "light"}
-      />
     </div>
   );
 }
