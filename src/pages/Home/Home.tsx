@@ -1,5 +1,5 @@
 import Button from "../../components/Buttons/Button/Button";
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import "./style.scss";
 import Waves from "../../components/Waves/Waves";
 import SocialLink from "../../components/SocialLink/SocialLink";
@@ -27,10 +27,6 @@ export default function Home() {
             <SocialLink
               icon={<BsGithub />}
               link="https://github.com/alkanoidev"
-            />
-            <SocialLink
-              icon={<BsTwitter />}
-              link="https://twitter.com/alkanoidev/"
             />
             <SocialLink
               icon={<BsLinkedin />}

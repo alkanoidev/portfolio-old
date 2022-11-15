@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: Props) {
         <div className="text-2xl transition grid group-hover:opacity-100 opacity-0 rounded-md border-2 border-off-dark absolute z-[1] w-full h-full bg-bg dark:bg-bg-dark place-items-center">
           View More
         </div>
-        <img src={project.imageSource} className="rounded-md" alt="" />
+        <img src={project.imageSource} loading="lazy" className="rounded-md" alt="" />
       </motion.a>
 
       <motion.div

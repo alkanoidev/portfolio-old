@@ -14,7 +14,7 @@ export default function InfoChip({ icon, title, onClick, email }: Props) {
       onClick={onClick}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       variants={{
         visible: { opacity: 1 },
         hidden: { opacity: 0 },

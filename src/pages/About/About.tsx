@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import {
   SiJavascript,
-  SiExpress,
   SiTailwindcss,
   SiMongodb,
   SiTypescript,
@@ -18,7 +17,7 @@ import {
 import { DiCss3 } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
 import "./style.scss";
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import InfoChip from "../../components/InfoChip/InfoChip";
 import { IoIosMail } from "react-icons/io";
 import Technology from "../../components/Buttons/Technology/Technology";
@@ -42,10 +41,11 @@ export default function About() {
         >
           <motion.img
             src={Avatar}
+            loading="lazy"
             alt=""
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             variants={{
               visible: { opacity: 1 },
               hidden: { opacity: 0 },
@@ -105,10 +105,6 @@ export default function About() {
                 link="https://github.com/alkanoidev"
               />
               <SocialLink
-                icon={<BsTwitter />}
-                link="https://twitter.com/alkanoidev/"
-              />
-              <SocialLink
                 icon={<BsLinkedin />}
                 link="https://www.linkedin.com/in/filip-ivanovic-60ab98242/"
               />
@@ -140,6 +136,7 @@ export default function About() {
             variants={container}
             initial="initial"
             whileInView="animate"
+            viewport={{once: true}}
           >
             <Technology icon={<FaHtml5 />} title="HTML5" />
             <Technology icon={<DiCss3 />} title="CSS3" />
