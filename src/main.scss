@@ -8,18 +8,10 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  @apply font-semibold;
 }
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-off-white dark:bg-off-dark;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply dark:bg-primary/50 bg-primary/70 rounded-full;
+*::selection{
+  @apply bg-bg-dark text-bg dark:bg-off-white/80 dark:text-off-dark;
 }
 
 html {
@@ -31,12 +23,8 @@ html {
   body {
     width: 100%;
     min-height: 100vh;
-    @apply bg-bg dark:bg-bg-dark;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
 
     #root {
-      @apply bg-bg dark:bg-bg-dark;
       width: 100%;
       min-height: 100vh;
     }
