@@ -8,16 +8,15 @@ module.exports = {
       },
       colors: {
         bg: {
-          DEFAULT: "#f5f5f5",
-          dark: "#121212",
+          DEFAULT: "#f4f4f4",
+          dark: "#080808",
         },
         off: {
-          dark: "#212121",
-          white: "#e6e6e6",
+          dark: "#101010",
+          white: "#fff",
         },
         primary: "#68af73",
         secondary: "#62aeef",
-        accent: "#e06b74",
         lineColor: {
           DEFAULT: "rgba(30, 45, 61, 1)",
           dark: "rgba(234, 234, 234, 1)",
