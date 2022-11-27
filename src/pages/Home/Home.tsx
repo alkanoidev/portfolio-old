@@ -1,8 +1,8 @@
-import Button from "../../components/Buttons/Button/Button";
+import Button from "../../components/Buttons/Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import "./style.scss";
 import Waves from "../../components/Waves/Waves";
-import SocialLink from "../../components/SocialLink/SocialLink";
+import SocialLink from "../../components/SocialLink";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -17,10 +17,10 @@ export default function Home() {
         <div className="buttons">
           <div className="flex items-center gap-4">
             <Button variant="primary">
-              <Link to="/contact">contact_me</Link>
+              <Link to="/projects">view_projects</Link>
             </Button>
             <Button variant="secondary">
-              <Link to="/projects">view_projects</Link>
+              <Link to="/contact">contact_me</Link>
             </Button>
           </div>
           <div className="flex gap-4 items-center">

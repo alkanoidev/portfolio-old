@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "../../components/Buttons/Button/Button";
+import Button from "../../components/Buttons/Button";
 import "./style.scss";
 import { motion } from "framer-motion";
-import { useThemeContext } from "../../context/ThemeProvider";
 
 type Props = {};
 type FormValuesProps = {
@@ -12,15 +11,12 @@ type FormValuesProps = {
   message: string | undefined;
 };
 export default function Contact({}: Props) {
-  const { theme } = useThemeContext();
-
   const navigate = useNavigate();
   const [formValues, setFormValues] = useState<FormValuesProps | null>({
     name: "",
     email: "",
     message: "",
   });
-  const [code, setCode] = useState<string>("");
 
   const handleChange = (
     e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -50,21 +46,6 @@ export default function Contact({}: Props) {
       .join("&");
   };
 
-  useEffect(() => {
-    setCode(`// submit message
-    const button = document.querySelector("#sendBtn");
-
-    const message = {
-      name: "${formValues?.name}",
-      email: "${formValues?.email}",
-      message: ${"`" + formValues?.message + "`"},
-    };
-    
-    button.addEventListener("click", () => {
-      form.send(message);
-    }); `);
-  }, [formValues?.email, formValues?.name, formValues?.message]);
-
   return (
     <div className="contact">
       <motion.div
@@ -84,7 +65,6 @@ export default function Contact({}: Props) {
               value={formValues?.name}
               onChange={handleChange}
               required
-              placeholder="Jane Doe"
             />
           </p>
           <p>
@@ -95,7 +75,6 @@ export default function Contact({}: Props) {
               value={formValues?.email}
               onChange={handleChange}
               required
-              placeholder="janedoe@gmail.com"
             />
           </p>
           <p>
@@ -106,7 +85,6 @@ export default function Contact({}: Props) {
               onChange={handleChange}
               rows={5}
               required
-              placeholder="Write your message..."
             />
           </p>
           <p>

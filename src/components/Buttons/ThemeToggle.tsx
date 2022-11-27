@@ -1,6 +1,5 @@
-import "./style.scss";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
-import { useThemeContext } from "../../../context/ThemeProvider";
+import { useThemeContext } from "../../context/ThemeProvider";
 type Props = {};
 
 export default function ThemeToggle({}: Props) {
@@ -12,6 +11,7 @@ export default function ThemeToggle({}: Props) {
       onClick={() => {
         toggleTheme();
       }}
+      name="toggle theme"
     >
       {theme === "light" ? <BsMoonStarsFill /> : <BsSunFill />}
     </button>

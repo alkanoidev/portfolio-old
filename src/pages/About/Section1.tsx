@@ -1,12 +1,11 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import AnimatedParagraph from "../../components/AnimatedParagraph";
-import Button from "../../components/Buttons/Button/Button";
-import SocialLink from "../../components/SocialLink/SocialLink";
+import Button from "../../components/Buttons/Button";
+import SocialLink from "../../components/SocialLink";
 
 export default function Section1() {
   return (
-    <AnimatedParagraph delay={0.3} className="mt-5">
+    <p className="mt-5">
       <h1>
         # About
       </h1>
@@ -43,6 +42,6 @@ export default function Section1() {
           />
         </div>
       </div>
-    </AnimatedParagraph>
+    </p>
   );
 }

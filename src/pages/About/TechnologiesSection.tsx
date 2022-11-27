@@ -1,17 +1,37 @@
-import AnimatedParagraph from "../../components/AnimatedParagraph";
 import Technology from "../../components/Buttons/Technology/Technology";
-import { motion } from "framer-motion";
-import { FaFigma, FaGitAlt, FaHtml5, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
+import {
+  FaFigma,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+  FaSass,
+} from "react-icons/fa";
 import { DiCss3 } from "react-icons/di";
-import { SiJavascript, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiJavascript,
+  SiMongodb,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
 
 export default function TechnologiesSection() {
+  const technologies = useRef<HTMLDivElement | null>(null);
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.to(".technology", {
+        opacity: 1,
+        stagger: 0.35,
+      });
+    }, technologies);
+
+    return () => ctx.revert();
+  }, []);
   return (
-    <AnimatedParagraph
-      delay={0.5}
-      className="pb-6 mt-16 sm:mt-14 flex flex-col w-full"
-    >
+    <p className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
       <h1 className=""># Skills</h1>
       <p>
         The main area of my expertise is <span>Front-end development</span>. I
@@ -26,14 +46,8 @@ export default function TechnologiesSection() {
         Database Management Systems as well as Nonrelational.
       </p>
 
-      <h2 className="mt-16">## Tools and Technologies</h2>
-      <motion.div
-        className="tech"
-        variants={container}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-      >
+      <h2 className="mt-16 scroll-trigger">## Tools and Technologies</h2>
+      <div ref={technologies} className="tech">
         <Technology icon={<FaHtml5 />} title="HTML5" />
         <Technology icon={<DiCss3 />} title="CSS3" />
         <Technology icon={<SiJavascript />} title="JavaScript" />
@@ -46,11 +60,7 @@ export default function TechnologiesSection() {
         <Technology icon={<GrMysql />} title="MySQL" />
         <Technology icon={<FaGitAlt />} title="Git" />
         <Technology icon={<FaFigma />} title="Figma" />
-      </motion.div>
-    </AnimatedParagraph>
+      </div>
+    </p>
   );
 }
-const container = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1, transition: { staggerChildren: 0.1 } },
-};

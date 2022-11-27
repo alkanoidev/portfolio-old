@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../../components/Buttons/Button/Button";
+import Button from "../../components/Buttons/Button";
 import "./style.scss";
 import { motion } from "framer-motion";
 

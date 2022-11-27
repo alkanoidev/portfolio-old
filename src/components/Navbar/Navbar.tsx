@@ -1,11 +1,25 @@
 import "./style.scss";
-import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import ThemeToggle from "../Buttons/ThemeToggle";
+import { Link, useLocation } from "react-router-dom";
+import { gsap } from "gsap";
+import { useLayoutEffect, useRef } from "react";
 
 export default function Navbar() {
+  const { pathname } = useLocation();
+  console.log(location.pathname);
+
+  const nav = useRef<HTMLDivElement | null>(null);
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap
+        .to(".line", { opacity: 1, ease: "power3.in" })
+        .delay(pathname === "/" ? 2.8 : 0);
+    }, nav);
+
+    return () => ctx.revert();
+  }, []);
   return (
-    <nav>
+    <nav ref={nav}>
       <div className="content">
         <div>
           <Link to="/">filip_ivanovic</Link>
@@ -21,12 +35,7 @@ export default function Navbar() {
         </div>
         <ThemeToggle />
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.2, ease: "easeOut", delay: 2.8 }}
-        className="line"
-      ></motion.div>
+      <div className="line opacity-0"></div>
     </nav>
   );
 }

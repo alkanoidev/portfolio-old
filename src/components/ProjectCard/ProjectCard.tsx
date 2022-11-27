@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import ProjectDataType from "../../types/ProjectData";
 import { BsGithub } from "react-icons/bs";
 import { HiExternalLink } from "react-icons/hi";
-import Button from "../Buttons/Button/Button";
+import Button from "../Buttons/Button";
 
 type Props = {
   children?: any;

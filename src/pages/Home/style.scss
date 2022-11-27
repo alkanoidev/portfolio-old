@@ -9,9 +9,9 @@
   .home-content {
     @apply px-5 mt-[70px] sm:mt-0 sm:pl-0 h-full gap-3 flex justify-center items-center flex-col;
     p {
-      @apply text-[54px] sm:text-headline text-bg-dark dark:text-bg font-extrabold leading-none;
+      @apply text-[54px] sm:text-headline text-bg-dark dark:text-bg leading-none;
       span {
-        @apply text-transparent
+        @apply text-transparent font-bold
         bg-gradient-to-r from-primary via-secondary to-primary 
         bg-clip-text bg-[length:200%_auto];
         animation: shine 1s linear infinite;

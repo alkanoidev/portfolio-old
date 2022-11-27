@@ -16,6 +16,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
+      name="button"
       {...props}
       className={`
       text-labels shadow font-semibold
@@ -23,7 +24,7 @@ export default function Button({
       py-[10px] px-[20px] rounded-lg ring-2
       relative
       overflow-hidden
-      transition-[background_0.2s_cubic-bezier(0.25,0.01,0.25,1)_0s]
+      transition
       flex items-center justify-center gap-2
       ${
         shine &&

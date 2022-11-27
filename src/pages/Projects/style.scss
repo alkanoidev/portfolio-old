@@ -1,5 +1,5 @@
 .projects {
-  @apply sm:px-0 px-5 flex flex-col my-3 sm:my-10 items-center text-headline font-extrabold w-full h-full;
+  @apply sm:px-0 px-5 flex flex-col my-3 sm:my-10 items-center text-headline w-full h-full;
   .content {
     @apply flex w-full h-full md:px-5 flex-wrap gap-60 justify-center mt-12;
   }

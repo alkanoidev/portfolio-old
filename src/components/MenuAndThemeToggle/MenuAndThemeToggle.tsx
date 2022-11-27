@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import ThemeToggle from "../Buttons/ThemeToggle/ThemeToggle";
+import ThemeToggle from "../Buttons/ThemeToggle";
 import "./style.scss";
 
 export default function MenuAndThemeToggle({
@@ -15,6 +15,7 @@ export default function MenuAndThemeToggle({
     <div className={`theme-menu`}>
       <ThemeToggle />
       <button
+      name="toggleMenu"
         onClick={() => {
           setMenu((prev) => !prev);
         }}

@@ -5,7 +5,7 @@
   .links {
     @apply flex flex-col items-center gap-8;
     a {
-      @apply text-headline font-extrabold leading-none;
+      @apply text-headline leading-none;
       -webkit-tap-highlight-color: transparent;
       -webkit-touch-callout: none;
       -webkit-user-select: none;

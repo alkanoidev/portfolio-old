@@ -1,29 +1,17 @@
 import "./style.scss";
-import { motion } from "framer-motion";
 
 type Props = {
   icon: JSX.Element;
   title: string;
   small?: boolean;
 };
-const item = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 0.2,
-    },
-  },
-};
 export default function Technology({ icon, title, small }: Props) {
   return (
-    <motion.button
-      variants={item}
+    <button
+      name={title}
       className={`${
         small ? "text-subh" : "text-headline"
-      } technology flex justify-center relative transition text-primary bg-clip-text group`}
+      } technology flex justify-center relative transition text-primary bg-clip-text group opacity-0`}
     >
       <div
         id="tooltip"
@@ -36,6 +24,6 @@ export default function Technology({ icon, title, small }: Props) {
         {title}
       </div>
       {icon}
-    </motion.button>
+    </button>
   );
 }

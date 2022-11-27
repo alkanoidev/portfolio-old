@@ -4,6 +4,7 @@ import "./style.scss";
 import projectsData from "./projects.json";
 import { HiExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
+import TextBehind from "../../components/TextBehind";
 
 type Props = {};
 
@@ -17,7 +18,7 @@ export default function Projects({}: Props) {
 
   return (
     <div className="projects">
-      <h1 className="mt-[70px] sm:mt-0 text-[48px]">some things i’ve built</h1>
+
       <motion.div
         className="content"
         variants={container}

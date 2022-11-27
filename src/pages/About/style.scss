@@ -2,12 +2,12 @@
   @apply flex w-full justify-between items-center flex-col pt-3 sm:pt-5 overflow-auto; // overflow-x-hidden
 
   .about-content {
-    @apply sm:pl-0 px-3 font-extrabold h-full sm:w-[700px] w-full;
+    @apply sm:pl-0 px-3 font-semibold h-full sm:w-[700px] w-full;
     h2 {
       @apply text-[42px];
     }
     p {
-      @apply text-body w-full sm:text-icon-sm text-bg-dark dark:text-bg leading-normal sm:w-[700px];
+      @apply text-body w-full sm:text-icon-sm text-bg-dark/80 dark:text-bg/80 leading-normal sm:w-[700px];
       span {
         @apply text-transparent 
           bg-gradient-to-r from-primary via-secondary to-primary 
