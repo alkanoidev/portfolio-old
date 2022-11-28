@@ -17,21 +17,31 @@ import {
 import { GrMysql } from "react-icons/gr";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function TechnologiesSection() {
   const technologies = useRef<HTMLDivElement | null>(null);
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".technology", {
-        opacity: 1,
-        stagger: 0.35,
-      });
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.fromTo(
+        ".technology",
+        { opacity: 0},
+        {
+          opacity: 1,
+          stagger: 0.15,
+          duration: 0.15,
+          scrollTrigger: {
+            trigger: document.querySelector(".scroll-trigger"),
+          },
+        }
+      );
     }, technologies);
 
     return () => ctx.revert();
   }, []);
   return (
-    <p className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
+    <article className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
       <h1 className=""># Skills</h1>
       <p>
         The main area of my expertise is <span>Front-end development</span>. I
@@ -47,7 +57,7 @@ export default function TechnologiesSection() {
       </p>
 
       <h2 className="mt-16 scroll-trigger">## Tools and Technologies</h2>
-      <div ref={technologies} className="tech">
+      <div ref={technologies} className="tech mb-10">
         <Technology icon={<FaHtml5 />} title="HTML5" />
         <Technology icon={<DiCss3 />} title="CSS3" />
         <Technology icon={<SiJavascript />} title="JavaScript" />
@@ -61,6 +71,6 @@ export default function TechnologiesSection() {
         <Technology icon={<FaGitAlt />} title="Git" />
         <Technology icon={<FaFigma />} title="Figma" />
       </div>
-    </p>
+    </article>
   );
 }

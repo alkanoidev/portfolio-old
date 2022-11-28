@@ -1,5 +1,5 @@
 nav {
-  @apply hidden sm:block sm:sticky z-10 sm:top-0 shadow  backdrop-blur-lg;
+  @apply hidden sm:block sm:sticky z-10 sm:top-0 shadow  backdrop-blur-md;
   .content {
     @apply flex text-labels font-semibold text-bg-dark
      dark:text-bg items-center w-full justify-between h-[60px] px-3;
@@ -31,9 +31,5 @@ nav {
     path {
       @apply fill-bg-dark dark:fill-bg;
     }
-  }
-  .line {
-    @apply bg-gradient-to-r pb-[1px] dark:from-bg-dark dark:via-lineColor-dark dark:to-bg-dark
-    from-bg via-bg-dark to-bg w-full;
   }
 }

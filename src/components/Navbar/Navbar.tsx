@@ -3,16 +3,16 @@ import ThemeToggle from "../Buttons/ThemeToggle";
 import { Link, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
+import GradientLine from "../GradientLine";
 
 export default function Navbar() {
   const { pathname } = useLocation();
-  console.log(location.pathname);
 
   const nav = useRef<HTMLDivElement | null>(null);
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap
-        .to(".line", { opacity: 1, ease: "power3.in" })
+        .fromTo(".line",{opacity: 0}, { opacity: 1, ease: "power3.in" })
         .delay(pathname === "/" ? 2.8 : 0);
     }, nav);
 
@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
         <ThemeToggle />
       </div>
-      <div className="line opacity-0"></div>
+      <GradientLine />
     </nav>
   );
 }

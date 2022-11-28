@@ -1,8 +1,5 @@
 .theme-menu {
-  background: rgba(255, 255, 255, 0);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
-  border-radius: 0 0 1rem 1rem;
-  @apply flex text-icon-sm backdrop-blur-lg px-3 fixed z-20 h-[70px] items-center justify-between w-full sm:hidden left-0 top-0;
+  @apply flex text-icon-sm backdrop-blur-md px-3 fixed z-20 h-[70px] items-center justify-between w-full sm:hidden left-0 top-0;
 
   .menu-button {
     @apply relative top-5 right-5 flex sm:hidden text-icon-sm;

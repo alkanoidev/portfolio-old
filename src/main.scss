@@ -11,7 +11,7 @@
   @apply font-semibold;
 }
 *::selection{
-  @apply bg-bg-dark text-bg dark:bg-off-white/80 dark:text-off-dark;
+  @apply bg-primary text-bg dark:text-bg-dark;
 }
 
 html {

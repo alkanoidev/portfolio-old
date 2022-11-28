@@ -22,7 +22,7 @@ export default function ScrollToTop() {
   return (
     <button
     name="scroll to top"
-      className={`${classes} bg-primary items-center text-light dark:text-dark justify-center flex text-2xl shadow hover:bg-primary/80 rounded-full w-[40px] h-[40px] fixed bottom-[30px] right-[30px] z-50 transition-all`}
+      className={`${classes} bg-primary items-center text-bg dark:text-bg-dark justify-center flex text-2xl shadow hover:bg-primary/80 rounded-full w-[40px] h-[40px] fixed bottom-[30px] right-[30px] z-50 transition-all`}
       onClick={() => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;

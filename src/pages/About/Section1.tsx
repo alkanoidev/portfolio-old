@@ -5,7 +5,7 @@ import SocialLink from "../../components/SocialLink";
 
 export default function Section1() {
   return (
-    <p className="mt-5">
+    <article className="mt-5">
       <h1>
         # About
       </h1>
@@ -42,6 +42,6 @@ export default function Section1() {
           />
         </div>
       </div>
-    </p>
+    </article>
   );
 }
