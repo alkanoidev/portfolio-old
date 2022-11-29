@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Buttons/Button";
 import "./style.scss";
-import { motion } from "framer-motion";
+import useAnimateBlock from "../../utils/hooks/useAnimateBlock";
 
 type Props = {};
 type FormValuesProps = {
@@ -12,6 +12,7 @@ type FormValuesProps = {
 };
 export default function Contact({}: Props) {
   const navigate = useNavigate();
+  const { divRef } = useAnimateBlock(0.5);
   const [formValues, setFormValues] = useState<FormValuesProps | null>({
     name: "",
     email: "",
@@ -48,11 +49,9 @@ export default function Contact({}: Props) {
 
   return (
     <div className="contact">
-      <motion.div
+      <div
+        ref={divRef}
         className="contact-form"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring" }}
       >
         <h1 className="mt-[70px] sm:mt-0">Contact me</h1>
         <form onSubmit={handleSubmit}>
@@ -93,7 +92,7 @@ export default function Contact({}: Props) {
             </Button>
           </p>
         </form>
-      </motion.div>
+      </div>
 
       <div id="blob1"></div>
       <div id="blob2"></div>

@@ -3,32 +3,25 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./style.scss";
 import projectsData from "./projects.json";
 import { HiExternalLink } from "react-icons/hi";
-import { motion } from "framer-motion";
 import TextBehind from "../../components/TextBehind";
 
-type Props = {};
 
-const container = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1, transition: { staggerChildren: 0.1 } },
-};
-
-export default function Projects({}: Props) {
+export default function Projects() {
   const [projects, setProjects] = useState<any[]>(projectsData);
 
   return (
     <div className="projects">
-
-      <motion.div
+      <TextBehind>Projects</TextBehind>
+      <h1 className="mt-16 sm:mt-0">
+        Projects
+      </h1>
+      <div
         className="content"
-        variants={container}
-        initial="initial"
-        animate="animate"
       >
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
-      </motion.div>
+      </div>
       <a
         href="https://github.com/alkanoidev"
         target="_blank"

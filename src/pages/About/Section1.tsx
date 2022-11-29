@@ -2,13 +2,13 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Button from "../../components/Buttons/Button";
 import SocialLink from "../../components/SocialLink";
+import useAnimateBlock from "../../utils/hooks/useAnimateBlock";
 
 export default function Section1() {
+  const { divRef } = useAnimateBlock(0.5);
   return (
-    <article className="mt-5">
-      <h1>
-        # About
-      </h1>
+    <article className="mt-5" ref={divRef}>
+      <h1># About</h1>
       <p className="pb-6">
         I'm a <span>frontend developer</span> who enjoys building things that
         live on the internet.
@@ -24,7 +24,7 @@ export default function Section1() {
         If you are in search of a frontend developer who enjoys solving problems
         and is desiring to learn and contribute, I'd love to hear from you!
       </p>
-      <div className="flex sm:flex-row flex-col sm:items-center items-start gap-3">
+      <div className="flex sm:flex-row flex-wrap sm:items-center items-start gap-3">
         <Button variant="primary" shine>
           <Link to="/contact">contact_me</Link>
         </Button>

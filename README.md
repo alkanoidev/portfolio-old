@@ -13,7 +13,7 @@ My overkilled personal portfolio website.
 | React-Router  |
 | TailwindCSS   |
 | Sass          |
-| Framer-Motion |
+| GSAP          |
 | Vite          |
 | Figma         |
 

@@ -10,8 +10,7 @@
             "typescript",
             "mdx",
             "framer-motion",
-            "tailwindcss",
-            "pwa"
+            "tailwindcss"
         ],
         "imageSource": "/blog.png"
     },

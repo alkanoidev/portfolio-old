@@ -11,7 +11,7 @@ export default function Technology({ icon, title, small }: Props) {
       name={title}
       className={`${
         small ? "text-subh" : "text-headline"
-      } technology flex justify-center relative transition text-primary bg-clip-text group opacity-0`}
+      } technology flex justify-center relative transition text-primary bg-clip-text group`}
     >
       <div
         id="tooltip"

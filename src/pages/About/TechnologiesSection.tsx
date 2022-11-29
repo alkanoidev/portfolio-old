@@ -15,34 +15,14 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
-import { useLayoutEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import useAnimateBlock from "../../utils/hooks/useAnimateBlock";
 
 export default function TechnologiesSection() {
-  const technologies = useRef<HTMLDivElement | null>(null);
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.fromTo(
-        ".technology",
-        { opacity: 0},
-        {
-          opacity: 1,
-          stagger: 0.15,
-          duration: 0.15,
-          scrollTrigger: {
-            trigger: document.querySelector(".scroll-trigger"),
-          },
-        }
-      );
-    }, technologies);
+  const { divRef } = useAnimateBlock(1);
 
-    return () => ctx.revert();
-  }, []);
   return (
-    <article className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
-      <h1 className=""># Skills</h1>
+    <article ref={divRef} className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
+      <h1># Skills</h1>
       <p>
         The main area of my expertise is <span>Front-end development</span>. I
         enjoy building intuitive applications that are fast and built with best
@@ -56,8 +36,8 @@ export default function TechnologiesSection() {
         Database Management Systems as well as Nonrelational.
       </p>
 
-      <h2 className="mt-16 scroll-trigger">## Tools and Technologies</h2>
-      <div ref={technologies} className="tech mb-10">
+      <h2 className="mt-16">## Tools and Technologies</h2>
+      <div className="mt-5 tech">
         <Technology icon={<FaHtml5 />} title="HTML5" />
         <Technology icon={<DiCss3 />} title="CSS3" />
         <Technology icon={<SiJavascript />} title="JavaScript" />
