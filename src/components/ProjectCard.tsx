@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: Props) {
           </Button>
         )}
       </section>
-      <div className="arrow absolute bottom-[40%] group-hover:block hidden">
+      <div className="arrow absolute bottom-[40%] group-hover:opacity-100 opacity-0 transition">
         <FaArrowRight className="arrow" />
       </div>
     </a>
