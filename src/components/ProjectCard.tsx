@@ -35,7 +35,7 @@ export default function ProjectCard({ project }: Props) {
       href={"/projects/" + project.repoName}
       className={`card ${
         project.commingSoon && "opacity-20"
-      } w-full flex flex-col gap-4 bg-off-white dark:bg-off-dark p-5 transition rounded-lg relative group`}
+      } w-full flex flex-col gap-4 bg-off-white dark:bg-off-dark p-5 transition rounded-lg relative group opacity-0`}
     >
       <section>
         <h1 className="text-5xl font-bold">{project.title}</h1>

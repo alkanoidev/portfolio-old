@@ -4,20 +4,16 @@ import "./style.scss";
 import projectsData from "./projects.json";
 import { HiExternalLink } from "react-icons/hi";
 import TextBehind from "../../components/TextBehind";
-
+import useAnimateBlock from "../../utils/hooks/useAnimateBlock";
 
 export default function Projects() {
   const [projects, setProjects] = useState<any[]>(projectsData);
-
+  const { divRef: projectsListRef } = useAnimateBlock(0.5);
   return (
     <div className="projects">
       <TextBehind>Projects</TextBehind>
-      <h1 className="mt-16 sm:mt-0">
-        Projects
-      </h1>
-      <div
-        className="content"
-      >
+      <h1 className="mt-16 sm:mt-0">Projects</h1>
+      <div className="content" ref={projectsListRef}>
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
