@@ -1,6 +1,6 @@
 [
     {
-        "title": "personal blog",
+        "title": "Personal Blog",
         "description": "A blogging platform for sharing posts about technologies I am currently learning and some tips and tricks.",
         "githubLink": "https://github.com/alkanoidev/filipblog",
         "liveDemoLink": "https://filipblog.netlify.app/",

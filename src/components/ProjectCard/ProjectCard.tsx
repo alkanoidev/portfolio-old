@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: Props) {
 
       <div className="sm:w-1/2 w-full flex flex-col gap-4">
         <section>
-          <h1>{project.title}</h1>
+          <h1 className="text-5xl">{project.title}</h1>
           <p>{project.description}</p>
         </section>
         <section>
