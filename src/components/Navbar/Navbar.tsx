@@ -11,15 +11,15 @@ export default function Navbar() {
     <nav ref={navRef}>
       <div className="content">
         <div>
-          <Link to="/">filip_ivanovic</Link>
+          <Link to="/">Filip Ivanovic</Link>
         </div>
         <div className="links">
-          <Link to="/">home</Link>
-          <Link to="/about">about_me</Link>
-          <Link to="/projects">projects</Link>
-          <Link to="/contact">contact_me</Link>
+          <Link to="/">HOME</Link>
+          <Link to="/about">ABOUT ME</Link>
+          <Link to="/projects">PROJECTS</Link>
+          <Link to="/contact">CONTACT ME</Link>
           <a href="https://filipblog.netlify.app/" className="" target="_blank">
-            blog
+            BLOG
           </a>
         </div>
         <ThemeToggle />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 import "./style.scss";
 import projectsData from "./projects.json";
 import { HiExternalLink } from "react-icons/hi";
