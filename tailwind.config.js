@@ -9,11 +9,11 @@ module.exports = {
       colors: {
         bg: {
           DEFAULT: "#f4f4f4",
-          dark: "#080808",
+          dark: "#171717",
         },
         off: {
-          dark: "#101010",
-          white: "#fff",
+          dark: "#262626",
+          white: "#e5e5e5",
         },
         primary: "#68af73",
         secondary: "#62aeef",
@@ -21,8 +21,6 @@ module.exports = {
           DEFAULT: "rgba(30, 45, 61, 1)",
           dark: "rgba(234, 234, 234, 1)",
         },
-        blobColor1: "#55b6c2",
-        blobColor2: "#98c379",
       },
       fontSize: {
         headline: "62px",
