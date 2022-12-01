@@ -7,7 +7,7 @@ export default function ThemeToggle({}: Props) {
 
   return (
     <button
-      className="text-icon-sm"
+      className="text-icon-sm h-[70px] w-[70px]"
       onClick={() => {
         toggleTheme();
       }}

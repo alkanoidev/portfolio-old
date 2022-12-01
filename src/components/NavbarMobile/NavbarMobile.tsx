@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { Link } from "react-router-dom";
+import useAnimateBlock from "../../utils/hooks/useAnimateBlock";
 import "./style.scss";
 
 type Props = {
@@ -8,6 +9,7 @@ type Props = {
 };
 
 export default function NavbarMobile({ setMenu, menu }: Props) {
+  const { divRef: navbarMobileRef } = useAnimateBlock(0.4);
   const handleClick = (): void => {
     setMenu(false);
   };
@@ -24,7 +26,7 @@ export default function NavbarMobile({ setMenu, menu }: Props) {
 
   return (
     <div className="navbar-mobile">
-      <div className="links">
+      <div className="links bg-bg dark:bg-bg-dark" ref={navbarMobileRef}>
         <Link to="/" onClick={handleClick}>
           home
         </Link>

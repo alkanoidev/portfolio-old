@@ -17,12 +17,13 @@ export default function MenuAndThemeToggle({
   return (
     <div
       ref={divRef}
-      className="flex text-icon-sm flex-col-reverse top-0 backdrop-blur-md fixed z-20 h-[70px] items-center justify-between w-full sm:hidden left-0"
+      className="flex text-icon-sm flex-col top-0 backdrop-blur-md fixed z-20 h-[70px] items-center justify-between w-full sm:hidden left-0"
     >
-      <div className="flex px-3 fixed z-20 h-full items-center justify-between w-full sm:hidden left-0 top-0">
+      <div className="flex px-3 z-20 h-full items-center justify-between w-full">
         <ThemeToggle />
         <button
           name="toggleMenu"
+          className="h-[70px] w-[70px] flex justify-end items-center"
           onClick={() => {
             setMenu((prev) => !prev);
           }}
