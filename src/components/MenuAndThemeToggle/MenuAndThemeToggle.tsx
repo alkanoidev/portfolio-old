@@ -17,7 +17,7 @@ export default function MenuAndThemeToggle({
   return (
     <div
       ref={divRef}
-      className="flex text-icon-sm flex-col-reverse backdrop-blur-md fixed z-20 h-[70px] items-center justify-between w-full sm:hidden left-0 top-0"
+      className="flex text-icon-sm flex-col-reverse top-0 backdrop-blur-md fixed z-20 h-[70px] items-center justify-between w-full sm:hidden left-0"
     >
       <div className="flex px-3 fixed z-20 h-full items-center justify-between w-full sm:hidden left-0 top-0">
         <ThemeToggle />

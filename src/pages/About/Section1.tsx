@@ -18,7 +18,7 @@ export default function Section1() {
         keeping up with the programming world that is constantly growing.
         <br />
         <br />
-        I also love open-source, UI design, and orange cats :)
+        I also love open-source, UI design, and orange cats.
         <br />
         <br />
         If you are in search of a frontend developer who enjoys solving problems
@@ -26,10 +26,10 @@ export default function Section1() {
       </p>
       <div className="flex sm:flex-row flex-wrap sm:items-center items-start gap-3">
         <Button variant="primary" shine>
-          <Link to="/contact">contact_me</Link>
+          <Link to="/contact">Contact Me</Link>
         </Button>
         <Button variant="secondary">
-          <a href="FilipIvanovicResume.pdf">resume</a>
+          <a href="FilipIvanovicResume.pdf">Resume</a>
         </Button>
         <div className="flex gap-2">
           <SocialLink

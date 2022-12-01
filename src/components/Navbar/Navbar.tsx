@@ -14,12 +14,12 @@ export default function Navbar() {
           <Link to="/">Filip Ivanovic</Link>
         </div>
         <div className="links">
-          <Link to="/">HOME</Link>
-          <Link to="/about">ABOUT ME</Link>
-          <Link to="/projects">PROJECTS</Link>
-          <Link to="/contact">CONTACT ME</Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Me</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact Me</Link>
           <a href="https://filipblog.netlify.app/" className="" target="_blank">
-            BLOG
+            Blog
           </a>
         </div>
         <ThemeToggle />

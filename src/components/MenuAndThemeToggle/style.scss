@@ -1,7 +1,0 @@
-.theme-menu {
-  @apply flex text-icon-sm backdrop-blur-md px-3 fixed z-20 h-[70px] items-center justify-between w-full sm:hidden left-0 top-0;
-
-  .menu-button {
-    @apply relative top-5 right-5 flex sm:hidden text-icon-sm;
-  }
-}

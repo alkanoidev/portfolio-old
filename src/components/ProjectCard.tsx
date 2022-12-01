@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: Props) {
       } w-full flex flex-col gap-4 bg-off-white dark:bg-off-dark p-5 transition rounded-lg relative group opacity-0`}
     >
       <section>
-        <h1 className="text-5xl font-bold">{project.title}</h1>
+        <h1 className="sm:text-5xl text-4xl font-bold">{project.title}</h1>
         <p className="text-lg text-bg-dark/80 dark:text-bg/80 mt-2">{project.description}</p>
       </section>
       <section>
@@ -49,7 +49,7 @@ export default function ProjectCard({ project }: Props) {
           ))}
         </div>
       </section>
-      <section className="buttons flex gap-4 mt-2">
+      <section className="buttons flex flex-wrap gap-4 mt-2">
         <Button icon={<BsGithub />} variant="secondary">
           <a href={project.githubLink}>View Code</a>
         </Button>

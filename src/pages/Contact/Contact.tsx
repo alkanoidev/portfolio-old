@@ -13,6 +13,7 @@ type FormValuesProps = {
 export default function Contact({}: Props) {
   const navigate = useNavigate();
   const { divRef } = useAnimateBlock(0.5);
+
   const [formValues, setFormValues] = useState<FormValuesProps | null>({
     name: "",
     email: "",
@@ -49,33 +50,32 @@ export default function Contact({}: Props) {
 
   return (
     <div className="contact">
-      <div
-        ref={divRef}
-        className="contact-form"
-      >
+      <div ref={divRef} className="contact-form">
         <h1 className="mt-[70px] sm:mt-0">Contact me</h1>
         <form onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>name:</label>
-            <input
-              type="text"
-              name="name"
-              value={formValues?.name}
-              onChange={handleChange}
-              required
-            />
-          </p>
-          <p>
-            <label>email:</label>
-            <input
-              type="email"
-              name="email"
-              value={formValues?.email}
-              onChange={handleChange}
-              required
-            />
-          </p>
+          <div>
+            <p>
+              <label>name:</label>
+              <input
+                type="text"
+                name="name"
+                value={formValues?.name}
+                onChange={handleChange}
+                required
+              />
+            </p>
+            <p>
+              <label>email:</label>
+              <input
+                type="email"
+                name="email"
+                value={formValues?.email}
+                onChange={handleChange}
+                required
+              />
+            </p>
+          </div>
           <p>
             <label>message:</label>
             <textarea
@@ -88,14 +88,11 @@ export default function Contact({}: Props) {
           </p>
           <p>
             <Button type="submit" variant="primary">
-              submit_message
+              Submit Message
             </Button>
           </p>
         </form>
       </div>
-
-      <div id="blob1"></div>
-      <div id="blob2"></div>
     </div>
   );
 }

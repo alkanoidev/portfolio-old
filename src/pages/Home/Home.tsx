@@ -8,19 +8,21 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="home">
-      <main className="home-content">
-        <p>
-          Hi ! <br />
-          I'm Filip <br />
-          <span>{">"} Front-end Developer</span>
-        </p>
+      <main className="home-content space-y-5">
+        <div className="flex flex-col gap-4">
+          <h1>Hi there! I'm Filip</h1>
+          <h1><span>Front-end Developer</span></h1>
+          <p className="text-body sm:text-icon-sm text-bg-dark/80 dark:text-bg/80">
+            I like building solid products that live on the internet.
+          </p>
+        </div>
         <div className="buttons">
           <div className="flex items-center gap-4">
             <Button variant="primary">
-              <Link to="/projects">view_projects</Link>
+              <Link to="/projects">View Projects</Link>
             </Button>
             <Button variant="secondary">
-              <Link to="/contact">contact_me</Link>
+              <Link to="/contact">Contact me</Link>
             </Button>
           </div>
           <div className="flex gap-4 items-center">

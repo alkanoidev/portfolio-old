@@ -1,7 +1,6 @@
 .Layout {
-  @apply bg-bg w-full h-full dark:bg-bg-dark text-bg-dark dark:text-bg flex flex-col transition;
+  @apply bg-bg w-full h-full pt-10 sm:pt-0 dark:bg-bg-dark text-bg-dark dark:text-bg flex flex-col transition;
   min-height: 100vh;
-  // overflow: hidden;
   .menu-button {
     @apply relative top-5 right-5 flex sm:hidden text-icon-sm;
   }

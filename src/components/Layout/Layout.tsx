@@ -3,7 +3,6 @@ import Navbar from "../Navbar/Navbar";
 import "./style.scss";
 import NavbarMobile from "../NavbarMobile/NavbarMobile";
 import MenuAndThemeToggle from "../MenuAndThemeToggle/MenuAndThemeToggle";
-import { useThemeContext } from "../../context/ThemeProvider";
 import ScrollToTop from "../Buttons/ScrollToTop";
 
 type Props = {
@@ -12,10 +11,9 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   const [menu, setMenu] = useState<boolean>(false);
-  const { theme } = useThemeContext();
 
   return (
-    <div className="Layout">
+    <div className={`Layout${menu ? "pt-0" : ""}`}>
       <Navbar />
       <MenuAndThemeToggle menu={menu} setMenu={setMenu} />
       {menu && <NavbarMobile setMenu={setMenu} menu={menu} />}

@@ -1,15 +1,19 @@
 .home {
-  @apply flex w-full justify-between items-center flex-col; //mt-20 sm:mt-32
-  // height: 100%;
+  @apply flex w-full justify-between items-center flex-col;
   height: 100vh;
-  // margin-top: 71px;
   @media only screen and (min-width: 700px) {
     height: calc(100vh - 71px);
   }
   .home-content {
-    @apply px-5 mt-[70px] sm:mt-0 sm:pl-0 h-full gap-3 flex justify-center items-center flex-col;
-    p {
-      @apply text-[54px] sm:text-headline text-bg-dark dark:text-bg leading-none;
+    @apply mt-4 sm:mt-0 sm:px-0 px-2 sm:pl-0 h-full flex flex-col items-center justify-center;
+    div {
+      @apply text-bg-dark dark:text-bg text-center;
+      h1{
+        @apply leading-tight text-3xl sm:text-headline;
+      }
+      p{
+        @apply leading-normal;
+      }
       span {
         @apply text-transparent font-bold
         bg-gradient-to-r from-primary via-secondary to-primary 
@@ -23,7 +27,7 @@
       }
     }
     .buttons {
-      @apply flex sm:flex-row w-full flex-col items-start gap-4 sm:items-center;
+      @apply flex sm:flex-row flex-col items-center gap-4;
     }
   }
 }

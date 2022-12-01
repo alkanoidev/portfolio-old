@@ -1,5 +1,5 @@
 .navbar-mobile {
-  @apply w-full h-screen fixed z-10 flex justify-center 
+  @apply w-full h-full fixed z-10 flex justify-center 
   items-center sm:hidden bg-bg dark:bg-bg-dark;
 
   .links {
@@ -43,30 +43,6 @@
           }
         }
       }
-    }
-  }
-  .blobs {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    #blob1 {
-      @apply blur-[50px] dark:blur-[100px];
-      position: absolute;
-      width: 120px;
-      height: 200px;
-      top: 0px;
-      left: 0px;
-      @apply bg-primary;
-    }
-    #blob2 {
-      @apply blur-[50px] dark:blur-[100px];
-      width: 200px;
-      height: 100px;
-      position: absolute;
-      bottom: 50%;
-      right: 0px;
-      @apply bg-secondary;
     }
   }
 }

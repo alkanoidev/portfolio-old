@@ -2,20 +2,20 @@
   @apply flex w-full justify-between items-center flex-col pt-3 sm:pt-5 overflow-auto; // overflow-x-hidden
 
   .about-content {
-    @apply sm:pl-0 px-3 font-semibold h-full sm:w-[700px] w-full;
+    @apply sm:pl-0 px-3 font-semibold h-full sm:w-[600px] w-full;
     h2 {
       @apply text-[42px];
     }
     p {
-      @apply text-body w-full sm:text-icon-sm text-bg-dark/80 dark:text-bg/80 leading-normal sm:w-[700px];
+      @apply text-xl w-full sm:text-icon-sm text-bg-dark/80 dark:text-bg/80 leading-normal;
       span {
-        @apply text-transparent 
+        @apply text-transparent font-bold
           bg-gradient-to-r from-primary via-secondary to-primary 
           bg-clip-text bg-[length:200%_auto];
       }
     }
     .tech {
-      @apply w-full flex flex-wrap gap-5 text-bg-dark dark:text-bg sm:w-[700px];
+      @apply w-full flex flex-wrap gap-5 text-bg-dark dark:text-bg;
     }
   }
 }
