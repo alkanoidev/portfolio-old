@@ -6,7 +6,7 @@
   }
   .home-content {
     @apply mt-4 sm:mt-0 sm:px-0 px-2 sm:pl-0 sm:h-full flex flex-col items-center justify-center;
-    height: calc(100vh - 70px);
+    height: calc(100% - 70px);
     div {
       @apply text-bg-dark dark:text-bg text-center;
       h1{
