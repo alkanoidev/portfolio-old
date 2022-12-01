@@ -13,7 +13,7 @@ export default function Home() {
           <h1>Hi there! I'm Filip</h1>
           <h1><span>Front-end Developer</span></h1>
           <p className="text-body sm:text-icon-sm text-bg-dark/80 dark:text-bg/80">
-            I like building solid products that live on the internet.
+            Developer who likes building solid products that live on the internet.
           </p>
         </div>
         <div className="buttons">
