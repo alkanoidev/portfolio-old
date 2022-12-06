@@ -7,10 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=1"
     />
-    <meta
-      name="theme-color"
-      content="#121212"
-    />
+    <meta name="theme-color" content="#121212" />
 
     <meta name="author" content="Filip Ivanovic" />
     <meta
@@ -21,20 +18,45 @@
     <meta name="keywords" content="Developer, Portfolio, Web, Frontend" />
     <meta name="title" content="Filip Ivanovic" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://filipivanovic.netlify.app/about">
-    <meta property="og:title" content="Filip Ivanovic">
-    <meta property="og:description" content="Filip Ivanovic - Frontend Developer - React, JavaScript, NextJS, TypeScript">
-    <meta property="og:image" content="previewimage.png">
-    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://filipivanovic.netlify.app/about" />
+    <meta property="og:title" content="Filip Ivanovic" />
+    <meta
+      property="og:description"
+      content="Filip Ivanovic - Frontend Developer - React, JavaScript, NextJS, TypeScript"
+    />
+    <meta property="og:image" content="previewimage.png" />
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://filipivanovic.netlify.app/about">
-    <meta property="twitter:title" content="Filip Ivanovic">
-    <meta property="twitter:description" content="Filip Ivanovic - Frontend Developer - React, JavaScript, NextJS, TypeScript">
-    <meta property="twitter:image" content="previewimage.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://filipivanovic.netlify.app/about"
+    />
+    <meta property="twitter:title" content="Filip Ivanovic" />
+    <meta
+      property="twitter:description"
+      content="Filip Ivanovic - Frontend Developer - React, JavaScript, NextJS, TypeScript"
+    />
+    <meta property="twitter:image" content="previewimage.png" />
 
     <title>Filip Ivanovic</title>
+
+    <script>
+      if ("theme" in localStorage) {
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+          document.documentElement.style.colorScheme = "dark";
+        } else {
+          document.documentElement.classList.remove("dark");
+          document.documentElement.style.colorScheme = "light";
+        }
+      } else {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      }
+    </script>
   </head>
   <body>
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
