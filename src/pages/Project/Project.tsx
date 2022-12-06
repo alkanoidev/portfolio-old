@@ -8,10 +8,7 @@ const ProfilePage = React.lazy(() => import("./ProjectPage"));
 export default function Project() {
   const { projectName } = useParams();
   const [readme, setReadme] = useState("");
-  const [repoData, setRepoData] = useState({
-    created_at: "",
-    topics: [""],
-  });
+
 
   useEffect(() => {
     const getReadme = async () => {
@@ -21,24 +18,13 @@ export default function Project() {
       const data = await res.text();
       setReadme(data);
     };
-    const getRepositoryData = async () => {
-      const res = await fetch(
-        `https://api.github.com/repos/alkanoidev/${projectName}`
-      );
-      const data = await res.json();
-      setRepoData({
-        created_at: data.created_at,
-        topics: data.topics,
-      });
-    };
 
     getReadme();
-    getRepositoryData();
   }, []);
 
   return (
     <Suspense fallback={<Skeleton />}>
-      <ProfilePage readme={readme} repoData={repoData} />
+      <ProfilePage readme={readme} />
     </Suspense>
   );
 }

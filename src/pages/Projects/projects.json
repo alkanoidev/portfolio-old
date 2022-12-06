@@ -11,8 +11,7 @@
             "mdx",
             "framer-motion",
             "tailwindcss"
-        ],
-        "imageSource": "/blog.png"
+        ]
     },
     {
         "title": "nasa-apis",
@@ -29,8 +28,7 @@
             "create-react-app"
         ],
         "comingSoon": false,
-        "repoName": "nasa-apis",
-        "imageSource": "/nasaapis.png"
+        "repoName": "nasa-apis"
     },
     {
         "title": "travel-app-landing-page",
@@ -46,7 +44,6 @@
             "create-react-app"
         ],
         "comingSoon": false,
-        "repoName": "travel-app-landing-page",
-        "imageSource": "/travel.png"
+        "repoName": "travel-app-landing-page"
     }
 ]
