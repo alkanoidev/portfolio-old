@@ -51,7 +51,7 @@ export default function Contact({}: Props) {
   return (
     <div className="contact">
       <div ref={divRef} className="contact-form">
-        <h1 className="mt-[70px] sm:mt-0">Contact me</h1>
+        <h1 className="mt-[70px] sm:mt-0">Get in touch</h1>
         <form onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <div>

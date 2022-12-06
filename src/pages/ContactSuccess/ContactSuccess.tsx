@@ -18,7 +18,7 @@ export default function ContactSuccess() {
         <h2 className="text-subh text-center">
           i will reach back to you shortly
         </h2>
-        <img src="../cat.gif" alt="cat gif" />
+        <img src="../cat.gif" alt="cat gif" loading="lazy" />
         <Button variant="primary">
           <Link to="/contact">send-a-new-message</Link>
         </Button>

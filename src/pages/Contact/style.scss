@@ -17,7 +17,8 @@
         }
         input,
         textarea {
-          @apply border-2 rounded-lg border-transparent outline-none min-w-[300px] bg-off-white dark:bg-off-dark p-2
+          @apply border-2 rounded-lg border-transparent outline-none min-w-[300px] bg-off-white dark:bg-off-dark 
+          px-2 py-3
           focus:border-2 focus:border-secondary focus:outline-none focus:ring-0
           hover:border-secondary hover:outline-none hover:ring-0;
           transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,

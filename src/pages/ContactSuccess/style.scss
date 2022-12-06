@@ -3,7 +3,7 @@
   @apply bg-bg dark:bg-bg-dark;
 
   .form-submitted {
-    @apply flex flex-col sm:mt-12 items-center w-full gap-3;
+    @apply flex flex-col sm:mt-6 items-center w-full gap-3;
 
     img {
       @apply rounded-lg w-[400px];
