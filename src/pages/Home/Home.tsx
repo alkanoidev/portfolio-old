@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="home">
       <main className="home-content space-y-5">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col justify-center items-center">
           <h1>Hi there! I'm Filip</h1>
           <h1><span>Front-end Developer</span></h1>
           <p className="text-body sm:text-icon-sm text-bg-dark/80 dark:text-bg/80">

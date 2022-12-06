@@ -8,12 +8,12 @@
     @apply mt-4 sm:mt-0 sm:px-0 px-2 sm:pl-0 sm:h-full flex flex-col items-center justify-center;
     height: calc(100% - 70px);
     div {
-      @apply text-bg-dark dark:text-bg text-center;
+      @apply text-bg-dark dark:text-bg text-center flex justify-center;
       h1{
         @apply leading-tight text-3xl sm:text-headline;
       }
       p{
-        @apply leading-normal;
+        @apply leading-normal my-2 w-auto sm:w-1/2;
       }
       span {
         @apply text-transparent font-bold

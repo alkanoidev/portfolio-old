@@ -9,11 +9,11 @@ module.exports = {
       colors: {
         bg: {
           DEFAULT: "#f4f4f4",
-          dark: "#171717",
+          dark: "#121212",
         },
         off: {
-          dark: "#262626",
-          white: "#e5e5e5",
+          white: "#dcdcdc",
+          dark: "#0b0b0b",
         },
         primary: "#68af73",
         secondary: "#62aeef",
