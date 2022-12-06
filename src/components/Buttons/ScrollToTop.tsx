@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { AiOutlineArrowUp } from "react-icons/ai";
 
 export default function ScrollToTop() {
   const [classes, setClasses] = useState("");
@@ -21,14 +20,27 @@ export default function ScrollToTop() {
 
   return (
     <button
-    name="scroll to top"
+      name="scroll to top"
       className={`${classes} bg-primary items-center text-bg dark:text-bg-dark justify-center flex text-2xl shadow hover:bg-primary/80 rounded-full w-[40px] h-[40px] fixed bottom-[30px] right-[30px] z-50 transition-all`}
       onClick={() => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }}
     >
-      <AiOutlineArrowUp />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+        />
+      </svg>
     </button>
   );
 }
