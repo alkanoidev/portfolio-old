@@ -4,6 +4,7 @@ import "./style.scss";
 import Waves from "../../components/Waves/Waves";
 import SocialLink from "../../components/SocialLink";
 import { Link } from "react-router-dom";
+import WavesMobile from "../../components/Waves/WavesMobile";
 
 export default function Home() {
   return (
@@ -11,9 +12,12 @@ export default function Home() {
       <main className="home-content space-y-5">
         <div className="flex flex-col justify-center items-center">
           <h1>Hi there! I'm Filip</h1>
-          <h1><span>Front-end Developer</span></h1>
+          <h1>
+            <span>Front-end Developer</span>
+          </h1>
           <p className="text-body sm:text-icon-sm text-bg-dark/80 dark:text-bg/80">
-            Developer who likes building solid products that live on the internet.
+            Developer who likes building solid products that live on the
+            internet.
           </p>
         </div>
         <div className="buttons">
@@ -38,6 +42,7 @@ export default function Home() {
         </div>
       </main>
       <Waves />
+      <WavesMobile />
     </div>
   );
 }
