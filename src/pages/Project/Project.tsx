@@ -1,30 +1,15 @@
 import React, { Suspense } from "react";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import "./style.scss";
 
-const ProfilePage = React.lazy(() => import("./ProjectPage"));
+const ProfilePage = React.lazy(async () => {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  return import("./ProjectPage");
+});
 
 export default function Project() {
-  const { projectName } = useParams();
-  const [readme, setReadme] = useState("");
-
-
-  useEffect(() => {
-    const getReadme = async () => {
-      const res = await fetch(
-        `https://raw.githubusercontent.com/alkanoidev/${projectName}/master/README.md`
-      );
-      const data = await res.text();
-      setReadme(data);
-    };
-
-    getReadme();
-  }, []);
-
   return (
     <Suspense fallback={<Skeleton />}>
-      <ProfilePage readme={readme} />
+      <ProfilePage />
     </Suspense>
   );
 }

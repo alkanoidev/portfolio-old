@@ -1,15 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { Remarkable } from "remarkable";
+import useAnimateBlock from "../../utils/hooks/useAnimateBlock";
 
 const md = new Remarkable();
 
-type Props = {
-  readme: string;
-};
+export default function ProjectPage() {
+  const { divRef } = useAnimateBlock(0.5);
+  const { projectName } = useParams();
+  const [readme, setReadme] = useState("");
 
-export default function ProjectPage({ readme }: Props) {
+  useEffect(() => {
+    const getReadme = async () => {
+      const res = await fetch(
+        `https://raw.githubusercontent.com/alkanoidev/${projectName}/master/README.md`
+      );
+      const data = await res.text();
+      setReadme(data);
+    };
+    getReadme();
+  }, []);
+
   return (
-    <div className="flex justify-center flex-col items-center mt-12 sm:mt-0">
+    <div
+      ref={divRef}
+      className="flex justify-center flex-col items-center mt-12 sm:mt-0"
+    >
       <div className="flex max-w-[700px] justify-start w-full mt-12">
         <Link to="/projects">
           <div className="flex rounded-lg bg-off-light dark:bg-off-dark p-2 text-dark dark:text-light gap-2 items-center justify-center hover:cursor-pointer">
