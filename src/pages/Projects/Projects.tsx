@@ -9,7 +9,9 @@ export default function Projects() {
   const { divRef: projectsListRef } = useAnimateBlock(0.5);
   return (
     <div className="projects">
-      <h1 className="mt-16 sm:mt-0">Projects</h1>
+      <h1 className="mt-16 sm:mt-0 before:w-32 before:h-4 before:z-[-1] before:bg-primary/90 before:absolute before:bottom-4 before:rounded-sm">
+        Projects
+      </h1>
       <div className="content" ref={projectsListRef}>
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />

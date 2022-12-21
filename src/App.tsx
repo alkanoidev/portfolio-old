@@ -16,15 +16,9 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="about/skills" element={<About />} />
             <Route path="contact">
               <Route path="/contact" element={<Contact />} />
               <Route path="success" element={<ContactSuccess />} />
-            </Route>
-            <Route path="projects">
-              <Route path="/projects" element={<Projects />} />
-              <Route path=":projectName" element={<Project />} />
             </Route>
             <Route path="*" element={<Page404 />} />
           </Routes>
