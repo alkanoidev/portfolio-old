@@ -11,7 +11,8 @@
             "mdx",
             "framer-motion",
             "tailwindcss"
-        ]
+        ],
+        "image": "filipblog-screenshot.png"
     },
     {
         "title": "nasa-apis",
@@ -24,8 +25,7 @@
             "javascript",
             "react router",
             "framer motion",
-            "styled components",
-            "create-react-app"
+            "styled components"
         ],
         "comingSoon": false,
         "repoName": "nasa-apis"
@@ -40,8 +40,7 @@
             "react",
             "javascript",
             "styled components",
-            "framer motion",
-            "create-react-app"
+            "framer motion"
         ],
         "comingSoon": false,
         "repoName": "travel-app-landing-page"

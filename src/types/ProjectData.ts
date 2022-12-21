@@ -5,7 +5,7 @@ type ProjectDataType = {
   liveDemoLink: string;
   repoName: string;
   technologies: string[];
-  imageSource: string;
+  image: string;
   commingSoon: true;
 };
 export default ProjectDataType;

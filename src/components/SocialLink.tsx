@@ -6,7 +6,7 @@ export default function SocialLink({ link, icon }: Props) {
       href={link}
       target="_blank"
       rel="noopener"
-      className="text-subh text-bg-dark dark:text-bg transition-transform hover:scale-125"
+      className="text-subh text-bg-dark dark:text-bg transition-transform hover:scale-110"
     >
       {icon}
     </a>

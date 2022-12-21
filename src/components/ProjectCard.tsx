@@ -11,52 +11,31 @@ export default function ProjectCard({ project }: Props) {
   return (
     <a
       href={"/projects/" + project.repoName}
-      className={`card ${
-        project.commingSoon && "opacity-20"
-      } w-full flex flex-col gap-4 bg-off-white dark:bg-off-dark p-5 z-0 transition rounded-lg relative group opacity-0`}
+      className={`w-[354px] h-[456px] p-4 bg-off-white dark:bg-off-dark rounded-3xl flex flex-col justify-between`}
     >
-      <section>
-        <h1 className="text-3xl">{project.title}</h1>
-        <p className="text-lg text-bg-dark/80 dark:text-bg/80 mt-2">
-          {project.description}
-        </p>
-      </section>
-      <section>
-        <h2 className="text-2xl mb-2">Technologies Used:</h2>
-        <div className="technologies flex flex-wrap w-full gap-3 text-primary text-labels">
-          {project.technologies.map((technology: any, index: number) => (
-            <h6 key={index}>{technology}</h6>
+      <div>
+        <h1 className="text-2xl my-4">{project.title}</h1>
+        <div className="w-full flex flex-wrap gap-3">
+          {project.technologies.map((technology) => (
+            <div className="text-xs font-normal border-2 border-primary/30 bg-bg dark:bg-bg-dark rounded-full py-1 px-2">{technology}</div>
           ))}
         </div>
-      </section>
-      <section className="buttons flex flex-wrap gap-4 mt-2">
-        <Button icon={<BsGithub />} variant="secondary">
-          <a href={project.githubLink}>View Code</a>
-        </Button>
-        {project.liveDemoLink !== "" && (
-          <Button
-            icon={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-                />
-              </svg>
-            }
-            variant="primary"
-          >
-            <a href={project.liveDemoLink}>View Site</a>
+        <div className="technologies"></div>
+        <p className="text-body opacity-70 font-normal my-4">
+          {project.description}
+        </p>
+      </div>
+
+      <div className="flex gap-4 w-full mt-2">
+        <a href={project.githubLink}>
+          <Button small variant="secondary" icon={<BsGithub />}></Button>
+        </a>
+        <a href={project.liveDemoLink} className="w-full h-full flex-grow-[2]">
+          <Button variant="primary" classes="w-full">
+            Live View
           </Button>
-        )}
-      </section>
+        </a>
+      </div>
     </a>
   );
 }

@@ -2,9 +2,11 @@ import React, { ReactNode } from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "primary" | "secondary";
-  children: ReactNode;
+  children?: ReactNode;
   icon?: ReactNode;
   shine?: boolean;
+  classes?: string;
+  small?: boolean;
 }
 
 export default function Button({
@@ -12,6 +14,8 @@ export default function Button({
   children,
   icon,
   shine,
+  classes,
+  small,
   ...props
 }: ButtonProps) {
   return (
@@ -19,9 +23,11 @@ export default function Button({
       name="button"
       {...props}
       className={`
-      text-labels shadow font-semibold
+      ${classes}
+      ${small ? "px-[10px]" : "px-[20px]"}
+      text-labels shadow font-semibold rounded-xl
     text-bg-dark dark:text-bg
-      py-[10px] px-[20px] rounded-lg ring-2
+      py-[10px] ring-2
       relative
       overflow-hidden
       transition
@@ -36,7 +42,7 @@ export default function Button({
         button
         ${
           variant === "primary"
-            ? "ring-primary hover:bg-primary/50"
+            ? "ring-primary hover:bg-primary/50 hover:before:animate-none"
             : "ring-secondary hover:bg-secondary/50"
         }`}
     >

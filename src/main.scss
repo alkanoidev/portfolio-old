@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,600,800,800i|Nanum+Pen+Script:400&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -7,10 +6,10 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   @apply font-semibold;
 }
-*::selection{
+*::selection {
   @apply bg-primary text-bg dark:text-bg-dark;
 }
 

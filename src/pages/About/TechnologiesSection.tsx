@@ -22,7 +22,9 @@ export default function TechnologiesSection() {
 
   return (
     <article ref={divRef} className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
-      <h1># Skills</h1>
+      <h1 className="before:w-28 before:h-4 before:z-[-1] before:bg-primary/90 before:absolute before:bottom-4 before:rounded-sm">
+        Skills
+      </h1>
       <p>
         The main area of my expertise is <span>Front-end development</span>. I
         enjoy building intuitive applications that are fast and built with best
@@ -36,7 +38,7 @@ export default function TechnologiesSection() {
         Database Management Systems as well as Nonrelational.
       </p>
 
-      <h2 className="mt-16">## Tools and Technologies</h2>
+      <h2 className="mt-16">Tools and Technologies</h2>
       <div className="mt-5 tech">
         <Technology icon={<FaHtml5 />} title="HTML5" />
         <Technology icon={<DiCss3 />} title="CSS3" />
