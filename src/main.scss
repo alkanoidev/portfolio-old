@@ -7,10 +7,10 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  @apply font-semibold;
+  @apply font-normal;
 }
 *::selection {
-  @apply bg-primary text-bg dark:text-bg-dark;
+  @apply bg-primary/50;
 }
 
 html {

@@ -10,10 +10,10 @@
     div {
       @apply text-bg-dark dark:text-bg text-center flex justify-center;
       h1{
-        @apply leading-tight text-3xl sm:text-headline;
+        @apply leading-tight text-3xl sm:text-headline font-semibold;
       }
       p{
-        @apply leading-normal my-2 w-auto sm:w-1/2;
+        @apply leading-normal my-2 w-auto sm:w-1/2 font-semibold;
       }
       span {
         @apply text-transparent font-bold

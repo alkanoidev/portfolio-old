@@ -1,12 +1,8 @@
 .contact {
-  @apply h-full flex justify-center items-start sm:px-0 z-0;
-  @apply bg-bg dark:bg-bg-dark;
+  @apply h-full flex w-full justify-center items-start sm:px-0 z-0;
 
   .contact-form {
-    @apply sm:mt-12 relative;
-    h1 {
-      @apply text-headline;
-    }
+    @apply sm:mt-12 relative w-full sm:w-auto;
 
     form {
       @apply flex flex-col gap-5 sm:gap-10 w-full;
@@ -38,8 +34,5 @@
         @apply rounded-lg w-[400px];
       }
     }
-  }
-  .code {
-    @apply hidden mt-14 sm:flex md:hidden lg:flex max-w-[450px] w-[450px];
   }
 }

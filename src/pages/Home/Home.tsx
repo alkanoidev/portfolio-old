@@ -8,15 +8,14 @@ import WavesMobile from "../../components/Waves/WavesMobile";
 import Projects from "../Projects/Projects";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
-import GradientLine from "../../components/GradientLine";
 
 export default function Home() {
   return (
     <>
-    <div className="bg-yellow-500 w-full text-center text-black text-icon-sm">
-      Under Construction
-    </div>
       <div className="home">
+      <div className="bg-yellow-500 w-full text-center text-black text-icon-sm">
+        Under Construction
+      </div>
         <main className="home-content space-y-5">
           <div className="flex flex-col justify-center items-center">
             <h1>Hi there! I'm Filip</h1>
@@ -51,13 +50,10 @@ export default function Home() {
         </main>
         <Waves />
         <WavesMobile />
-        <GradientLine />
       </div>
       <Projects />
-      <GradientLine />
 
       <About />
-      <GradientLine />
 
       <Contact />
     </>

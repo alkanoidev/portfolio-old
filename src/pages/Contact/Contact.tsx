@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/Buttons/Button";
 import "./style.scss";
 import useAnimateBlock from "../../utils/hooks/useAnimateBlock";
+import SocialLink from "../../components/SocialLink";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { HiMail } from "react-icons/hi";
 
 type Props = {};
 type FormValuesProps = {
@@ -49,9 +52,11 @@ export default function Contact({}: Props) {
   };
 
   return (
-    <div className="contact">
+    <div className="contact px-2 sm:px-0 pb-12">
       <div ref={divRef} className="contact-form">
-        <h1 className="mt-[70px] sm:mt-0">Get in touch</h1>
+        <h1 className="mt-[70px] sm:mt-0 mb-5 sm:text-headline text-5xl before:w-48 relative before:h-4 before:-z-[1] z-0 before:bg-primary dark:before:bg-primary/50 before:absolute before:bottom-0 before:rounded-sm">
+          Get in touch
+        </h1>
         <form onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <div>
@@ -86,11 +91,22 @@ export default function Contact({}: Props) {
               required
             />
           </p>
-          <p>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <SocialLink
+                icon={<BsLinkedin />}
+                link="https://www.linkedin.com/in/filip-ivanovic-60ab98242"
+              />
+              <SocialLink
+                icon={<BsGithub />}
+                link="https://github.com/alkanoidev"
+              />
+              <h1 className="text-lg">alkanoidev@gmail.com</h1>
+            </div>
             <Button type="submit" variant="primary">
-              Submit Message
+              Submit
             </Button>
-          </p>
+          </div>
         </form>
       </div>
     </div>

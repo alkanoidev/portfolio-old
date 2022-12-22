@@ -8,7 +8,7 @@ export default function Section1() {
   const { divRef } = useAnimateBlock(0.5);
   return (
     <article className="mt-5" ref={divRef}>
-      <h1 className="before:w-32 before:h-4 before:z-[-1] before:bg-primary/90 before:absolute before:bottom-4 before:rounded-sm">About</h1>
+      <h1 className="before:w-32 before:h-4 before:z-[-1] before:bg-primary dark:before:bg-primary/50 before:absolute before:bottom-4 before:rounded-sm">About</h1>
       <p className="pb-6">
         I'm a <span>frontend developer</span> who enjoys building things that
         live on the internet.

@@ -22,7 +22,7 @@ export default function TechnologiesSection() {
 
   return (
     <article ref={divRef} className="pb-6 mt-16 sm:mt-14 flex flex-col w-full">
-      <h1 className="before:w-28 before:h-4 before:z-[-1] before:bg-primary/90 before:absolute before:bottom-4 before:rounded-sm">
+      <h1 className="before:w-28 before:h-4 before:z-[-1] before:bg-primary dark:before:bg-primary/50 before:absolute before:bottom-4 before:rounded-sm">
         Skills
       </h1>
       <p>
